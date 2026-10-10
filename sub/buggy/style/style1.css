@@ -1,0 +1,34 @@
+/* aaaaa */
+html {
+}
+
+	html:hover body, html:focus body {
+		background-image: url(../images/imp_k_clr_500.png);
+	}
+
+body {
+	font-family: TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif;
+	color: rgba(86,86,86,1.0);
+	background-image: url(../images/imp_k_bw_500.png);
+	background-color: rgba(186,186,186,.2);
+}
+
+	body::after {
+		background-image: url(../images/bg_faded.png) !important;
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-color: rgba(186,186,186,0);
+	}
+
+	body:hover::after, body:focus::after {
+		background-size: auto 100%;
+	}
+
+	body:hover, body:focus {
+		background-image: url(../images/imp_k_bw_500.png) !important;
+		background-color: rgba(186,186,186,.6);
+	}
+
+	body.home:hover .content, body.home:focus .content {
+		background-color: rgba(255,255,255,1);
+	}

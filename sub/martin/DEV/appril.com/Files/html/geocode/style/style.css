@@ -1,0 +1,50 @@
+/* aaaaa */
+html {
+height: 100%;
+}
+body {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 10px;
+color: rgba(86,86,86,1.0);
+margin: 0;
+padding: 0;
+min-height: 100%;
+background-image: none;
+background-repeat: no-repeat;
+background-position: center center;
+background-color: rgba(255,255,255,1.0);
+}
+a, a:hover, a:visited, a:active {
+font-size: 10px;
+color: rgba(86,86,86,1.0);
+text-decoration: none;
+}
+div {
+width: auto;
+}
+ul {
+list-style: none;
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+.div {
+display: block;
+max-width: 50%;
+position: relative;
+overflow: hidden;
+margin: 0 auto;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}
+.div ul {
+margin: 0 !important;
+}
+#result {
+width: 100%;
+}
+#result td {
+width: 100%;
+height: auto;
+}

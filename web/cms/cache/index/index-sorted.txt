@@ -1,0 +1,1 @@
+a:1:{i:0;a:4:{s:7:"dirname";s:47:"content/admin@kiapes.sk/blog/uncategorized/post";s:8:"basename";s:40:"2020-02-16-00-03-55_test_kiapes-ipsum.md";s:9:"extension";s:2:"md";s:8:"filename";s:37:"2020-02-16-00-03-55_test_kiapes-ipsum";}}

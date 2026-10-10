@@ -1,0 +1,6 @@
+A less error occured trying to build your bundle. You've likely entered an invalid input into the less variable field. Check your syntax and try again!
+
+ thanks!
+
+
+{"type":"Syntax","message":"Operation on an invalid type","filename":"bootstrap.css","line":null,"column":-1,"extract":[null,null,"// Variables"]}

@@ -1,0 +1,145 @@
+/* */
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+}
+
+
+@media print {
+
+html, body {
+	height: 100%;
+}
+
+}
+
+html, input, select, label, form, div, td {
+	font-family: "Century Gothic", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #000;
+}
+
+#map_canvas div, #map_canvas div a, #map_canvas_subject div, #map_canvas_subject div a {
+	font-family: "Century Gothic", "Trebuchet MS", Arial, Helvetica, sans-serif !important;
+	color: #000;
+}
+
+form {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+img {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+a {
+}
+
+a:hover {
+}
+
+.clear {
+	display: block;
+	clear: both;
+}
+
+.hidden {
+	display: none;
+	display: none !important;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#map_area.closed {
+	margin: 0 0 0 15px !important;
+	margin-left: 15px !important
+}
+
+#map_list_in li {
+	float: left !important;
+	width: 318px !important;
+}
+
+#map_list_in li a {
+	padding: 5px 10px 5px 5px !important;
+}
+
+li.map_list_cat_A,
+li.map_list_cat_B,
+li.map_list_cat_C,
+li.map_list_cat_A active,
+li.map_list_cat_B active,
+li.map_list_cat_C active {
+	background-position: 3px 23px !important;
+}
+
+#map_list_in li p.map_list_date {
+	padding: 1px 10px 0 28px !important;
+}
+
+#map_list_in li span.map_list_info {
+	display: inline-block !important;
+	margin: 0 0 3px 0 !important;
+}
+
+#map_list_toggle {
+}
+
+#map_list_toggle:hover,
+#map_list_toggle.closed:hover {
+}
+
+#map_list_toggle.closed {
+}
+
+#map_filter_count_menu {
+	height: 62px !important;
+}
+
+#map_filter_count_stat:hover span,
+#map_filter_count_stat span {
+	background-position: 180px 9px;
+}
+
+.map_filter_cat_A,
+.map_filter_cat_B,
+.map_filter_cat_C {
+	display: inline-block;
+	height: 18px !important;
+	padding: 2px 0 0 0 !important;
+}
+
+#map_filter_main li {
+	width: 315px !important;
+}
+
+#li_A_box,
+#li_B_box,
+#li_C_box {
+	height: 20px !important;
+	padding: 2px 0 0 0 !important;
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: 24px 24px;
+}
+

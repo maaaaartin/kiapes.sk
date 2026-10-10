@@ -1,0 +1,108 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Google Maps API V3: Street View</title>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAMydFGYRDQ7Wb-HfYAQTzUrjh29IT8aTg&sensor=false"></script>
+<style type="text/css">
+body {
+	margin: 20; padding: 20
+}
+#map_canvas, #map_street, #map_image {
+	width: 700px;
+	height: 400px;
+}
+</style>
+<script type="text/javascript">
+	function loadStreetView(map, marker, latlng) {
+		var area = 250;
+		if (marker == undefined || marker == null) return;		
+		// Find street view within 200 meters, as street view may not always be available on any latlng
+		var service = new google.maps.StreetViewService();
+		service.getPanoramaByLocation(marker.getPosition(), area, function(result, status) {
+	        if (status == google.maps.StreetViewStatus.OK) {
+	          	//var panorama = map.getStreetView();
+				var panorama = new google.maps.StreetViewPanorama(document.getElementById('map_street'));
+	    		panorama.setPosition(result.location.latLng);
+				panorama.setVisible(true);
+	        }
+	        else {
+	        	alert("No street view is available within " + area + " meters");
+	        	return;
+	        }
+	    });
+	}
+
+    function initialize() {
+		var latitude = document.getElementById('latitude').innerHTML;
+		var longitude = document.getElementById('longitude').innerHTML;
+		var address = document.getElementById('address').innerHTML;
+
+		var contentString = address + '<br/>' + 'Zemepisná šírka: ' + latitude + '<br/>Zemepisná dĺžka: ' + longitude;
+        var mapOptions = {
+          center: new google.maps.LatLng(latitude,longitude),
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var panoramaOptions = {
+          /*position: new google.maps.LatLng(latitude,longitude),
+          zoom: 15,*/
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+		//var panorama = new google.maps.StreetViewPanorama(document.getElementById('map_street'), panoramaOptions);
+		
+        var latlng = new google.maps.LatLng(latitude,longitude);
+        var marker = new google.maps.Marker({
+            position: latlng,
+            map: map,
+            title: 'Marker',
+			draggable: true,
+        });
+        /*var street = new google.maps.Marker({
+            position: latlng,
+            map: map,
+            title: 'Marker',
+        });*/
+		var infowindow = new google.maps.InfoWindow({
+			content: contentString,
+		});
+        google.maps.event.addListener(map, 'resize', function() {
+			//loadStreetView(map, marker);
+        });
+		google.maps.event.addListener(map, 'click', function () {
+			infowindow.close(map, marker);
+			//loadStreetView(map, marker);
+		});
+        google.maps.event.addListener(marker, 'click', function() {
+			//loadStreetView(map, marker);
+			infowindow.open(map, marker);
+			//infowindow.close();
+        });
+		google.maps.event.addListener(marker, 'dragstart', function() {
+			//infowindow.open(map, marker);
+        });
+		google.maps.event.addListener(marker, 'dragend', function() {
+			//infowindow.open(map, marker);
+			//infowindow.close(map, marker);
+			loadStreetView(map, marker);
+        });
+		google.maps.event.addListener(infowindow, 'closeclick', function () {
+			//infowindow.close(map, marker);
+		});
+		infowindow.open(map, marker);
+		//loadStreetView(map, marker);
+		map.setStreetView(panorama);
+    }
+</script>
+</head>
+<body onload="initialize()">
+<div id="map_canvas">
+	<span id="latitude">49.1363</span>
+	<span id="longitude">19.5116</span>
+	<span id="address">Brnice 166, Liptovská Sielnica, SK</span>
+</div>
+<div id="map_street"></div>
+<div id="map_image"><!--<img src="http://maps.googleapis.com/maps/api/streetview?size=700x400&location=49.136300,19.511600&sensor=false" />--></div>
+</body>
+</html>

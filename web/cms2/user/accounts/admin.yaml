@@ -1,0 +1,11 @@
+state: enabled
+email: admin@kiapes.sk
+fullname: 'Martin Kiapeš'
+title: Administrator
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$4/BA2iSA55pBhFuAw4yuRuinjUEWbZRd5VGzrO0cKH3StOS51Wbui

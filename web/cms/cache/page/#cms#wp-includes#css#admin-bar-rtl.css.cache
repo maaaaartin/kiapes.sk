@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="generator" content="HTMLy v2.7.4" />
+<link rel="icon" type="image/x-icon" href="http://kiapes.sk/cms/favicon.ico" />
+<link rel="sitemap" href="http://kiapes.sk/cms/sitemap.xml" />
+<link rel="alternate" type="application/rss+xml" title="Kiapeö Feed" href="http://kiapes.sk/cms/feed/rss" />
+
+    <title>This page doesn't exist! - Kiapeö</title>
+    <meta name="description" content="404 Not Found"/>
+    <link rel="canonical" href="http://kiapes.sk/cms/" />
+     
+    <link rel="stylesheet" id="twentysixteen-fonts-css" href="https://fonts.googleapis.com/css?family=Merriweather%3A400%2C700%2C900%2C400italic%2C700italic%2C900italic%7CMontserrat%3A400%2C700%7CInconsolata%3A400&#038;subset=latin%2Clatin-ext" type="text/css" media="all" />
+    <link rel="stylesheet" id="genericons-css"  href="http://kiapes.sk/cms/themes/twentysixteen/genericons/genericons.css" type="text/css" media="all" />
+    <link rel="stylesheet" id="twentysixteen-style-css"  href="http://kiapes.sk/cms/themes/twentysixteen/css/style.css" type="text/css" media="all" />
+    <!--[if lt IE 10]>
+    <link rel="stylesheet" id="twentysixteen-ie-css"  href="http://kiapes.sk/cms/themes/twentysixteen/css/ie.css" type="text/css" media="all" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" id="twentysixteen-ie8-css"  href="http://kiapes.sk/cms/themes/twentysixteen/css/ie8.css" type="text/css" media="all" />
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" id="twentysixteen-ie7-css"  href="http://kiapes.sk/cms/themes/twentysixteen/css/ie7.css" type="text/css" media="all" />
+    <![endif]-->
+</head>
+<body class="error-404">
+    <div id="page" class="site">
+        <div class="site-inner">
+        
+            <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+            <header id="masthead" class="site-header" role="banner">
+                <div class="site-header-main">
+                    <div class="site-branding">
+                        <h1 class="site-title"><a href="http://kiapes.sk/cms/" rel="home">Kiapeö</a></h1>
+                        <p class="site-description">Kiapeö</p>
+                    </div><!-- .site-branding -->
+
+                    <button id="menu-toggle" class="menu-toggle">Menu</button>
+
+                    <div id="site-header-menu" class="site-header-menu">
+                        <nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Primary Menu">
+                            <div class="menu-main-container">
+                                <ul class="nav primary-menu"><li class="item first"><a href="http://kiapes.sk/cms/">Home</a></li></ul>                            </div>
+                        </nav><!-- .main-navigation -->
+                    </div><!-- .site-header-menu -->
+                    
+                </div><!-- .site-header-main -->
+            </header><!-- .site-header -->
+
+            <div id="content" class="site-content">
+
+                <div id="primary" class="content-area">
+                    <main id="main" class="site-main" role="main">
+                        <article class="page type-page hentry">
+    <header class="entry-header">
+        <h1 class="entry-title">This page doesn't exist!</h1>
+    </header>
+    <div class="entry-content">
+        <p>Please search to find what you're looking for or visit our <a href="http://kiapes.sk/cms/">homepage</a> instead.</p>
+        <form class="search-form" role="search">
+            <label>
+                <span class="screen-reader-text">Search for:</span>
+                <input type="search" title="Search for:" name="search" value="" placeholder="Search ‚Ä¶" class="search-field">
+            </label>
+            <button class="search-submit" type="submit"><span class="screen-reader-text">Search</span></button>
+        </form>
+    </div>
+</article>                    </main><!-- .site-main -->
+                </div><!-- .content-area -->
+
+
+                <aside id="secondary" class="sidebar widget-area" role="complementary">
+                    <section class="widget widget_text">
+                        <h2 class="widget-title">About</h2>
+                        <div class="textwidget"><p>Proudly powered by HTMLy, a databaseless blogging platform.</p>
+                        </div>
+                    </section>
+                    
+                    <section id="search" class="widget widget_search">
+                        <form role="search" class="search-form">
+                        <label>
+                            <span class="screen-reader-text">Search for:</span>
+                            <input type="search" class="search-field" placeholder="Search &hellip;" value="" name="search" title="Search for:" />
+                        </label>
+                        <button type="submit" class="search-submit"><span class="screen-reader-text">Search</span></button>
+                        </form>
+                    </section>    
+                    
+                    <section id="recent-posts" class="widget widget_recent_entries">        
+                        <h2 class="widget-title">Recent Posts</h2>
+                        <br />
+<b>Deprecated</b>:  Array and string offset access syntax with curly braces is deprecated in <b>/home/ms008600/www_root/cms/system/vendor/michelf/php-markdown/Michelf/MarkdownExtra.php</b> on line <b>163</b><br />
+<br />
+<b>Deprecated</b>:  Array and string offset access syntax with curly braces is deprecated in <b>/home/ms008600/www_root/cms/system/vendor/michelf/php-markdown/Michelf/MarkdownExtra.php</b> on line <b>165</b><br />
+<br />
+<b>Deprecated</b>:  Array and string offset access syntax with curly braces is deprecated in <b>/home/ms008600/www_root/cms/system/vendor/michelf/php-markdown/Michelf/MarkdownExtra.php</b> on line <b>434</b><br />
+<br />
+<b>Deprecated</b>:  Array and string offset access syntax with curly braces is deprecated in <b>/home/ms008600/www_root/cms/system/vendor/michelf/php-markdown/Michelf/MarkdownExtra.php</b> on line <b>434</b><br />
+<br />
+<b>Deprecated</b>:  Array and string offset access syntax with curly braces is deprecated in <b>/home/ms008600/www_root/cms/system/vendor/michelf/php-markdown/Michelf/MarkdownExtra.php</b> on line <b>443</b><br />
+<br />
+<b>Deprecated</b>:  Array and string offset access syntax with curly braces is deprecated in <b>/home/ms008600/www_root/cms/system/vendor/michelf/php-markdown/Michelf/MarkdownExtra.php</b> on line <b>481</b><br />
+<br />
+<b>Deprecated</b>:  Array and string offset access syntax with curly braces is deprecated in <b>/home/ms008600/www_root/cms/system/vendor/michelf/php-markdown/Michelf/MarkdownExtra.php</b> on line <b>481</b><br />
+<br />
+<b>Deprecated</b>:  Array and string offset access syntax with curly braces is deprecated in <b>/home/ms008600/www_root/cms/system/vendor/michelf/php-markdown/Michelf/MarkdownExtra.php</b> on line <b>500</b><br />
+<br />
+<b>Deprecated</b>:  Array and string offset access syntax with curly braces is deprecated in <b>/home/ms008600/www_root/cms/system/vendor/michelf/php-markdown/Michelf/MarkdownExtra.php</b> on line <b>501</b><br />
+<br />
+<b>Deprecated</b>:  Array and string offset access syntax with curly braces is deprecated in <b>/home/ms008600/www_root/cms/system/vendor/michelf/php-markdown/Michelf/MarkdownExtra.php</b> on line <b>605</b><br />
+<br />
+<b>Deprecated</b>:  Array and string offset access syntax with curly braces is deprecated in <b>/home/ms008600/www_root/cms/system/vendor/michelf/php-markdown/Michelf/MarkdownExtra.php</b> on line <b>617</b><br />
+<br />
+<b>Deprecated</b>:  Array and string offset access syntax with curly braces is deprecated in <b>/home/ms008600/www_root/cms/system/vendor/michelf/php-markdown/Michelf/MarkdownExtra.php</b> on line <b>617</b><br />
+<br />
+<b>Deprecated</b>:  Array and string offset access syntax with curly braces is deprecated in <b>/home/ms008600/www_root/cms/system/vendor/michelf/php-markdown/Michelf/MarkdownExtra.php</b> on line <b>628</b><br />
+<br />
+<b>Deprecated</b>:  Array and string offset access syntax with curly braces is deprecated in <b>/home/ms008600/www_root/cms/system/vendor/michelf/php-markdown/Michelf/MarkdownExtra.php</b> on line <b>629</b><br />
+<br />
+<b>Deprecated</b>:  Array and string offset access syntax with curly braces is deprecated in <b>/home/ms008600/www_root/cms/system/vendor/michelf/php-markdown/Michelf/MarkdownExtra.php</b> on line <b>993</b><br />
+<br />
+<b>Deprecated</b>:  Array and string offset access syntax with curly braces is deprecated in <b>/home/ms008600/www_root/cms/system/vendor/michelf/php-markdown/Michelf/MarkdownExtra.php</b> on line <b>1337</b><br />
+<br />
+<b>Deprecated</b>:  Array and string offset access syntax with curly braces is deprecated in <b>/home/ms008600/www_root/cms/system/vendor/michelf/php-markdown/Michelf/Markdown.php</b> on line <b>800</b><br />
+<br />
+<b>Deprecated</b>:  Array and string offset access syntax with curly braces is deprecated in <b>/home/ms008600/www_root/cms/system/vendor/michelf/php-markdown/Michelf/Markdown.php</b> on line <b>1140</b><br />
+<br />
+<b>Deprecated</b>:  Array and string offset access syntax with curly braces is deprecated in <b>/home/ms008600/www_root/cms/system/vendor/michelf/php-markdown/Michelf/Markdown.php</b> on line <b>1165</b><br />
+<br />
+<b>Deprecated</b>:  Array and string offset access syntax with curly braces is deprecated in <b>/home/ms008600/www_root/cms/system/vendor/michelf/php-markdown/Michelf/Markdown.php</b> on line <b>1530</b><br />
+<br />
+<b>Deprecated</b>:  Array and string offset access syntax with curly braces is deprecated in <b>/home/ms008600/www_root/cms/system/vendor/michelf/php-markdown/Michelf/Markdown.php</b> on line <b>1532</b><br />
+<ul><li><a href="http://kiapes.sk/cms/2020/02/kiapes-ipsum">Kiape≈° Ipsum</a></li></ul>                    </section>
+                    
+                    
+                    
+                    <section id="archives" class="widget widget_archive">
+                    <h2 class="widget-title">Archives</h2>        
+                        <ul class="archivegroup"><li class="expanded"><a href="javascript:void(0)" class="toggle" onclick="                    if (this.parentNode.className.indexOf('expanded') > -1){this.parentNode.className = 'collapsed';this.innerHTML = '&#9658;';} else {this.parentNode.className = 'expanded';this.innerHTML = '&#9660;';}">&#9660;</a> <a href="http://kiapes.sk/cms/archive/2020">2020</a> <span class="count">(1)</span><ul class="month"><li class="item"><a href="http://kiapes.sk/cms/archive/2020-02">February</a> <span class="count">(1)</span></li></ul></li></ul>                    </section>
+                    
+                    <section id="category" class="widget widget_category">
+                    <h2 class="widget-title">Category</h2>        
+                        <ul><li><a href="http://kiapes.sk/cms/category/uncategorized">Uncategorized</a></li></ul>                    </section>
+                    
+                    <section id="popular-tags" class="widget widget_popular_tags">
+                    <h2 class="widget-title">Popular Tags</h2>
+                                                <ul>
+                                                    <li><a class="more-link" href="http://kiapes.sk/cms/tag/test">test (1)</a></li>
+                                                                        </ul>
+                    </section>
+                    
+                </aside><!-- .sidebar .widget-area -->
+
+            </div><!-- .site-content -->
+
+            <footer id="colophon" class="site-footer" role="contentinfo">
+                <nav class="main-navigation" role="navigation" aria-label="Footer Primary Menu">
+                    <div class="menu-main-container">
+                        <ul class="nav primary-menu"><li class="item first"><a href="http://kiapes.sk/cms/">Home</a></li></ul>                    </div>
+                </nav><!-- .main-navigation -->
+                <nav aria-label="Footer Social Links Menu" role="navigation" class="social-navigation">
+                    <div class="menu-social-links-container">
+                    <ul class="social-links-menu" id="menu-social-links">
+                        <li><a href="https://twitter.com/maaaaartin"><span class="screen-reader-text">Twitter</span></a></li>
+                        <li><a href="https://facebook.com/martin.kiapes.sk"><span class="screen-reader-text">Facebook</span></a></li>
+                        <li><a href=""><span class="screen-reader-text">Google+</span></a></li>
+                        <li><a href=""><span class="screen-reader-text">GitHub</span></a></li>
+                    </ul>
+                    </div>                
+                </nav>
+                <div class="site-info">
+                    <span class="site-title"><a href="http://kiapes.sk/cms/" rel="home">Kiapeö</a></span>
+                    <span class="copyright"><p>2020 (c) Kiapeö</p><p>Proudly powered by <a href="http://www.htmly.com" target="_blank">HTMLy</a></p></span>
+                </div><!-- .site-info -->
+            </footer><!-- .site-footer -->
+        </div><!-- .site-inner -->
+    </div><!-- .site -->
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="http://kiapes.sk/cms/themes/twentysixteen/js/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="http://kiapes.sk/cms/themes/twentysixteen/js/jquery.js"></script>
+    <script type="text/javascript" src="http://kiapes.sk/cms/themes/twentysixteen/js/jquery-migrate.js"></script>
+    <script type="text/javascript" src="http://kiapes.sk/cms/themes/twentysixteen/js/skip-link-focus-fix.js"></script>
+    <script type="text/javascript">
+    /* <![CDATA[ */
+    var screenReaderText = {"expand":"expand child menu","collapse":"collapse child menu"};
+    /* ]]> */
+    </script>
+    <script type="text/javascript" src="http://kiapes.sk/cms/themes/twentysixteen/js/functions.js"></script>
+    </body>
+</html>

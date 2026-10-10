@@ -1,0 +1,247 @@
+/* aaaaa */
+html {
+height: 100%;
+}
+body {
+font-family: Arial, Verdana, Helvetica, sans-serif;
+color: rgba(255,255,255,1);
+margin: 0;
+padding: 0;
+min-height: 100%;
+min-width: 1100px;
+background-image: url(../images/nova_bg.jpg);
+background-repeat: no-repeat;
+background-position: center center;
+background-color: rgba(255,255,255,1.0);
+}
+a, a:hover, a:visited, a:active {
+color: rgba(86,86,86,1.0);
+text-decoration: none;
+}
+div {
+width: auto;
+}
+ul {
+list-style: none;
+list-style-type: none;
+padding: 0;
+margin: 0;
+width: auto;
+display: block;
+}
+.clear {
+clear: both;
+}
+.image {
+position: absolute;
+top: 50%;
+right: 50%;
+width: 500px;
+height: 262px;
+margin: -140px -490px 0 0;
+overflow: visible;
+background-image: url(../images/image_500.png);
+background-repeat: no-repeat;
+background-position: center center;
+background-color: transparent;
+}
+.links {
+position: absolute;
+top: 50%;
+right: 50%;
+width: 500px;
+height: 262px;
+margin: -140px -490px 0 0;
+overflow: visible;
+}
+
+#link_fb {
+width: 100px;
+height: 100px;
+padding: 0;
+display: block;
+position: absolute;
+right: 0;
+bottom: -130px;
+z-index: 110;
+background-image: url(../images/icon_fb.png);
+background-repeat: no-repeat;
+background-position: center center;
+background-color: transparent;
+}
+/*#link_fb:hover {
+-webkit-box-shadow: rgba(0,0,0,.4) 2px 2px 4px -2px;
+box-shadow: rgba(0,0,0,.4) 2px 2px 4px -2px;
+}*/
+#link_fb:hover img {
+-webkit-filter: drop-shadow( 2px 2px 4px rgba(0, 0, 0, 0.75));
+filter: url(../images/shadow.svg#drop-shadow);
+}
+#container1 {
+position: relative;
+width: 1100px;
+margin: 0 auto;
+z-index: 101;
+}
+#container2 {
+position: relative;
+width: 1000px;
+margin: 0 auto;
+z-index: 100;
+}
+#container3 {
+position: relative;
+width: 1020px;
+margin: 0 auto;
+z-index: 99;
+}
+.name1 {
+display: inline;
+width: auto;
+position: absolute;
+/*top: 138px;*/
+top: 0;
+right: 0;
+overflow: hidden;
+text-align: left;
+padding: 22px 20px 0 0;
+/*float: right;*/
+}
+.name1 ul {
+margin: 20px 0 0 0 !important;
+}
+.name2 {
+display: inline;
+width: auto;
+position: absolute;
+/*top: 138px;*/
+top: 0;
+right: 0;
+overflow: hidden;
+text-align: left;
+padding: 20px 20px 0 0;
+/*float: right;*/
+color: rgba(0,0,0,1) !important;
+}
+.name2 ul {
+margin: 15px 0 0 0 !important;
+color: rgba(0,0,0,1) !important;
+}
+.name2 .larger, .name2 .large, .name2 .middle, .name2 .normal, .name2 .small {
+color: rgba(0,0,0,1) !important;
+}
+title {
+display: inline-block !important;
+}
+.title {
+display: inline;
+width: auto;
+float: left;
+overflow: hidden;
+text-align: left;
+padding: 20px 0 0 20px;
+/*float: right;*/
+}
+.title ul {
+margin: 10px 0 0 0 !important;
+}
+.teaser {
+display: inline;
+width: 420px;
+float: right;
+overflow: hidden;
+text-align: justify;
+padding: 25px 20px 0 0 !important;
+/*float: right;*/
+}
+.header {
+width: 100%;
+margin: 10px 0 0 0;
+text-align: center;
+font-size: 66px;
+text-transform: uppercase;
+}
+.footer {
+width: 100%;
+margin: 10px 0 0 0;
+text-align: center;
+font-size: 65px;
+text-transform: uppercase;
+}
+.content {
+width: 100%;
+height: 800px;
+padding: 0;
+background-image: url(../images/content_bg.png);
+background-repeat: no-repeat;
+background-position: center center;
+background-color: transparent;
+}
+.text {
+width: auto;
+display: block;
+padding: 50px 60px 60px 60px;
+background-color: transparent;
+color: rgba(0,0,0,1) !important;
+}
+.text .larger, .text .large, .text .middle, .text .normal, .text .small {
+color: rgba(0,0,0,1) !important;
+}
+.text p {
+margin: 4px 0;
+}
+.text header {
+text-align: center;
+font-size: 50.9px !important;
+line-height: 50px;
+}
+.text title {
+margin: 20px 0 0 0;
+}
+.photo {
+float: left;
+width: 500px;
+height: 636px;
+margin: 20px 0 0 0;
+background-image: url(../images/photo_500.png);
+background-repeat: no-repeat;
+background-position: center center;
+background-color: transparent;
+}
+.number {
+float: left;
+width: 150px;
+height: 150px;
+margin: 95px 0 0 -70px;
+z-index: 109;
+background-image: url(../images/number_150.png);
+background-repeat: no-repeat;
+background-position: center center;
+background-color: transparent;
+}
+.bold {
+font-weight: bold;
+}
+.light {
+font-weight: normal !important;
+}
+.larger {
+font-size: 50px !important;
+color: rgba(255,255,255,1);
+}
+.large {
+font-size: 35px !important;
+color: rgba(255,255,255,1);
+}
+.middle {
+font-size: 25px !important;
+color: rgba(255,255,255,1);
+}
+.normal {
+font-size: 20px !important;
+color: rgba(255,255,255,1);
+}
+.small {
+font-size: 15px !important;
+color: rgba(255,255,255,1);
+}

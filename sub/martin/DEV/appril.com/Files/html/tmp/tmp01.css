@@ -1,0 +1,40 @@
+.zoneMainContent h1 {
+	border: 1px solid #e5e5e5;
+	padding: 10px 20px;
+	color: #000;
+	text-align: center;
+	background: rgba(243,243,243,.85);
+}
+.zoneMainContent h2 {
+	width: auto;
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	padding: 10px;
+	color: #000;
+	text-align: center;
+	font-weight: normal;
+	background: rgba(243,243,243,.85);
+}
+.zoneMainContent h3 {
+	width: auto;
+	color: #999;
+}
+#plc_lt_zoneContent_PagePlaceholder_PagePlaceholder_lt_zoneTop_editabletext_BizFormControl3_Bizform1 {
+	border: 1px solid #e5e5e5;
+	padding: 20px;
+	background: rgba(243,243,243,.85);
+	color: #999;
+}
+#plc_lt_zoneContent_PagePlaceholder_PagePlaceholder_lt_zoneTop_editabletext_BizFormControl3_Bizform1 table td {
+	vertical-align: top;
+	height: 30px;
+}
+#plc_lt_zoneContent_PagePlaceholder_PagePlaceholder_lt_zoneTop_editabletext_BizFormControl3_Bizform1 input {
+	border: 1px solid #e5e5e5;
+}
+#plc_lt_zoneContent_PagePlaceholder_PagePlaceholder_lt_zoneTop_editabletext_BizFormControl3_Bizform1 .TextBoxField {
+	padding: 5px;
+}
+#plc_lt_zoneContent_PagePlaceholder_PagePlaceholder_lt_zoneTop_editabletext_BizFormControl3_Bizform1 .FormButton {
+	padding: 5px 10px;
+}

@@ -1,0 +1,587 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sk" lang="sk">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=windows-1250" />
+  <meta name="description" content="Mesto Martin " />
+  <meta name="keywords" content="Obce, mestá, mesto Martin" />
+  <meta http-equiv= "Page-Enter" content= "BlendTrans(Duration = 0.5)" />
+  <meta http-equiv= "Page-Exit" content= "BlendTrans(Duration = 0.5)" />
+  <meta name="author" content="Mesto Martin" />
+  <link rel="alternate" type="application/rss+xml" title="RSS Mesto Martin" href="http://www.martin.sk/rss" />
+  <link rel="alternate" href="http://www.martin.sk/home/index.php" title="Grafická verzia" />
+  <link rel="alternate" href="http://www.martin.sk/home/index_text.php" title="Textová verzia" />
+
+  <!-- style -->
+<style>
+/* TRASHOUT WIDGET STYLE */
+.shadow{-moz-box-shadow:0 0 11px -3px #ccc;-webkit-box-shadow:0 0 11px -3px #ccc;box-shadow:0 0 11px -3px #ccc} .trashout_widget_font_color{color:#004890} /* bright green: #54b041, bright blue: #03a5d4 */ .trashout_widget_font_dark_color{color:#404040}
+.trashout_widget_bg_color{background-color:#004890}
+.trashout_widget_bg_dark_color{background-color:#404040}
+.trashout_widget_width_height{width:175px;height:175px} /* size of widget box */
+.trashout_widget_margin{margin: 0 7px}
+.trashout_widget_picture_width{width:70px}; /* width of shown image  */ .trashout_widget_picture_height{height:92px} /* height of shown image  */ #trashout_widget_picture_no_color{height:67px} /* 70% height of image -1px */ #trashout_widget_picture_color{height:24px} /* 30% height of image */ .trashout_widget_number{font-size:24px!important;text-transform:uppercase;font-weight:600}
+.trashout_widget_type{font-size:10px!important;color:#b3b3b3;text-transform:uppercase;margin:0 0 18px!important} #trashout_widget{font-size:10px;text-align:center!important;cursor:pointer!important;cursor:hand!important}
+#trashout_widget hr{color:#BBB!important;background-color:#BBB!important;height:1px!important;border:0!important}
+#trashout_widget_header{padding:10px 8px 5px;text-align:center!important;} #trashout_widget_header a{text-decoration:none!important;background-color: transparent!important} #trashout_widget_header strong{font-size:15px!important;font-family:"Arial",Helvetica!important}
+#trashout_widget_body_left{width:77px;height:auto;float:left;padding:8px 0 0 0!important} #trashout_widget_body_right{width:70px;height:92px;float:left;padding:10px 0 0 11px!important} #trashout_widget p{margin:0;padding:0!important;text-align:center!important;font-family:"Arial",Helvetica!important;line-height:20px!important}
+#trashout_widget_picture_connect_color{height:1px;-ms-filter:"alpha(opacity=50)";filter:alpha(opacity=50);-moz-opacity:.5;-khtml-opacity:.5;opacity:.5}
+#trashout_widget_picture{position:relative;top:-92px}
+#trashout_widget a{background-color:transparent!important}
+/* END TRASHOUT WIDGET STYLE */
+</style>
+
+
+<link rel="stylesheet" type="text/css" href="http://www.martin.sk/finale/css/style.css" />
+<link rel="stylesheet" media="print" type="text/css" href="http://www.martin.sk/finale/css/print.css" />
+<title>
+Mesto Martin - aktuálne z mesta</title>
+</head>
+
+<body>
+<div id='celok'>
+
+<a name='zaciatok'></a>
+<div class='hidden'>
+        <a href='#preskoc'><b>Choď na obsah</b></a><br />
+        <a href='#hn'><b>Choď na hlavnú navigáciu</b></a><br />
+        <a href='#bn'><b>Choď na bočnú navigáciu</b></a><br />
+
+</div>
+<div id="wrap">
+
+
+    <!-- HEADER -->
+	  <!-- Background -->
+<div id='header-section' class='noprint'>    
+<a href="index.php">
+<img id='header-background-left' src='http://www.martin.sk/finale/img/top/top_lavy_new.jpg' alt='logo mesta Martin' /></a><img id='header-background-center' src='http://www.martin.sk/finale/img/top/top_10.jpg' alt='fotografia z Martina' />
+
+
+
+    <div id="header-background-right">
+   <ul><li class="linia"><a href="http://www.martin.sk/update/anglicky_fin" title="england"><img class="img-navflag" src="http://www.martin.sk/finale/img/flag_uk.png" alt="england" /></a> <a href="http://www.martin.sk/update/nemecky_fin" title="germany"><img class="img-navflag" src="http://www.martin.sk/finale/img/flag_germany.png" alt="germany" /></a> <a href="http://www.martin.sk/update/taliansky_fin" title="italy"><img class="img-navflag" src="http://www.martin.sk/finale/img/flag_italy.png" alt="italy" /></a></li>
+   </ul>
+   <ul>
+ <li class='linia'><a href='index.php'>home</a></li>
+        <li class="linia"><a href="index_blind.php?typ=2">verzia&nbsp;pre&nbsp;slabozrakých</a></li>
+
+        <li class="linia"><a href="index_text.php?typ=1">textová&nbsp;verzia</a></li>
+
+        <li class="linia"><a href="index.php?typ=0">grafická&nbsp;verzia</a></li>
+
+        <li class="linia"><a href="?s=mapa_stranky">mapa&nbsp;stránky</a></li>
+     </ul>
+        <ul>
+        <li class="linia"><a href="?ss=rss">RSS</a> <a href="?ss=rss" title="RSS kanál"><img class="img-navflag" src="http://www.martin.sk/finale/img/top/rss_i.jpg" alt="logo rss" /></a></li>
+
+        </ul>
+    </div>
+      
+   </div>
+
+
+	  <!-- Navigation -->
+
+
+
+<!-- Breadcrumbs -->
+    <div id="breadcrumbs" class='noprint'>
+
+      <div class="header-breadcrumbs">
+        <ul>
+        <li><a href='?kat=1' class = 'sive'>úradné oznamy</a ></li><li><a href='?kat=3' class = 'sive'>tlačové správy</a></li><li><a href='?kat=4' class = 'sive'>aktuality</a></li><li><a href='?kat=2' class = 'sive'>akcie mesta</a></li><li><a href='?s=tabule' class = 'sive'>tabuľa</a></li>        </ul>
+        <!-- Search form -->                  
+        <div class="searchform">
+          <form action=" " method="get">
+            <fieldset>
+              <input type='hidden' name='s' value='search' />
+              <input name="query_new" class="field"  value=" vyhľadávanie"  title="sem vpíš vyhľadávací reťazec"/>
+              <input type="submit" name="button" class="button" value="&nbsp;" title="hľadaj"/>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+
+    </div>
+    <div id="siva_ciara" style="background: #E1E5E6 !important; float: none !important; height: auto !important; padding: 0 10px; width: auto !important">
+	<script language="javascript" type="text/javascript">function sizeAppril(obj){obj.style.height=obj.contentWindow.document.body.scrollHeight+'px';}</script><iframe name="appril" src="http://www.appril.com/Obce/SK/ZA/Martin/Martin/Widget.aspx" frameborder="0" scrolling="no" id="appril" onload='javascript:sizeAppril(this);'></iframe><style>iframe#appril {width:100% !important; height: 160px !important; border:0 !important; border-collapse:collapse !important; margin: 0 0 20px 0; background: transparent !important;}</style>
+	</div>
+<a name='hn'></a>
+	  <!-- LEFT COLUMN -->
+	  <!-- Navigation -->
+    <div id="left-column" class='noprint'>
+<h2 class='cervene'>VŠEOBECNÉ INFORMÁCIE</h2><ul><li><a href='?s=1006949441' class='cervene'>o meste</a></li><li><a href='?s=1006962802' class='cervene'>história</a></li><li><a href='?s=1006962848' class='cervene'>kultúra</a></li><li><a href='?s=1046864244' class='cervene'>šport</a></li><li><a href='?s=1060764476' class='cervene'>cestovný ruch</a></li><li><a href='?s=1006962913' class='cervene'>vzdelávanie</a></li><li><a href='?s=1006962956' class='cervene'>doprava</a></li><li><a href='?s=1137582587' class='cervene'>úrady a inštitúcie</a></li><li><a href='?s=1032426577' class='cervene'>dôležité tel. čísla</a></li><li><a href='?s=1049718479' class='cervene'>civilná ochrana</a></li><li><a href='?s=1171974156' class='cervene'>bezplatný internet</a></li></ul>
+
+
+
+<h2 class='modre'>SAMOSPRÁVA MESTA</h2><ul><li><a href='?s=1171357821' class='modre'>úradná tabuľa</a></li><li><a href='?s=1341340441' class='modre'>správne konania</a></li><li><a href='?s=1007238817' class='modre'>o samospráve</a></li><li><a href='?s=1331831822' class='modre'>voľby</a></li><li><a href='?s=1037341702' class='modre'>financovanie</a></li><li><a href='?s=1006963065' class='modre'>primátor mesta</a></li><li><a href='?s=1007387466' class='modre'>zástupca primátora</a></li><li><a href='?s=1006963119' class='modre'>mestské zastupiteľstvo</a></li><li><a href='?s=1010754714' class='modre'>prednosta MsÚ</a></li><li><a href='?s=1007217631' class='modre'>mestský úrad</a></li><li><a href='?s=1006963416' class='modre'>mestská polícia</a></li><li><a href='?s=1108712905' class='modre'>útvar hl. kontrolóra</a></li><li><a href='?s=1006963463' class='modre'>útvar hl. architekta</a></li><li><a href='?s=1207222308' class='modre'>centrum kultúry</a></li><li><a href='?s=1174312173' class='modre'>turist. - inf. kancelária</a></li><li><a href='?s=1034918200' class='modre'>správa šport. zariadení</a></li><li><a href='?s=1007219684' class='modre'>legislatíva</a></li><li><a href='?s=1006963739' class='modre'>ako vybaviť...</a></li><li><a href='?s=1165476261' class='modre'>sociálna pomoc</a></li><li><a href='?s=1124799040' class='modre'>nebytové priestory</a></li><li><a href='?s=1124256949' class='modre'>útulok pre zvieratá</a></li><li><a href='?s=1007223410' class='modre'>prístup k informáciám</a></li><li><a href='?s=1240230612' class='modre'>poskytovanie dotácií</a></li><li><a href='?s=1035463291' class='modre'>IMS</a></li><li><a href='?s=1265811420' class='modre'>strategické dokumenty</a></li><li><a href='?s=1294653299' class='modre'>dary pre mesto</a></li><li><a href='?s=1240491731' class='modre'>transparentný Martin</a></li><li><a href='?s=1294148756' class='modre'>zmluvy faktúry objed.</a></li></ul>
+
+
+<h2 class='zlte'>PROJEKTY</h2><ul><li><a href='?s=1368707892' class='zlte'>Partnerské mestá</a></li><li><a href='?s=1339018385' class='zlte'>Mestská karta</a></li><li><a href='?s=1366965443' class='zlte'>Cezhraničná hradná cesta</a></li><li><a href='?s=1372449274' class='zlte'>Nábrežie rieky Turiec</a></li><li><a href='?s=1369761154' class='zlte'>Staráme sa o bylinky</a></li><li><a href='?s=1373316167' class='zlte'>Vyšehradské noty</a></li><li><a href='?s=1327424024' class='zlte'>POHYBOM KU ZDRAVIU</a></li><li><a href='?s=1332099447' class='zlte'>Projekty podporené ROP</a></li><li><a href='?s=1333557607' class='zlte'>Lesopark Jedľoviny</a></li><li><a href='?s=1367867039' class='zlte'>Medokýš</a></li><li><a href='?s=1336399938' class='zlte'>Sociálna práca</a></li><li><a href='?s=1241504234' class='zlte'>DIGITÁLNE MESTO</a></li><li><a href='?s=1095757002' class='zlte'>projekt MATRA</a></li><li><a href='?s=1141807518' class='zlte'>projekt SNOWBALL</a></li><li><a href='?s=1078727373' class='zlte'>fondy EÚ</a></li><li><a href='?s=1205223326' class='zlte'>projekt TRENDY TRAVEL</a></li><li><a href='?s=1205151958' class='zlte'>projekt PROMOTION</a></li><li><a href='?s=1034923352' class='zlte'>priemyselný park</a></li><li><a href='?s=1045054703' class='zlte'>zdravé mesto</a></li><li><a href='?s=1201527285' class='zlte'>parlament mladých</a></li><li><a href='?s=1298466895' class='zlte'>projekt vzdelávania</a></li></ul>
+
+
+<h2 class='cervene'>MÉDIÁ</h2><ul><li><a href='?s=1239558474' class='cervene'>rss kanál</a></li><li><a href='?s=1239558593' class='cervene'>fotogaléria</a></li><li><a href='?s=1239558694' class='cervene'>audiozáznamy</a></li><li><a href='?s=1246516604' class='cervene'>audiozáznamy MsZ</a></li><li><a href='?s=1239558765' class='cervene'>videozáznamy</a></li></ul>
+<ul>
+<li ><a href='?s=1006963861' class='modre'>ZAHRANIČNÉ VZŤAHY</a></li>
+
+<li ><a href='?s=tz'  class='modre'>KONTAKTY</a></li>
+<li ><a href='?s=foto' class='modre'>FOTOGALÉRIA</a></li>
+<li ><a href='?s=linky' class='modre'>WWW LINKY</a></li>
+<li ><a href='?s=guestbook' class='modre'>NÁVŠTEVNÁ KNIHA</a></li>
+<li ><a href='?s=1235328308' class='modre'>MAPA MESTA</a></li>
+<li ><a href="http://www.mhdmartin.sk/" title="stránka sa otvorí v novom okne" class='modre'>MHD Martin</a></li>
+
+</ul>
+<p> </p>
+
+
+
+
+    </div>
+<a name='bn'></a>	  <!-- RIGHT COLUMN -->
+    <div id="right-column" class='noprint'>
+
+      <!-- Right column box -->
+
+      <div class="right-column-box-orange">
+        <h2 class="right-column-box-title-orange"><a href="?s=tz">Kontakty</a></h2>
+      </div>
+
+
+         		
+
+      <!-- Right column box -->
+      <div class="right-column-box-sedy">
+                  <p><a href="http://www.martin.sk/finalet/index.php" ><img src='http://www.martin.sk/finale/img/pict/tm7.jpg' width = '65' height = '65' alt='transparentné mesto' class='right-column-img3'/></a><a href="http://www.martin.sk/finalet/index.php" ><br/><br/>transparentné mesto </a></p>
+            <p><a href="http://www.martin.sk/finale/?s=1339018385" title="mestská karta"><img src='http://www.martin.sk/finale/img/pict/mestska_karta_banner.png' width = '65' height = '65' alt='mestská karta' class='right-column-img3'/></a><a href="http://www.martin.sk/finale/?s=1339018385" title="mestská karta" ><br/><br/>mestská karta</a></p>
+               
+            <p><a href="http://martin.ebit.sk/index.php?zobraz=drazby&d=1&idmenu=301" title="stránka sa otvorí v novom okne" target="new_window"><img src='http://www.martin.sk/final/img/pict/aukcie_i.jpg' width = '65' height = '65' alt='profil verejného obstarávateľa, elektronické prieskumy a aukcie' class='right-column-img3'/></a><a href="http://martin.ebit.sk/index.php?zobraz=drazby&d=1&idmenu=301" title="stránka sa otvorí v novom okne" target="new_window" ><br/>Profil verejného obstarávateľa<br/>Aukčný systém</a></p>
+            <p><a href="http://egov.martin.sk/" title="zmluvy faktúry objednávky"><img src='http://www.martin.sk/finale/img/pict/cgeGOV.png' width='65' height='65' alt='zmluvy, faktúry, objednávky' class='right-column-img3'/></a><a href="http://egov.martin.sk/" target="new_window" title="stránka sa otvorí v novom okne"><br/><br/>zmluvy faktúry objednávky</a></p>
+            <p><a href="?s=hladaj_formular" title="vyhladávací formulár postupov vybavovania"><img src='http://www.martin.sk/final/img/pict/ako_vybavit_i.jpg' width = '65' height = '65' alt='formuláre - ako vybaviť' class='right-column-img3'/></a><a href="?s=hladaj_formular" title="vyhladávací formulár postupov vybavovania" ><br/><br/>ako vybaviť</a></p>
+            <p><a href="http://www.martin.sk/sms" title="SMS infokanál"><img src='http://www.martin.sk/finale/img/pict/sms_red.png' width = '65' height = '65' alt='SMS infokanál' class='right-column-img3'/></a><a href="http://www.martin.sk/sms" title="SMS infokanál" ><br/><br/>SMS infokanál</a></p>
+            <p><a href="?s=1240230612" title="poskytovanie dotácií"><img src='http://www.martin.sk/finale/img/pict/euro7.jpg' width = '65' height = '65' alt='poskytovanie dotácií' class='right-column-img3'/></a><a href="?s=1240230612" title="poskytovanie dotácií" ><br/><br/>poskytovanie dotácií</a></p>
+            <p><a href="http://www.tikmartin.sk" title="turisticko informačná kancelária"><img src='http://www.martin.sk/finale/img/pict/tik2.png' width = '65' height = '65' alt='turisticko informa4n8 kancel8ria' class='right-column-img3'/></a><a href="http://www.tikmartin.sk" title="turisticko informačná kancelária" ><br/><br/>turisticko informačná kancelária</a></p>
+            <p><a href="http://www.kulturamartin.sk" title="stránka kultúry v Martine sa otvorí v novom okne" target="new_window"><img src='http://www.martin.sk/final/img/pict/kultura_i.jpg' width = '65' height = '65' alt='kultúra vMartine' class='right-column-img3'/></a><a href="http://www.kulturamartin.sk" title="stránka kultry v Martine" ><br/><br/>kultúra v&nbsp;Martine</a></p>
+            
+           
+            <p><a href="http://egov.martin.sk/Default.aspx?NavigationState=803:0:" title="zoznam psov v meste"><img src='http://www.martin.sk/finale/img/pict/pes_zoznam.jpg' width = '65' height = '65' alt='zoznam psov chovaných v meste' class='right-column-img3''/></a><a href="http://egov.martin.sk/Default.aspx?NavigationState=803:0:" title="zoznam psov chovaných v meste" ><br/><br/>zoznam psov chovaných<br/> v meste</a></p>
+            
+            <p><a href="?s=1202651872" title="popis MCORŠ"><img src='http://www.martin.sk/final/img/pict/mcors_i.jpg' width = '65' height = '65' alt='Martinská celoroná olympiáda' class='right-column-img3'/></a><a href="?s=1202651872" title="popis MCORŠ" ><br/><br/>Martinská celoročná olympiáda</a></p>
+            <p><a href="http://www.regionzilina.sk" title="stránka sa otvorí v novom okne" target="_blank"><img src='http://www.martin.sk/final/img/pict/zsk_i.jpg' width = '65' height = '65'  alt='Žilinský samosprávny kraj' class='right-column-img3'/></a><a href="http://www.regionzilina.sk" title="stránka sa otvorí v novom okne" target="_blank" ><br/><br/>Žilinský samosprávny kraj</a></p>
+            <p><a href="?s=tabule" title="úradná tabuľa"><img src='http://www.martin.sk/final/img/pict/tabula_i.jpg' width = '65' height = '65' alt='úradná tabuľa' class='right-column-img3'/></a><a href="?s=tabule" title="úradná tabuľa" ><br/><br/>úradná tabuľa</a></p>
+            <p><a href="http://martin.web-gis.sk" title="mapový portál mesta Martin"><img src='http://www.martin.sk/final/img/pict/mapa_i.jpg' width = '65' height = '65' alt='mapový portál' class='right-column-img3'/></a><a href="http://martin.web-gis.sk" title="mapový portl mesta Martin" ><br/><br/>mapový portál mesta Martin</a></p>
+            
+      </div>
+    <div>			
+<!-- ====================================== -->
+<!-- TrashOut.me statistics widget for area -->
+
+<!-- html -->
+<div id="trashout_widget" class="trashout_widget_width_height trashout_widget_font_dark_color trashout_widget_margin">
+    <div id="trashout_widget_header">
+        <a href="http://www.trashout.me/statistics/slovakia/zilina-region" class="trashout_widget_font_dark_color" rel="follow" title="TrashOut - nelegalne skladky odpadu, mobilna aplikacia">
+            <strong class="trashout_widget_font_dark_color">Neleg&#225;lne skl&#225;dky</strong><br/><strong class="trashout_widget_font_dark_color">v Martine</strong>
+        </a>
+    </div>
+    <hr />
+    <div id="trashout_widget_body" >
+        <div id="trashout_widget_body_left">
+            <p id="trashout_reported" class="trashout_widget_number">
+            <img src="http://www.trashout.me/img/widget/loading.gif" width="16" height="16" alt="-"/>
+            </p>
+            <p class="trashout_widget_type">nahl&#225;sen&#253;ch</p>
+
+            <p id="trashout_reporters" class="trashout_widget_number trashout_widget_font_color">
+            <img src="http://www.trashout.me/img/widget/loading.gif" width="16" height="16" alt="-"/>
+            </p>
+            <p class="trashout_widget_type">report&#233;rov</p>
+
+
+<!--            <img src="http://www.trashout.me/img/logo/trashout_logo_bw_83x45.jpg" width="83" height="45" border="0" alt="trashout.me" /> -->
+
+<!--            <p id="trashout_cleaned" class="trashout_widget_number trashout_widget_font_color"><img src="http://www.trashout.me/img/widget/loading.gif" width="16" height="16" alt="-"/></p>
+            <p class="trashout_widget_type">vy&#269;isten&#233;</p> -->
+        </div>
+        <div id="trashout_widget_body_right">
+            <div id="trashout_widget_picture_fixed" class="trashout_widget_picture_width trashout_widget_picture_height">
+                <div id="trashout_widget_picture_no_color" class="trashout_widget_picture_width trashout_widget_bg_dark_color"></div>
+                <div id="trashout_widget_picture_connect_color" class="trashout_widget_bg_color trashout_widget_picture_width"></div>
+                <div id="trashout_widget_picture_color" class="trashout_widget_bg_color trashout_widget_picture_width"></div>
+            </div>
+            <div id="trashout_widget_picture"  class="trashout_widget_picture_width trashout_widget_picture_height">
+                <a href="http://www.trashout.me/statistics/slovakia/zilina-region/martin" rel="follow" title="TrashOut - nelegalne skladky odpadu, mobilna aplikacia">
+                    <img width="70" height="92" src="http://www.trashout.me/img/widget/tree145x190_e1e5e6.png" border="0" alt="trashout.me tree" id="trashout_widget_tree" />
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end of TrashOut.me statistics widget for area -->
+<!-- ============================================= -->
+
+
+    </div>
+</body>
+
+    
+
+
+	<!-- Right column box -->
+      <div class="right-column-box-blue">
+        <h2 class="right-column-box-title-blue">Služby občanom</h2>
+        <ul class="main-navigation">
+        <li><a href="?s=tabule">úradná tabuľa</a></li>
+        <li><a href="?s=hladaj_formular">ako vybaviť</a></li>
+        <li><a href="?s=1105960731">úradné hodiny MsÚ</a></li>
+        <li><a href="?s=1126174577">klientské centrum</a></li>
+        <li><a href="?clanok=1328284478">odvoz separ. zberu</a></li>
+        <br/>
+        <li><a href="?s=novinky">novinky na e-mail</a></li>
+        </ul>
+      </div>
+      
+      <!-- Right column box -->
+      <div class="right-column-box-red">
+        <h2 class="right-column-box-title-red">Mestské zastupiteľstvoh2>
+        <ul class="main-navigation">
+        <li><a href="?s=1006964777">plán práce MsZ</a></li>
+        <li><a href="?s=1299242069">materiály na rokovania</a></li>
+        <li><a href="?s=1006964811">uznesenia MsZ</a></li>
+        <li><a href="?s=1007219731">schválené VZN</a></li>
+        <li><a href="?s=vzn-navrh">návrhy VZN</a></li>
+        <li><a href="?s=interpelacie">interpelácie</a></li>
+        <li><a href="?s=1181769942">mestské časti</a></li>
+        <li><a href="?s=1006964653">komisie</a></li>
+        <li><a href="?s=1246516604">zvukové záznamy MsZ</a></li>
+        </ul>
+      </div>
+      
+    <!-- Right column box -->
+      <div class="right-column-box-yellow">
+        <h2 class="right-column-box-title-yellow">Poradenstvo</h2>
+        <ul class="main-navigation">
+        <li><a href="?s=mapa_stranky">mapa stránky</a></li>
+        <li><a href="?s=bezplatne_poradenstvo">poradenstvo</a></li>
+        <li><a href="?s=1165476261">sociálna pomoc</a></li>
+        <li><a href="?s=1137586967">sprievodca MsÚ</a></li>
+        <li><a href="http://www.profesia.sk/partner/regiony/index.php?page_id=200" target='new_window' title='stránka sa zobrazí v novom okne'>ponuka práce</a></li>
+        <li><a href="http://www.matramartin.sk/index.php" target="_blank" title='stránka sa zobrazí v novom okne'>bývanie v meste</a></li>
+        <li><a href='?s=1137582758&amp;ss=pohotovost_lekarne'>lekárne pohotovosť</a></li>
+        </ul>
+      </div>      
+     
+
+     
+      
+    <!-- Right column box -->
+      <div class="right-column-box-blue">
+        <h2 class="right-column-box-title-blue">Anketa</h2>
+
+
+      Športujete?<br />» <a href="?ankOdp=1">profesionálne</a> «<br /><img src=".http://www.martin.sk/finale/img/anketa.gif" height='8' width='34' alt="14902 hlasov" class='right-column-img2' /> 34%<br />» <a href="?ankOdp=2">rekreačne</a> «<br /><img src=".http://www.martin.sk/finale/img/anketa.gif" height='8' width='33' alt="14840 hlasov" class='right-column-img2' /> 33%<br />» <a href="?ankOdp=3">vôbec</a> «<br /><img src=".http://www.martin.sk/finale/img/anketa.gif" height='8' width='33' alt="14605 hlasov" class='right-column-img2' /> 33%<br />      <ul class="main-navigation">
+      <li><a href="?s=ankety">ostatné ankety</a></li>
+      </ul>
+      </div>
+    
+       <!-- Right column box -->
+      <div class="right-column-box-red">
+        <h2 class="right-column-box-title-red">Napíšte nám</h2>
+
+
+    <ul class="main-navigation">
+    <li><a href="?s=poruchy">ohlasovanie porúch</a></li>
+    <li><a href="?s=1007223410">žiadosti o informácie</a></li>
+    <li><a href="?s=schranka_dovery">schránka dôvery</a></li>
+    <li><a href="?s=primator_f">názory občanov</a></li>
+    <li><a href="?s=guestbook">návštevná kniha</a></li>
+    </ul>
+    </div>
+
+      <!-- Right column box -->
+      <div class="right-column-box-yellow">
+        <h2 class="right-column-box-title-yellow">Najčítanejšie</h2>
+
+       <ul class="main-navigation">
+       <li><a href="?s=vypis_stat&amp;typs=c">články</a></li>
+       <li><a href="?s=vypis_stat&amp;typs=v">virtuálne položky</a></li>
+       <li><a href="?s=vypis_stat&amp;typs=f">fotoalbumy</a></li>
+       <li><a href="?s=vypis_stat&amp;typs=m">položky menu</a></li>
+       </ul>
+      </div>
+    
+               <!-- Right column box -->
+      <div class="right-column-box-blue">
+        <h2 class="right-column-box-title-blue">Foto dňa</h2>
+        <p></p>
+
+      <a href='.http://www.martin.sk/finale/data/foto/1273229750.jpg'><img src=".http://www.martin.sk/finale/data/foto/1273229750.jpg" alt="foto dňa" width='164' border='0' /></a><br /><br /><b>Josef Tomeček  </b><br/>Album: <a href="?s=foto2&amp;id=1273225371">Najúspešnejší športovci za rok 2009</a>
+
+    </div>
+    
+
+
+       <!-- Right column box -->
+      <div class="right-column-box-green">
+        <h2 class="right-column-box-title-green">Webmaster</h2>
+        <ul class="main-navigation">
+        <li><a href="http://www.martin.sk/stat">štatistika</a></li>
+        <li><a href="?s=mapa_stranky">mapa stránky</a></li>
+        <li><a href="?s=o_str">o stránkach</a></li>
+        <li><a href="mailto:webmaster@martin.sk">kontakt</a></li>
+        </ul>
+      </div>
+
+
+    </div>
+
+	<!-- MIDDLE COLUMN -->
+    <div id="middle-column">
+	 			
+
+<a name='preskoc'></a><!-- Middle column left section -->
+<div class="middle-column-left">
+
+
+
+    <!-- Middle column left box -->
+        <div class="middle-column-box-left-white">
+<br/><b>03.01.2014</b>, <a href='?kat=1'><b>úradné oznamy</b></a><br/>          <h2>
+Zverejnenie zámeru Mesta Martin prenajať nehnuteľný majetok z dôvodu hodného osobitného zreteľa          </h2>
+<p></p><p>Mesto Martin zverejňuje zámer prenajať nehnuteľný majetok z dôvodu hodného osobitného zreteľa v zmysle § 9a, ods. 9 písm. c) zákona č. 138/1991 Zb. o majetku obcí v znení neskorších predpisov a v zmysle VZN č. 99 o hospodárení s majetkom mesta a to:          </p>
+
+<a href=?clanok=1388759185 class='pokracovanie'><b>...pokračovanie článku</b></a>, <small>prečítané: 36 x</small><br/><br/><div class='hr2'></div></div>
+
+
+    <!-- Middle column left box -->
+        <div class="middle-column-box-left-white">
+<br/><b>03.01.2014</b>, <a href='?kat=10'><b>výberové konanie</b></a><br/><img src='http://www.martin.sk/finale/img/i_vk.jpg' class='middle-column-img-left2'  alt='ikona' /><br/>          <h2>
+Výberové konanie          </h2>
+<p></p><p>Mesto Martin v súlade s ust. § 6 ods. 1 zák. NR SR č. 552/2003 Z. z. o výkone práce vo verejnom záujme v znení neskorších predpisov a s čl. 5 Pracovného poriadku zamestnancov Mesta Martin informuje o voľnom pracovnom mieste na Mestskom úrade v Martine:          </p>
+
+<a href=?clanok=1388760185 class='pokracovanie'><b>...pokračovanie článku</b></a>, <small>prečítané: 160 x</small><br/><br/><div class='hr2'></div></div>
+
+
+    <!-- Middle column left box -->
+        <div class="middle-column-box-left-white">
+<br/><b>22.12.2013</b>, <a href='?kat=4'><b>aktuality</b></a><br/>          <h2>
+VEĽKOLEPÚ VIANOČNÚ VÝZDOBU OKORENÍ I SILVESTER          </h2>
+<p></p><p>Vianočné trhy, príchod sv. Mikuláša, rozsvietenie vynovenej vianočnej výzdoby i Silvester 2013. To všetko a oveľa viac pripravilo mesto Martin pre spestrenie času medzi Vianocami a blížiacim sa koncom roka. Tradičnú Vianočnú atmosféru vniesol do ulíc mesta 6.decembra Mikuláš, ktorý zázračným mávnutím palice rozsvietil nie len vianočný stromček na divadelnom námestí, ale i kompletnú výzdobu mesta. Svojimi výrobkami i voňavými produktmi na ľudovú nôtu lákali stánkari a najväčšiu radosť mali najmenší, ktorí si domov odniesli malé sladké odmeny.          </p>
+
+<a href=?clanok=1387745860 class='pokracovanie'><b>...pokračovanie článku</b></a>, <small>prečítané: 1403 x</small><br/><br/><div class='hr2'></div></div>
+
+
+    <!-- Middle column left box -->
+        <div class="middle-column-box-left-white">
+<br/><b>19.12.2013</b>, <a href='?kat=4'><b>aktuality</b></a><br/>          <h2>
+Mesto Martin a TIK vyhlasuje pre deti výtvarnú súťaž          </h2>
+<p></p><p>Turistická informačná kancelária mesta Martin spolu s detským rytierom Martinkom vyhlasuje výtvarnú rodinnú súťaž „Od Adventu do Troch kráľov v Turci“. Svoje diela môžete prihlásiť do 8. januára 2014.          </p>
+
+<a href=?clanok=1387443129 class='pokracovanie'><b>...pokračovanie článku</b></a>, <small>prečítané: 141 x</small><br/><br/><div class='hr2'></div></div>
+
+
+    <!-- Middle column left box -->
+        <div class="middle-column-box-left-white">
+<br/><b>29.11.2013</b>, <a href='?kat=4'><b>aktuality</b></a><br/>          <h2>
+V školách s čistými rukami          </h2>
+<p></p><p>Vďaka sponzorskej aktivite sa deti v troch martinských školách zapojili do projektu Čisté ruky v školách a aktívne bojujú proti šíreniu mikroorganizmov pravidelným čistením rúk.           </p>
+
+<a href=?clanok=1385732790 class='pokracovanie'><b>...pokračovanie článku</b></a>, <small>prečítané: 175 x</small><br/><br/><div class='hr2'></div></div>
+
+
+    <!-- Middle column left box -->
+        <div class="middle-column-box-left-white">
+<br/><b>29.11.2013</b>, <a href='?kat=4'><b>aktuality</b></a><br/><a href='.http://www.martin.sk/finale/data/foto/prispevky/1385733311.jpg'><img src='.http://www.martin.sk/finale/data/foto/prispevky/thumb/t1385733311.jpg' class='middle-column-img-left2'  alt='' /></a>          <h2>
+Družba s českými hasičmi oslavuje už 55 rokov          </h2>
+<p></p><p>V piatok 15. novembra zavítali do Martina zástupcovia družobného mesta Nový Jičín, aby si pripomenuli 55. výročie založenia družby medzi Okresným výborom Dobrovoľnej požiarnej ochrany Martin (OV DPO) a Okresným združením hasičov Čiech, Moravy a Sliezska Nový Jičín. 
+          </p>
+
+<a href=?clanok=1385733311 class='pokracovanie'><b>...pokračovanie článku</b></a>, <small>prečítané: 147 x</small><br/><br/><div class='hr2'></div></div>
+
+
+    <!-- Middle column left box -->
+        <div class="middle-column-box-left-white">
+<br/><b>29.11.2013</b>, <a href='?kat=4'><b>aktuality</b></a><br/><a href='.http://www.martin.sk/finale/data/foto/prispevky/1385733551.jpg'><img src='.http://www.martin.sk/finale/data/foto/prispevky/thumb/t1385733551.jpg' class='middle-column-img-left2'  alt='' /></a>          <h2>
+Patrón mesta sa opäť dostal do malieb, článkov a koláží          </h2>
+<p></p><p>Dvestodvadsať detí sa 18. novembra vo veľkej zasadacej miestnosti Mestského úradu zúčastnilo súťažnej prezentácie projektu Odkaz sv. Martina, ktorý mal už svoje deviate pokračovanie.           </p>
+
+<a href=?clanok=1385733551 class='pokracovanie'><b>...pokračovanie článku</b></a>, <small>prečítané: 164 x</small><br/><br/><div class='hr2'></div></div>
+
+
+    <!-- Middle column left box -->
+        <div class="middle-column-box-left-white">
+<br/><b>28.11.2013</b>, <a href='?kat=4'><b>aktuality</b></a><br/><a href='.http://www.martin.sk/finale/data/foto/prispevky/1385625383.jpg'><img src='.http://www.martin.sk/finale/data/foto/prispevky/thumb/t1385625383.jpg' class='middle-column-img-left2'  alt='' /></a>          <h2>
+Najväčšie zľavy s Mestskou kartou          </h2>
+<p></p><p>Hovoria Vám niečo názvy ERKA SERVICE, AQUA – EXOTIC Marián Kašuba, GORENJE KUCHYNE, ROCCO, Miroslav Matula – SLUŽBY V AKVARISTIKE, CENTRUM PROSPERITY, APLEND, KOZEL PUB, OBČERSTVENIE GOOD FOOD, PENZION ĽADOVEŇ či PEGAFUN DANCE GROUP? To sú prevádzky, ktoré Vám, držiteľom Mestskej karty Martin, poskytujú tie najväčšie zľavy.          </p>
+
+<a href=?clanok=1385625383 class='pokracovanie'><b>...pokračovanie článku</b></a>, <small>prečítané: 258 x</small><br/><br/><div class='hr2'></div></div>
+
+
+    <!-- Middle column left box -->
+        <div class="middle-column-box-left-white">
+<br/><b>25.11.2013</b>, <a href='?kat=4'><b>aktuality</b></a><br/><a href='.http://www.martin.sk/finale/data/foto/prispevky/1385391152.jpg'><img src='.http://www.martin.sk/finale/data/foto/prispevky/thumb/t1385391152.jpg' class='middle-column-img-left2'  alt='' /></a>          <h2>
+Poslanci sa zaujímali o svoje zdravie a niesli tak Posolstvo zdravia          </h2>
+<p></p><p>Martinskí poslanci sa počas dnešného rokovania v zastupiteľstve zúčastnili viacerých zdravotníckych vyšetrení, čím sa snažili spopularizovať preventívne vyšetrenia a ich význam pre ľudské zdravie. Okrem toho sa dozvedeli viac aj o svojom zdravotnom stave.          </p>
+
+<a href=?clanok=1385391152 class='pokracovanie'><b>...pokračovanie článku</b></a>, <small>prečítané: 241 x</small><br/><br/><div class='hr2'></div></div>
+
+
+    <!-- Middle column left box -->
+        <div class="middle-column-box-left-white">
+<br/><b>22.11.2013</b>, <a href='?kat=3'><b>tlačové správy</b></a><br/><a href='.http://www.martin.sk/finale/data/foto/prispevky/1385140559.jpg'><img src='.http://www.martin.sk/finale/data/foto/prispevky/thumb/t1385140559.jpg' class='middle-column-img-left2'  alt='' /></a>          <h2>
+Mesto Martin vyhlasuje zimnú údržbu          </h2>
+<p></p><p>Mesto Martin vyhlásilo tohtoročný začiatok zimnej údržby na nedeľu 24. novembra od ôsmej hodiny ráno.
+          </p>
+
+<a href=?clanok=1385140559 class='pokracovanie'><b>...pokračovanie článku</b></a>, <small>prečítané: 180 x</small><br/><br/><div class='hr2'></div></div>
+
+
+    <!-- Middle column left box -->
+        <div class="middle-column-box-left-white">
+<br/><b>20.11.2013</b>, <a href='?kat=1'><b>úradné oznamy</b></a><br/>          <h2>
+Výberové konanie na funkciu riaditeľa CVČ Kamarát          </h2>
+<p></p><p>Mesto  Martin vyhlasuje v zmysle § 4 ods. 1 zákona č. 596/2003 Z. z. o štátnej správe v školstve a školskej samospráve a o zmene a doplnení niektorých zákonov v znení neskorších predpisov  a v zmysle § 5 ods. 3 zákona č. 552/2003 Z. z. o výkone práce vo verejnom záujme v znení neskorších predpisov vyhlasuje výberové konanie na obsadenie funkcie riaditeľa/riaditeľky:
+          </p>
+
+<a href=?clanok=1384932780 class='pokracovanie'><b>...pokračovanie článku</b></a>, <small>prečítané: 473 x</small><br/><br/><div class='hr2'></div></div>
+
+
+    <!-- Middle column left box -->
+        <div class="middle-column-box-left-white">
+<br/><b>19.11.2013</b>, <a href='?kat=4'><b>aktuality</b></a><br/>          <h2>
+Zamestnanci sa budú školiť vďaka eurofondom          </h2>
+<p></p><p>Mesto Martin uspelo s ďalším projektom v rámci programu cezhraničnej spolupráce. Tento krát si bude s českým partnerom meniť skúsenosti v motivácii a riadení zamestnancov. 
+          </p>
+
+<a href=?clanok=1384854977 class='pokracovanie'><b>...pokračovanie článku</b></a>, <small>prečítané: 213 x</small><br/><br/><div class='hr2'></div></div>
+</div>
+
+<!-- Middle column right section -->
+		  <div class="middle-column-right"><br/>
+		  
+
+        <!-- Middle column right box -->
+        <div class="middle-column-box-right-white">
+<b>03.01.2014</b>, <a href='?kat=1'><b>úradné oznamy</b></a><br/>          <h2>
+Zverejnenie zámeru Mesta Martin previesť nehnuteľný majetok z dôvodu hodného osobitného zreteľa          </h2>
+<p></p><p>Mesto Martin zverejňuje zámer previesť nehnuteľný majetok z dôvodu hodného osobitného zreteľa v zmysle § 9a ods. 8 písm. e) zákona č. 138/1991 Zb. o majetku obcí v znení neskorších predpisov a v zmysle VZN č. 99 o hospodárení s majetkom mesta a to:</p>
+
+<a href=?clanok=1388759269 class='pokracovanie'><b>...pokračovanie článku</b></a>, <small>prečítané: 34 x</small><br/><br/><div class='hr3'></div></div>
+
+        <!-- Middle column right box -->
+        <div class="middle-column-box-right-white">
+<b>02.01.2014</b>, <a href='?kat=1'><b>úradné oznamy</b></a><br/>          <h2>
+Oznámenie          </h2>
+<p></p><p>Mesto Martin, ako vecne a miestne príslušný orgán ochrany ovzdušia pripomína povinnosť prevádzkovateľom malého zdroja znečisťovania ovzdušia podľa § 6 ods. 4 zákona č. 401/1998 Z. z. o poplatkoch za znečisťovanie ovzdušia, oznámiť každoročne <b>do 15. februára  za každý zdroj znečisťovania ovzdušia</b> spotrebu palív a surovín, plochy na ktorej sa zdroj znečisťovania nachádza, a ďalšie údaje potrebné na zistenie množstva a škodlivosti znečisťujúcich látok vypustených do ovzdušia <b>za uplynulý rok 2013. </p>
+
+<a href=?clanok=1388691014 class='pokracovanie'><b>...pokračovanie článku</b></a>, <small>prečítané: 50 x</small><br/><br/><div class='hr3'></div></div>
+
+        <!-- Middle column right box -->
+        <div class="middle-column-box-right-white">
+<b>21.12.2013</b>, <a href='?kat=10'><b>výberové konanie</b></a><br/><img src='http://www.martin.sk/finale/img/i_vk.jpg' class='middle-column-img-left2'  alt='ikona' /><br/>          <h2>
+Výberové konanie          </h2>
+<p></p><p>Mesto Martin v súlade s ust. § 6 ods. 1 zák. NR SR č. 552/2003 Z. z. o výkone práce vo verejnom záujme v znení neskorších predpisov a Smernicou o obsadzovaní voľných pracovných miest Mesta Martin informuje o voľnom pracovnom mieste na Mestskom úrade v Martine:</p>
+
+<a href=?clanok=1387640271 class='pokracovanie'><b>...pokračovanie článku</b></a>, <small>prečítané: 800 x</small><br/><br/><div class='hr3'></div></div>
+
+        <!-- Middle column right box -->
+        <div class="middle-column-box-right-white">
+<b>02.12.2013</b>, <a href='?kat=4'><b>aktuality</b></a><br/>          <h2>
+Viac ako jeden krúžok s príspevkom          </h2>
+<p></p><p>Mesto reaguje na zmenu systému financovania škôl a školských zariadení a od budúceho roku zavádza príspevok pre člena základnej umeleckej školy a člena centra voľného času. 
+</p>
+
+<a href=?clanok=1385969334 class='pokracovanie'><b>...pokračovanie článku</b></a>, <small>prečítané: 283 x</small><br/><br/><div class='hr3'></div></div>
+
+        <!-- Middle column right box -->
+        <div class="middle-column-box-right-white">
+<b>29.11.2013</b>, <a href='?kat=4'><b>aktuality</b></a><br/>          <h2>
+V Martine vznikol cech taxikárov          </h2>
+<p></p><p>Dôstojnejšie rokovanie s mestom Martin, skvalitnenie služieb občanom i podpora cestovného ruchu. To sú dôvody založenia Občianskeho združenia CECH TAXI MARTIN, ktoré vzniklo 18. októbra.</p>
+
+<a href=?clanok=1385733021 class='pokracovanie'><b>...pokračovanie článku</b></a>, <small>prečítané: 198 x</small><br/><br/><div class='hr3'></div></div>
+
+        <!-- Middle column right box -->
+        <div class="middle-column-box-right-white">
+<b>29.11.2013</b>, <a href='?kat=4'><b>aktuality</b></a><br/>          <h2>
+Deti stavali mosty          </h2>
+<p></p><p>Tridsať detí vo veku od 8  do 12 rokov zo sociálne znevýhodneného a ekonomicky slabšieho prostredia sa počas štyroch dní v novembri zúčastnili výchovného opatrenia Staviame mosty.
+</p>
+
+<a href=?clanok=1385733421 class='pokracovanie'><b>...pokračovanie článku</b></a>, <small>prečítané: 134 x</small><br/><br/><div class='hr3'></div></div>
+
+        <!-- Middle column right box -->
+        <div class="middle-column-box-right-white">
+<b>29.11.2013</b>, <a href='?kat=4'><b>aktuality</b></a><br/><a href='.http://www.martin.sk/finale/data/foto/prispevky/1385733743.jpg'><img src='.http://www.martin.sk/finale/data/foto/prispevky/thumb/t1385733743.jpg' class='middle-column-img-left2' alt='' /></a>          <h2>
+Ozdoby na stromček z novín          </h2>
+<p></p><p>Členovia ôsmych seniorských klubov sa stretli v stredu 20.novembra o 13.00 h v Dennom centre na Ul. Škultétyho na predvianočnom posedení. 
+</p>
+
+<a href=?clanok=1385733743 class='pokracovanie'><b>...pokračovanie článku</b></a>, <small>prečítané: 230 x</small><br/><br/><div class='hr3'></div></div>
+
+        <!-- Middle column right box -->
+        <div class="middle-column-box-right-white">
+<b>28.11.2013</b>, <a href='?kat=3'><b>tlačové správy</b></a><br/>          <h2>
+Poslanci schválili mestský zákon roka          </h2>
+<p></p><p>Najvýznamnejším všeobecne záväzným nariadením je každoročne rozpočet mesta, ktorý martinskí poslanci schválili na novembrovom zasadnutí. Podobne ako je v parlamente štátny rozpočet považovaný za zákon roka, na úrovni samosprávy je to rozpočet, ktorý na obdobie nastávajúceho roka ovplyvní dianie v meste na všetkých úrovniach a určí priority. Dobrou správou je, že 29-miliónový rozpočet na rok 2014, nepočíta so zvyšovaním daní a poplatkov pre občanov mesta, výrazne mení spôsob podpory športu a na sociálnu oblasť či školstvo myslí aspoň tak ako doteraz.</p>
+
+<a href=?clanok=1385635451 class='pokracovanie'><b>...pokračovanie článku</b></a>, <small>prečítané: 213 x</small><br/><br/><div class='hr3'></div></div>
+
+        <!-- Middle column right box -->
+        <div class="middle-column-box-right-white">
+<b>25.11.2013</b>, <a href='?kat=4'><b>aktuality</b></a><br/><a href='.http://www.martin.sk/finale/data/foto/prispevky/1385392658.jpg'><img src='.http://www.martin.sk/finale/data/foto/prispevky/thumb/t1385392658.jpg' class='middle-column-img-left2' alt='' /></a>          <h2>
+Mikuláš v meste prekvapí malých aj veľkých          </h2>
+<p></p><p>Mesto Martin a Centrum kultúry pozýva všetky menšie i väčšie deti na Mikuláša v meste. V piatok 6. decembra 2013 o 16.15 h príde na Divadelné námestie Mikuláš spolu s Anjelom a Čertom, aby potešil malých i veľkých. Okrem sladkostí je pripravené aj veľkolepé rozsvietenie novej a bohatšej vianočnej výzdoby.  </p>
+
+<a href=?clanok=1385392658 class='pokracovanie'><b>...pokračovanie článku</b></a>, <small>prečítané: 416 x</small><br/><br/><div class='hr3'></div></div>
+
+        <!-- Middle column right box -->
+        <div class="middle-column-box-right-white">
+<b>21.11.2013</b>, <a href='?kat=4'><b>aktuality</b></a><br/><a href='.http://www.martin.sk/finale/data/foto/prispevky/1385021803.jpg'><img src='.http://www.martin.sk/finale/data/foto/prispevky/thumb/t1385021803.jpg' class='middle-column-img-left2' alt='' /></a>          <h2>
+Ozbrojené sily udelili primátorovi mesta pamätnú medailu          </h2>
+<p></p><p>V utorok 19. novembra si primátor mesta Andrej Hrnčiar prevzal pamätnú medailu, ktorá mu bola udelená pri príležitosti 20. výročia vzniku Ozbrojených síl SR za dobrú spoluprácu vojenských útvarov a mesta Martin. 
+</p>
+
+<a href=?clanok=1385021803 class='pokracovanie'><b>...pokračovanie článku</b></a>, <small>prečítané: 256 x</small><br/><br/><div class='hr3'></div></div>
+
+        <!-- Middle column right box -->
+        <div class="middle-column-box-right-white">
+<b>19.11.2013</b>, <a href='?kat=1'><b>úradné oznamy</b></a><br/>          <h2>
+Vianočné trhy začnú na Mikuláša, remeselníci už môžu posielať žiadosti          </h2>
+<p></p><p>Od 6. decembra do 31. decembra sa v meste Martin uskutočnia Vianočné trhy. Záujemcovia o predaj tovaru v stánkoch už môžu posielať žiadosti. 
+</p>
+
+<a href=?clanok=1384854901 class='pokracovanie'><b>...pokračovanie článku</b></a>, <small>prečítané: 363 x</small><br/><br/><div class='hr3'></div></div>
+
+        <!-- Middle column right box -->
+        <div class="middle-column-box-right-white">
+<b>19.11.2013</b>, <a href='?kat=4'><b>aktuality</b></a><br/>          <h2>
+Pri Jahodníckej škole už parkujú na novom          </h2>
+<p></p><p>Obyvatelia Ľadovne, rodičia i deti Základnej školy na Jahodníckej ulici si už iste všimli, že pred školou pribudlo nové parkovisko. 
+</p>
+
+<a href=?clanok=1384855021 class='pokracovanie'><b>...pokračovanie článku</b></a>, <small>prečítané: 195 x</small><br/><br/><div class='hr3'></div></div>
+</div>
+
+
+
+<br /><br />  </div>
+  </div>
+	  <!-- FOOTER -->
+    <div id="footer" class='noprint' >
+       Copyright &copy; 2012 Mesto Martin | All Rights Reserved | coded by <img alt="logo Datacom" src="http://www.martin.sk/img/datacom4.gif" /></a><br />
+       <a href="http://validator.w3.org/check?uri=referer" title="Validate code as W3C XHTML 1.0 Strict Compliant">W3C XHTML 1.0</a> | <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fwww.martin.sk%2Ffinal%2Fcss%2Fstyle.css&amp;profile=css21&amp;usermedium=all" title="Validate Style Sheet as W3C CSS 2.0 Compliant">W3C CSS 2.0</a> | <a href="javascript:window.print()" title="vytlač stránku">Tlač stránku</a>
+    </div>
+
+</div>
+
+</body>
+<!-- script TrashOut widget -->
+<!-- put to the bottom of the page -->
+<script src="http://www.trashout.me/widget.js/slovakia/zilina-region/martin" type="text/javascript"></script>
+<!-- end TrashOut widget script -->
+</html>
+
+
+

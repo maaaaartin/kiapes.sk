@@ -1,0 +1,3 @@
+a[class^="anchor"]:focus, a[class^="anchor"]:hover, a[class^="anchor"]:active, a[class^="anchor"].active {
+    text-decoration: none !important;
+}

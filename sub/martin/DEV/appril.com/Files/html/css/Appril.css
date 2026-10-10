@@ -1,0 +1,5482 @@
+/*#Global#*/
+
+.LTR, .RTL
+{
+	background-color: #ffffff;
+}
+
+.cleaner
+{
+	clear: both;	
+}
+
+.clear 
+{
+	width:0px; 
+	height:0px; 
+	clear:both; 
+	line-height: 0px; 
+	font-size: 0px;
+}
+
+body
+{
+	background-color: #ffffff;
+	font-size: small;
+	font-family: Arial;
+	margin: 0px;
+}
+
+h1
+{
+	color: #ffa21e;
+	font-size: 160%;
+	margin-top: 0;
+}
+h1 a, h1 a:visited {color: #ffa21e; text-decoration: none;}
+h1 a:hover {text-decoration: underline;}
+
+h2
+{
+	font-size: 160%
+}
+
+h3
+{
+	font-size: 130%
+}
+
+h4
+{
+	font-size: 110%
+}
+
+h5
+{
+	font-size: 100%
+}
+
+h2,h3,h4,h5, h1 .prefix
+{
+	color: #002756;
+}
+h2 a, 
+h2 a:visited,
+h3.link a, 
+h3.link a:visited
+{color: #002756; text-decoration: none;}
+h2 a:hover, h3.link a:hover {text-decoration: underline;}
+
+a
+{
+	text-decoration: underline;
+	color: #2542A1;
+}
+a:visited
+{
+	color: purple;
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+a img{ border: 0; }
+
+a.more
+{
+	display:block;
+	text-align: right;
+}
+.ErrorMessage
+{
+	color: #ff0000;
+}
+.lineheight15
+{
+	line-height: 1.5em;
+}
+
+/*#Global/Logon form#*/
+.LoginPanelPasswordRetrieval input[type="submit"]
+{
+	width: 120px;
+}
+
+.LogonTextBox
+{
+	width: 150px;
+}
+
+/*#Global/Language Selector#*/
+.languageSelection img
+{
+	border: none;
+}
+
+.languageSelectionWithCultures, .languageSelection
+{
+	text-align: right;
+}
+
+.languageSelectionWithCultures a
+{
+	padding: 0px 2px;
+}
+
+.languageSelection span, .languageSelectionWithCultures span
+{
+	padding: 0px 2px;
+}
+
+.languageSelectionWithCultures img
+{
+	vertical-align: text-bottom;
+}
+
+/*#Global/Message & Errors labels#*/
+.EditingFormErrorLabel, .EventManagerRegError
+{
+	color: #ff0000;
+}
+
+/*#Main styles#*/
+
+/*#Main styles/General#*/
+
+.mainDiv
+{
+	width: 1004px;
+	margin: 0px auto;
+
+/*	margin: 0 auto;
+	min-width: 820px;
+	max-width: 1180px;
+*/
+}
+.zoneMainContent
+{
+	min-height: 400px;
+	margin: 15px 0 10px 0;
+}
+
+.IE6 .zoneMainContent
+{
+	height: 400px;
+
+}
+
+.zoneLeft
+{
+	float: left;
+	width: 155px;
+	min-height: 100px;
+	padding-left: 0px;
+	padding-right: 4px;
+}
+
+.zoneContent
+{
+	float: left;
+	margin: 0px;
+	padding-top: 0em;
+	padding-right: 15px;
+	width: 585px;
+}
+
+.zoneRight
+{
+	float: right;
+	width: 240px;
+}
+
+.zoneLeftContent
+{
+	float: left;
+	margin: 0px;
+	padding-top: 0em;
+	padding-right: 15px;
+	width: 744px;
+}
+
+.zoneLeftMenu
+{
+	float: left;
+	width: 240px;
+	min-height: 100px;
+}
+
+.zoneRightContent
+{
+	float: right;
+	margin: 0px;
+	padding-top: 0em;
+	padding-left: 15px;
+	width: 745px;
+}
+.zoneLeftContent50
+{
+	float: left;
+	margin: 0px;
+	padding-top: 0em;
+	width: 480px;
+}
+.zoneRightContent50
+{
+	float: right;
+	margin: 0px;
+	padding-top: 0em;
+	width: 480px;
+}
+
+
+/*#Main styles/Master page#*/
+
+.zoneTop
+{
+	height: 13px;
+	padding-top: 7px;
+	font-size: 80%;
+	color: #2542A1;
+	text-align: right;
+}
+.zoneTop a
+{
+	color: #2542A1;
+}
+.zoneTop .currentUser a
+{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 120%;
+}
+.zoneTop .currentUser a span
+{
+	text-decoration: none;
+}
+.zoneTop .currentUser a:hover span
+{
+	text-decoration: underline;
+}
+
+.signOut
+{
+	padding-top: 7px;
+	padding-left: 15px;
+/*	float: right;*/
+}
+
+.zoneLogo
+{
+	width: 200px;
+	float: left;
+}
+.zoneLogo .logo a
+{
+	display: block;
+	width: 197px;
+	height: 46px;
+}
+.zoneLogo .logo a span
+{
+	display: none;
+}
+.zoneLogo .logo a.hp
+{
+	background: #fff url(../App_Themes/Appril/Images/logo_sprite.png) no-repeat left 0;
+}
+.zoneLogo .logo a.hp:hover
+{
+	background: #fff url(../App_Themes/Appril/Images/logo_sprite.png) no-repeat left -46px;
+}
+.zoneLogo .logo a.stavby
+{
+	background: #fff url(../App_Themes/Appril/Images/logo_sprite.png) no-repeat left -92px;
+}
+.zoneLogo .logo a.stavby:hover
+{
+	background: #fff url(../App_Themes/Appril/Images/logo_sprite.png) no-repeat left -138px;
+}
+.zoneLogo .logo a.firmy
+{
+	background: #fff url(../App_Themes/Appril/Images/logo_sprite.png) no-repeat left -184px;
+}
+.zoneLogo .logo a.firmy:hover
+{
+	background: #fff url(../App_Themes/Appril/Images/logo_sprite.png) no-repeat left -230px;
+}
+.zoneLogo .logo a.obce
+{
+	background: #fff url(../App_Themes/Appril/Images/logo_sprite.png) no-repeat left -276px;
+}
+.zoneLogo .logo a.obce:hover
+{
+	background: #fff url(../App_Themes/Appril/Images/logo_sprite.png) no-repeat left -322px;
+}
+
+.zoneSearch
+{
+	width: 450px;
+	float: left;
+}
+
+.gsbtxt
+{
+	margin: 0;
+	padding: 2px 8px 0 6px;
+	height: 28px;
+	width: 330px;
+	border: 1px solid #ccc;
+	border-bottom-color: #999;
+	border-right: none;
+	vertical-align: top;
+	font-size: 18px;
+	line-height: 26px;
+	font-family: arial,sans-serif;
+}
+
+.gsbbox1
+{
+	background-color: #eee;
+	border-top: solid 1px #ccc;
+	border-left: solid 1px #999;
+	border-right: solid 1px #999;
+	border-bottom: solid 1px #999;
+	padding-bottom: 0px;
+	height: 30px;
+	display: inline-block;
+	position: relative;
+}
+.IE7 .gsbbox1
+{
+	margin-top: 1px;
+}
+.gsbbtn
+{
+	border: medium none;
+	cursor: pointer;
+	font-family: arial,sans-serif;
+	margin: 0;
+	vertical-align: top;
+	position: relative;
+	background: url(../App_Themes/Appril/Images/topmenu.gif) repeat-x left -102px;
+	height: 30px;
+	font-size: 15px;
+	width: 70px;
+}
+.gsbbtn:active
+{
+	background: #ccc none repeat scroll 0 0;
+}
+.gsbscope
+{
+	padding-top: 5px;
+}
+.gsbscope label
+{
+	padding-right: 7px;
+}
+
+.TopSearchBox
+{
+	padding-top: 6px;
+	overflow: hidden;
+	_width: 100%;
+}
+.PageSearchBox
+{
+	overflow: hidden;
+	_width: 100%;
+}
+.PageSearchBox .gsbtxt
+{
+	width: 540px;
+}
+	
+.zoneMenu
+{
+	margin: 0px auto;
+}
+
+.zoneBottom
+{	
+	background: black;
+	padding: 2px 10px 4px 10px;
+	color: white;
+	margin: 10px 0 10px 0;
+	min-height: 15px;
+}
+
+.IE6 .zoneBottom
+{
+	height: 15px;
+}
+
+.zoneBottom a
+{
+	color: white;
+}
+
+.zoneTopInfo
+{
+	text-align: right;
+	font-weight: normal;
+	font-size: 13px;
+	padding: 0px 0px 5px 0px;
+}
+.zoneTopInfo a{
+	text-decoration: none;
+	color: #e36c26;
+}
+
+.zoneTopInfo a:hover {
+	color: #000000;
+	text-decoration: underline;
+}
+
+/*#Main styles/Appril buttons#*/
+.ApprilButtons a, .ApprilButtons button{
+    display:block;
+    float:left;
+    margin:0 7px 0 0;
+    background-color:#f5f5f5;
+    border:1px solid #dedede;
+    border-top:1px solid #eee;
+    border-left:1px solid #eee;
+    font-family: "Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+    font-size:100%;
+    line-height:130%;
+    text-decoration:none;
+    font-weight:bold;
+    color:#565656;
+    cursor:pointer;
+    padding:5px 10px 6px 7px;/* Links */
+}
+.ApprilButtons button{
+    width:auto;
+    overflow:visible;
+    padding:4px 10px 3px 7px; /* IE6 */
+}
+.ApprilButtons button[type]{
+    padding:5px 10px 5px 7px; /* Firefox */
+    line-height:17px; /* Safari */
+}
+*:first-child+html button[type]{
+    padding:4px 10px 3px 7px; /* IE7 */
+}
+.ApprilButtons button img, .ApprilButtons a img{
+    margin:0 4px -3px 0 !important;
+    padding:0;
+    border:none;
+    width:16px;
+    height:16px;
+}
+.ApprilButtons button:hover, .ApprilButtons a:hover{
+    background-color:#dff4ff;
+    border:1px solid #c2e1ef;
+    color:#336699;
+}
+.ApprilButtons a:active{
+    background-color:#6299c5;
+    border:1px solid #6299c5;
+    color:#fff;
+}
+.ApprilButtons button.dark, .ApprilButtons a.dark{
+    background-color:#eee;
+    border:1px solid #999;
+    border-top:1px solid #ddd;
+    border-left:1px solid #ddd;
+    color:#565656;
+}
+.ApprilButtons a.dark:hover, .ApprilButtons button.dark:hover{
+    background-color:#e0e0e0;
+    border:1px solid #888;
+    color:#565656;
+}
+.ApprilButtons a.dark:active{
+    background-color:#aaa;
+    border:1px solid #888;
+    color:#fff;
+}
+
+/*S & B*/
+.MainPageArticle 
+{
+	background-color: #F1F1F1;
+	border:1px solid #000000;
+}
+
+.DivContentSB
+{
+	background: #F1F1F1;
+	border: 1px black solid;
+	width: 940px;
+	height:1290px;
+}
+
+.DivContentSBTop
+{
+	width: 920px;
+	background: #FFFFFF;
+	position:relative;
+	top:5px;
+	left:10px;
+}
+
+.DivContentSBTopCaption
+{
+	color:#E36C26;
+	font-size:20px;
+	font-weight:bold;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+.PContentSB
+{
+	left: 5px; 
+	top: 5px;
+	width: 445px;
+	position:relative;
+	margin-bottom:5px;
+}
+
+.DivContentSBLeft
+{
+	left: 10px;
+	top: 10px; 
+	position:relative;
+	width:455px;
+	height:1230px;
+	background: #ffffff;
+	float:left;
+}
+
+.DivContentSBRight
+{
+	left: -10px; 
+	top:10px;
+	position:relative;
+	width:455px;
+	height:1230px;
+	float:right;
+	background: #ffffff;
+}
+
+.ImgContentSB
+{
+	margin: 5px 5px 5px 5px;
+	width:200px;
+}
+
+/*#Main styles/Blog page#*/
+
+.blogDetail .zoneTop
+{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.blogDetail .zoneLeft
+{
+	width: 700px;
+}
+
+.blogDetail .zoneRight
+{
+	width: 200px;
+}
+
+
+/*Top logo, left menu*/
+.mainDivLeftMenu
+{
+	width: 1024px;
+	margin: 0px auto;
+}
+
+.mainDivLeftMenu .zoneMenu
+{
+	width: 90px;
+	margin: 0px 0 10px 0;
+	min-height: 400px;
+	clear: none !important;
+}
+
+.mainDivLeftMenu .verticalCMSMenu
+{
+	width: 98%;
+}
+
+.mainDivLeftMenu .zoneMainContent
+{
+	padding-left: 4px;
+	margin: 0px 0 10px 0;
+	min-height: 400px;
+	width: 930px;
+}
+
+/*#Main styles/Home page#*/
+.HeroHP
+{
+	height: 156px;
+	width: 100%;
+	background-color: #ef8704;
+	color: #fff;
+	background: url(../App_Themes/Appril/Images/hero-bg5.jpg) no-repeat;
+}
+
+.HeroHP .TitleBox
+{
+	float: left;
+	padding-left: 25px;
+	padding-top: 10px;
+}
+.HeroHP .TitleBox H1
+{
+	margin: 0;
+	padding: 0;
+	font-size: 26px;
+	padding-bottom: 10px;
+	color: #fff;
+	font-family: 'Istok Web', Arial, sans-serif;
+}
+
+.HeroHP .TitleBox .args
+{
+	font-family: 'Istok Web', Arial, sans-serif;
+	font-size: 17px;
+	float: left;
+	width: 400px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	line-height: 1.5em;
+	height: 73px;
+}
+.HeroHP .TitleBox .args a,
+.HeroHP .TitleBox .args a:visited
+{
+	color: #fff;
+	text-decoration: none;
+}
+.HeroHP .TitleBox .args a:hover
+{
+	text-decoration: underline;
+}
+
+.HeroHP .TitleBox .reg
+{
+	font-family: 'Istok Web', Arial, sans-serif;
+	font-size: 15px;
+	float: left;
+	width: 270px;
+	margin: 0;
+	padding-top: 20px;
+	text-align: right;
+	color: #000;
+	line-height: 1.2em;
+}
+.HeroHP .TitleBox .btn
+{
+	float: left;
+	width: 180px;
+	margin: 0;
+	padding-top: 16px;
+	padding-left: 81px;
+}
+.HPSteps
+{
+	padding-top: 10px;
+}
+.HPSteps td
+{
+	text-align: center;
+	width: 172px;
+}
+.HPSteps td a
+{
+	text-decoration: none;
+}
+.HPSteps td.sep
+{
+	padding-top: 43px;
+	width: 35px;
+}
+.HPSteps .head
+{
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 105%;
+	padding-bottom: 10px;
+	color: #000;
+}
+.HPSteps .txt
+{
+	padding-top: 7px;
+	font-size: 85%;
+	color: #444;
+}
+
+.zoneCenterHP .MedialniPartneri .bluesmokeBox
+{
+	border-left: solid 1px #B3BEE4;
+	border-right: solid 1px #B3BEE4;
+	border-bottom: solid 1px #B3BEE4;
+}
+
+.zoneCenterHP
+{
+	padding-bottom: 1em;
+}
+
+.HPContentsBox .bluesmokeBox {
+}
+
+.HPContentsBox .bluesmokeBox .content {
+	padding: 5px 10px 10px 10px;
+	font-size: 85%;
+	line-height: 1.5em;
+}
+
+.HPContentsBox .bluesmokeBox .content div.item{
+	padding: 3px 0 3px 10px; 
+	background: url(../App_Themes/CorporateSite/Images/odrazka.gif) no-repeat 0px 7px;
+}
+
+.HPContentsBox .bluesmokeBox .content a{
+	xcolor: #2542A1;
+}
+.HPContentsBox .bluesmokeBox .content a:hover{
+	color: #e36c26;
+	text-decoration: underline;
+}
+
+.HPTopBox
+{
+	padding-top: 5px;
+	padding-bottom: 20px;
+}
+.HPAktuality
+{
+	line-height: 2em;
+	padding-top: 0em;
+	xpadding-bottom: 2em;
+	xpadding-left: 20px;
+}
+
+.HPAktuality h2
+{
+	line-height: 1em;
+	margin: 0;
+	padding-top: 0;
+	padding-bottom: 0.5em;
+}
+
+.HPAktuality div
+{
+	font-size: 90%;
+	color: #444;
+}
+
+.HPAktuality div span
+{
+	padding-right: 0em;
+	font-weight: bold;
+}
+#HPNewsPromoBox
+{
+	height: 35px;
+	overflow: hidden;
+}
+#HPNewsPromoBox #btnOpenBox
+{
+	padding-top: 5px;
+}
+
+#HPNewsPromoBox #NewsPromo
+{
+	margin: 5px 0 10px 0;
+	padding: 15px;
+	background-color:#dff4ff;
+	border:1px solid #c2e1ef;
+	color:#444;
+	height: 110px;
+}
+.HPArticleListItem
+{
+	padding-bottom: 2.5em;
+}
+.HPArticleListItem h3
+{
+	margin: 0;
+	padding-top: 0em;
+	padding-bottom: 0.5em;
+}
+.HPArticleListItem p
+{
+	margin: 0;
+	padding: 0;
+	line-height: 1.5em;
+}
+.HPApprilBlog h2
+{
+	margin-top: 0;
+}
+
+.HPBlogPost
+{
+	padding-bottom: 2.5em;
+}
+.HPBlogPost h3
+{
+	margin: 0;
+	padding-top: 0em;
+	padding-bottom: 0.5em;
+}
+.HPBlogPost img
+{
+	float: left;
+	border: solid 1px #ddd;
+	margin-right: 1.5em;
+	background-color: #fff;
+	padding: 5px;
+}
+.HPBlogPost p
+{
+	margin: 0;
+	padding: 0;
+}
+.HPBlogPost .BlogPostDate
+{
+	color: #777;
+	font-size: 85%;
+	padding-top: 0.5em;
+}
+
+.HPGroupsListItem
+{
+	padding-bottom: 2.5em;
+}
+
+.HPGroupsListItem .logo
+{
+	padding-right: 20px;
+}
+
+.HPGroupsListItem h3
+{
+	margin: 0;
+	padding-top: 0em;
+	padding-bottom: 0.5em;
+}
+.HPGroupsListItem .predmet
+{
+	margin: 0;
+	padding-bottom: 0.5em;
+	line-height: 1.5em;
+}
+.HPGroupsListItem .GroupMembersCount
+{
+	padding-bottom: 1em;
+}
+
+
+/*#Menu Top Appril#*/
+.topmenu {
+	height: 34px;
+	color: #ffffff;
+	background: #000000 url(../App_Themes/Appril/Images/topmenu.gif);
+	behavior: url(/App_Themes/Appril/Scripts/csshover.htc);
+}
+.topmenu ul {
+	margin: 0;
+	padding: 0;
+	display: block;
+	position: absolute;
+	z-index: 5;
+/*	background-color: #242B35;*/
+}
+
+.topmenu #menuElem
+{
+	width: 1004px;
+}
+.topmenu ul li {
+	list-style: none;
+	float: left;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	background: url(../App_Themes/Appril/Images/topmenu.gif) no-repeat right -34px;
+	z-index: 5;
+}
+.topmenu ul li a,
+.topmenu ul li span {
+	padding: 0px 10px 0px 11px;
+	margin: 0;
+	display: block;
+	text-decoration: none;
+	white-space: nowrap;
+	color: #fff;
+	line-height: 34px;
+	font-size: 110%;
+}
+.topmenu ul li a:hover {
+	text-decoration: none;
+}
+.topmenu ul ul {
+	position: absolute;
+	/*display: none;*/
+	visibility: hidden;
+	padding: 0;
+	margin: 0;
+	z-index: 5;
+	background-color: #000;
+}
+.topmenu ul li:hover ul, .topmenu ul li.hover ul {
+	visibility: visible;
+	display: block;
+}
+
+
+.topmenu .MojAppril,
+.topmenu .MojApprilHighlighted
+{
+	float: right;
+	background: url(../App_Themes/Appril/Images/topmenu.gif) repeat-x left -178px;
+}
+
+.topmenu .MojAppril a,
+.topmenu .MojApprilHighlighted a,
+.topmenu .MojAppril a:hover,
+.topmenu .MojApprilHighlighted a:hover
+{
+	border: solid 1px #388b00;
+	line-height: 32px;
+	background: url(../App_Themes/Appril/Images/topmenu.gif) repeat-x left -178px;
+}
+
+.topmenu .MojAppril ul a,
+.topmenu .MojApprilHighlighted ul a,
+.topmenu .MojAppril ul a:hover,
+.topmenu .MojApprilHighlighted ul a:hover
+{
+	border: none;
+	line-height: 34px;
+	background: none;
+}
+
+.topmenu .MojAppril ul,
+.topmenu .MojApprilHighlighted ul
+{
+	position: absolute;
+	right: 0px;
+}
+
+.topmenu ul ul li {
+	float: none;
+	display: block;
+	text-align: left;
+	border-right: none;
+	background-color: #000;
+	background-image: none;
+	padding: 0;
+	z-index: 5;
+}
+.IE6 .topmenu ul ul li {
+	padding: 0px 30px 0px 15px;
+	border: solid 1px #000;
+}
+.topmenu ul ul li a {
+	padding: 0px 30px 0px 15px;
+	margin: 0;
+	font-size: 100%;
+	line-height: 2em;
+}
+.IE6 .topmenu ul ul li a {
+	padding: 0;
+}
+.IE6 .topmenu a:visited {
+	color: #ffffff;
+}
+.topmenu .CMSListMenuLinkHighlighted,
+.topmenu .CMSListMenuLink:hover
+{
+	background: url(../App_Themes/Appril/Images/topmenu.gif) repeat-x left -68px;
+}
+
+.topmenu .CMSListMenuUL .CMSListMenuLI a:hover {
+	text-decoration: none;
+}
+.topmenu .CMSListMenuUL .CMSListMenuUL .CMSListMenuHighlightedLI a.CMSListMenuLinkHighlighted,
+.topmenu .CMSListMenuUL .CMSListMenuUL .CMSListMenuHighlightedLILast a.CMSListMenuLinkHighlighted,
+.topmenu .CMSListMenuUL .CMSListMenuUL a:hover {
+	color: #fff;
+	text-decoration: none;
+	background-image: none;
+}
+
+.topmenu ul ul li:hover,
+.topmenu ul ul li.CMSListMenuHighlightedLI,
+.topmenu ul ul li.CMSListMenuHighlightedLILast
+{
+	background-color: #EB6D24;
+}
+.topmenu .CMSListMenuUL .CMSListMenuUL li:hover a {
+	color: #ffffff;
+}
+/*#Menu design#*/
+.CMSTreeMenuTable
+{
+	/*font-size: 120%;*/
+	width: 100%;
+}
+
+.CMSTreeMenuTable a
+{
+	white-space: nowrap;
+}
+
+.subCMSTreeMenuTable
+{
+	margin-left: 10px;
+}
+
+.CMSTreeMenuTable a:hover
+{
+	text-decoration: underline;
+}
+
+.CMSTreeMenuItem, .CMSTreeMenuSelectedItem
+{
+	background: url(../App_Themes/CorporateSite/Images/leftmenuBg.gif) repeat-x left bottom;
+	padding: 3px 0px;
+}
+
+.subCMSTreeMenuItem, .subCMSTreeMenuSelectedItem
+{
+	background: url(../App_Themes/CorporateSite/Images/leftmenuBg.gif) repeat-x left bottom;
+	padding: 3px 0px;
+}
+
+.CMSTreeMenuLink
+{
+	padding-left: 12px;
+	text-decoration: none;
+	color: #000000;
+	background: url(../App_Themes/CorporateSite/Images/treeMenuItemBackground.png) no-repeat left center;
+}
+.CMSTreeMenuLink:visited
+{
+	color: #000000;
+}
+
+.subCMSTreeMenuLink
+{
+	text-decoration: none;
+	padding-left: 18px;
+	background: url(../App_Themes/CorporateSite/Images/treeMenuItemBackground.png) no-repeat 8px center;
+}
+
+.CMSTreeMenuSelectedLink
+{
+	background: url(../App_Themes/CorporateSite/Images/treeMenuItemBackgroundActive.png) no-repeat left center;
+	padding-left: 12px;
+	text-decoration: underline;
+}
+
+.subCMSTreeMenuSelectedLink
+{
+	background: url(../App_Themes/CorporateSite/Images/treeMenuItemBackgroundActive.png) no-repeat 8px center;
+	padding-left: 18px;
+}
+
+/*#Other css styles#*/
+
+/*#Other css styles/Language selector#*/
+.languageselector
+{
+	float: right;
+	margin: 30px 10px 0px 0px;
+}
+
+.languageselector img
+{
+	border: none;
+	margin-left: 5px;
+	margin-right: 3px;
+}
+
+.languageselector a
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+/*#Other css styles/Search box#*/
+.searchbox
+{
+	
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+.searchbox input[type=image]
+{
+	margin: 0px 0px 0px 7px;
+}
+
+.searchbox label
+{
+	margin-right: 10px;
+	padding-bottom: 5px;
+}
+
+.shoppingCartPreview
+{
+	float: right;
+	width: 100%;
+	text-align: right;
+	margin-top: 5px;
+}
+.shoppingCartPreview table
+{
+	float: right;
+}
+.SmallTextLabel
+{
+	font-size: 12px;
+}
+
+/*#Other css styles/Polls#*/
+.PollTitle
+{
+	font-weight:bold;
+	display:none;
+	margin-bottom:10px
+}
+
+.PollAnswers{
+	font-size: 10px;
+	margin-top: 5px;
+}
+
+.PollGraph
+{
+	height: 8px;
+	border: 1px solid gray;
+}
+
+.PollGraph div
+{
+	height: 8px;
+	background: url(../App_Themes/CorporateSite/Images/poll02.gif) 100% 0% repeat-x;
+	line-height: 0px;
+	font-size: 0px;
+}
+
+.PollGraph div.PollGraph0
+{
+	background: url(../App_Themes/CorporateSite/Images/poll01.gif) 100% 0% repeat-x;
+}
+
+.PollGraph div.PollGraph2
+{
+	background: url(../App_Themes/CorporateSite/Images/poll03.gif) 100% 0% repeat-x;
+}
+
+.PollQuestion
+{
+	font-size:14px;
+	font-weight: bold;
+}
+
+.PollCount
+{
+	text-align: right;
+}
+
+.PollFooter
+{
+	margin-top:10px;
+}
+
+.signOut input, .SubscriptionButton, .PollVoteButton
+{
+	background: url(../App_Themes/CorporateSite/Images/buttonBackground.gif) repeat-x;
+	border: 1px solid #000000;
+	color: #ffffff;
+}
+
+/*#Containers#*/
+
+/*#Containers/WidgetGroup box#*/
+.WidgetGroupBox
+{
+	padding-bottom: 2em;
+}
+.WidgetGroupBox h2
+{
+	margin: 0;
+	padding-bottom: 0.5em;
+}
+.WidgetGroupSideBox
+{
+	padding-bottom: 2em;
+}
+
+/*#Containers/Content padding#*/
+.ContentPadding
+{
+	padding: 0px 10px 0px 0px;
+}
+
+/*#Containers/Black box#*/
+.blackBox
+{
+	border: 1px solid #545454;
+	margin-bottom: 15px;
+}
+
+.blackBox .title
+{
+	background: #e36c26 url(../App_Themes/CorporateSite/Images/topMenuItemDivider.gif) 0% 40% 
+
+repeat-x;
+	padding: 5px 15px;
+	font-size: 12px;
+	margin-top: 0px;
+	color: white;
+	margin-bottom:0px;	
+}
+
+.blackBox .content
+{
+	padding: 5px;
+	background: #f3f3f3;
+	font-size: 12px;
+}
+
+/*#Containers/BlueSmoke box#*/
+.bluesmokeBox {
+	border: 0px;
+	margin-bottom: 15px;
+}
+
+.bluesmokeBox .title {
+	background: #fff url(../App_Themes/Appril/Images/topmenu.gif) repeat-x left -132px;
+	color: #002756;
+	font-size: 100%;
+	padding-top: 6px;
+	padding-left: 10px;
+	margin: 0px;
+}
+
+.bluesmokeBox .content {
+	padding: 5px 10px 10px 10px;
+	background-color: #fff;
+}
+
+/*#Containers/BlueSmoke box with bullets#*/
+.bluesmokeBox .content_bullets {
+	padding: 5px 10px 10px 10px;
+	background-color: #fff;
+	font-size: 85%;
+}
+.bluesmokeBox .content_bullets div.item{
+	padding: 3px 0 3px 10px; 
+	background: url(../App_Themes/CorporateSite/Images/odrazka.gif) no-repeat 0px 7px;
+}
+.bluesmokeBox .content_bullets a:hover {
+	color: #e36c26;
+	text-decoration: underline;
+}
+
+/*#Containers/OrangeSmoke box#*/
+.orangesmokeBox {
+	border-left: solid 1px #ffb27f;
+	border-right: solid 1px #ffb27f;
+	border-bottom: solid 1px #ffb27f;
+	margin-bottom: 15px;
+}
+
+.orangesmokeBox .title {
+	background: #fff url(../App_Themes/Appril/Images/topmenu.gif) repeat-x left -155px;
+	color: #000;
+	font-size: 100%;
+	padding-top: 6px;
+	padding-left: 10px;
+	margin: 0px;
+}
+
+.orangesmokeBox .content {
+	padding: 5px 10px 10px 10px;
+	background-color: #fff;
+}
+/*#Containers/OrangeSmoke box without title#*/
+.orangesmokeBox {
+	border-left: solid 1px #ffb27f;
+	border-right: solid 1px #ffb27f;
+	border-bottom: solid 1px #ffb27f;
+	margin-bottom: 15px;
+}
+
+.orangesmokeBox .title {
+	background: #fff url(../App_Themes/Appril/Images/topmenu.gif) repeat-x left -155px;
+	color: #000;
+	font-size: 100%;
+	padding-top: 6px;
+	padding-left: 10px;
+	margin: 0px;
+}
+
+.orangesmokeBox .content {
+	padding: 5px 10px 10px 10px;
+	background-color: #fff;
+}
+.orangesmokeBox .content h2 {
+	padding-top: 0;
+	margin-top: 0;
+}
+/* TAGCLOUD */
+.blackBox .TagCloud {
+	padding: 7px 10px 10px 10px;
+	margin: 0px;
+}
+
+.blackBox .TagCloud span a:hover {
+	color: #e36c26;
+}
+/* END TAGCLOUD */
+
+/* APRIL BLOG BOX */
+.apprilblog {
+	margin: 5px 10px 10px 10px;
+}
+
+.apprilblog a{
+	display: block;
+	padding: 3px 15px 0.5em 10px; 
+	background: url(../App_Themes/CorporateSite/Images/odrazka.gif) no-repeat 0px 7px;
+	color: #000;
+}
+
+.apprilblog a:hover{
+	color: #e36c26;
+}
+.apprilblog a:visited{
+	color: purple;
+}
+
+/* END APRIL BLOG BOX */
+
+
+/* ASB BLOG BOX */
+.asbBlog {
+	padding: 5px 10px 10px 10px;
+}
+
+.asbBlog a{
+display: block;
+	padding:3px 15px 0px 10px; 
+	background: url(../App_Themes/CorporateSite/Images/odrazka.gif) no-repeat 0px 7px;
+
+}
+.asbBlog a: hover{
+	color: #e36c26;
+}
+
+/* END ASB BLOG BOX */
+
+.blackBox .noveClanky{
+	display: block;
+	padding: 0px 0px 10px 0px;
+}
+
+.blackBox .NewsLatest{
+	display: block;
+	padding: 10px 10px 5px 10px;
+}
+
+.blackBox .content .noveClanky .NewsLatest h3{
+	color: #e36c26;
+	padding: 0px 0px 10px 0px;
+	margin: 0px;
+}
+
+.blackBox .content .noveClanky .NewsLatest p{
+	padding: 0px 0px 0px 5px;
+	margin: 0px 0px 10px 5px;
+	font-style: italic;
+}
+
+
+.blackBox .content .noveClanky .NewsLatest .InfoboxNews{
+	width: 600px;
+	margin-bottom: 0px;
+height: 30px;
+border-bottom: 1px solid #cccccc;
+}
+
+.blackBox .content .noveClanky .NewsLatest .InfoboxNews .Date {
+	width: 200px;
+	font-size: 10px;
+	float: left;
+	margin: 0px 0px 0px 10px;
+}
+
+.blackBox .content .noveClanky .NewsLatest .InfoboxNews .more a{
+	float: right;	
+}
+
+.blackBox .content .noveClanky .NewsLatest .InfoboxNews .more a:hover{
+	float: right;	
+	color: #e36c26;
+}
+
+
+/* END ASB BLOG BOX */
+
+.blackBox .on-line-report {
+	margin: 0px 10px 10px 10px;
+}
+
+.blackBox .on-line-report  h3{
+	padding: 10px 0px 5px 0px;
+margin: 0px;
+color: #e36c26;
+font-weight: normal;
+}
+
+
+
+
+/*#Containers/Orange box#*/
+.orangeBox
+{
+	border: 1px solid #ffd7b4;
+	margin-bottom: 15px;
+		
+}
+
+.orangeBox .title
+{
+	background: #e36c26 url(../App_Themes/CorporateSite/Images/topMenuItemHover.gif) 0% 40% repeat-x;
+	padding: 3px 5px;
+	font-size: 12px;
+	margin-top: 0px;
+	margin-bottom:0px;
+	color: white;
+}
+
+.orangeBox .content
+{
+	padding: 5px;
+}
+
+
+/*#Containers/Orange box with grey cont.#*/
+.orangeBoxGrey
+{
+			
+}
+
+.orangeBoxGrey .title
+{
+	background: #e36c26 url(../App_Themes/CorporateSite/Images/OrangeBoxTitle.gif) repeat-x;
+	padding: 3px 5px;
+	font-size: 12px;
+	margin-top: 0px;
+	margin-bottom:0px;
+}
+
+.orangeBoxGrey .content
+{
+	padding: 5px;
+	background: #f0f0f0;
+}
+
+/*#Containers/Gray box#*/
+.grayBox
+{
+	background: #f0f0f0;
+	padding: 5px;
+}
+.redBox
+{
+	background: #efefef url(../App_Themes/CommunitySite/Images/container_gray-body.gif) repeat-y top left;
+	width: 154px;
+	padding: 5px 10px;
+}
+
+.redBox h3.redBoxTitle
+{
+	background: url(../App_Themes/CommunitySite/Images/container_red-line.gif) no-repeat bottom left;
+	padding-bottom: 3px;
+	margin-bottom: 3px;
+	margin-top: 0px;
+}
+
+.redBoxBottom
+{
+	background: transparent url(../App_Themes/CommunitySite/Images/container_gray-bottom.gif) no-repeat top center;
+	height: 6px;
+	width: 174px;	
+	margin-bottom: 5px;
+}
+
+.boxRedLight
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.boxRedLight h3
+{
+	background: url(../App_Themes/CommunitySite/Images/container_red-line.gif) repeat-x bottom left;
+	padding-bottom: 3px;
+	margin-bottom: 10px;
+	margin-top: 0px;
+	width: 99%;
+}
+/*#Containers/BreadBox#*/
+.BreadBox
+{
+	margin: 0;
+	padding: 0;
+	font-size: 85%;
+	color: #555;
+	padding-bottom: 1em;
+}
+.BreadBox a
+{
+	color: #555;
+	text-decoration: underline;
+}
+.BreadBox a:hover
+{
+	color: #000;
+	text-decoration: underline;
+}
+
+/*#Containers/Form box#*/
+.FormBox, .CommentFormContainer, .BoardNewPost, .TabsContent, .TabBody,
+.GroupForums, .PageContent, .MessagingBox
+{
+	background-color: #fcfcfc;
+	border: 1px solid #CCCCCC;
+	padding: 10px;
+	min-height: 200px;
+}
+
+.TabsContent .MessagingBox
+{
+	padding: 0px;
+	border: none;
+}
+
+.TextAreaField
+{
+	width: 400px;
+	height: 200px;
+}
+
+.TextBoxField
+{
+	width: 400px;
+}
+
+.DialogPageContent .TextBoxField
+{
+	width: 360px !important;
+}
+
+.DialogPageContent .TextAreaField
+{
+	width: 360px !important;
+	height: 200px !important;
+}
+
+.DialogPageContent .ShortField
+{
+	width: auto !important;
+}
+
+.EditingFormErrorLabel
+{
+	color: Red;
+}
+
+
+
+/*#News#*/
+
+.NewsListItem
+{
+	padding-bottom: 1em;
+}
+
+.NewsListItem h3
+{
+	margin: 0;
+	padding: 0;
+	padding-bottom: 0.5em;
+	font-size: 110%;
+}
+
+.NewsListItem .ReleaseDate
+{
+	color: #777;
+	font-size: 85%;
+	padding-top: 0.5em;
+}
+
+.NewsReleaseDate
+{
+	color: #777;
+	font-size: 85%;
+	padding-bottom: 1em;
+}
+
+.MostViewedNewsItem
+{
+	font-size: 90%;
+	padding: 0 1em 1em 1em;
+}
+
+.MostViewedNewsItem a:hover
+{
+	color: #e36c26;
+	text-decoration: underline;
+}
+.NewsStavbaLink
+{
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+.NewsStavbaLink a
+{
+	color: #2542A1;
+}
+.PublicFilter .News .TextLabel,
+.PublicFilter .News .RegionLabel
+{
+	width: 80px;
+	display: inline-block;
+}
+.PublicFilter .News .TextInput
+{
+	width: 250px;
+}
+
+/*#Blog#*/
+
+.BlogTeaser
+{
+	float: left;
+	border: solid 1px #ddd;
+	background-color: #fff;
+	padding: 5px;
+	width: 60px;
+	height: 60px;
+	margin-right: 10px;
+
+}
+.BlogDescription
+{
+	float: right;
+	width: 135px;
+}
+.BlogFeed .FeedIcon
+{
+	float: none;
+	vertical-align: middle;
+}
+.BlogFeed .FeedCaption
+{
+	padding-left: 10px;
+}
+.BlogPTitle a
+{
+	color: #002756;
+	font-weight: bold;
+	font-size: 130%;
+	text-decoration: none;
+}
+
+.BlogPTitle
+{
+	background: #fff url(../App_Themes/Appril/Images/BlueShadow_Box.gif) repeat-x; 
+	padding: 10px 20px 5px 20px;
+	border-left: solid 1px #cccccc;
+	border-right: solid 1px #cccccc;
+}
+
+.BlogPBody
+{
+	padding: 10px 20px 5px 20px;
+	border-left: solid 1px #cccccc;
+	border-right: solid 1px #cccccc;
+	border-bottom: solid 1px #cccccc;
+	line-height: 1.5em;
+}
+.BlogPBody .BlogPTeaser
+{
+	float: left;
+	border: solid 1px #ddd;
+	background-color: #fff;
+	padding: 5px;
+	width: 80px;
+	height: 80px;
+	margin-right: 25px;
+}
+.BlogSpacer
+{
+	padding: 1em;
+}
+
+.BlogPBody img
+{
+	border: none;
+}
+
+.BlogPDateWhole
+{
+	text-align: right;
+	padding: 5px 10px 0 0;
+	border-top: solid 1px #cccccc;
+	margin-left: 117px;
+}
+
+.BlogPostSummary
+{
+	padding: 2em 20px 2em 20px;
+	border-left: solid 1px #cccccc;
+	border-right: solid 1px #cccccc;
+	border-top: solid 1px #cccccc;
+	background-color: #f0f0f0;
+	line-height: 1.5em;
+	font-weight: bold;
+}
+.BlogPostBody
+{
+	padding: 2em 20px 5px 20px;
+	border-left: solid 1px #cccccc;
+	border-right: solid 1px #cccccc;
+	border-bottom: solid 1px #cccccc;
+	line-height: 1.5em;
+}
+.BlogPostBody .BlogPDateWhole
+{
+	margin-top: 2em;
+	margin-left: 0;
+}
+
+.BlogPostAddThis
+{
+	padding: 1em 0 5em 0;
+}
+
+.comments hr
+{
+	border: solid 1px #cccccc;
+}
+
+.BlogCommentsTitle, .BlogLeaveComment
+{
+	font-weight: bold;
+	font-size: 110%;
+}
+
+.BoardLeaveMessage, .BoardMessageTitle, .BlogTrackbacksTitle
+{
+	font-weight: bold;
+	font-size: 110%;
+}
+
+.blogDetail .comments .TextAreaField
+{
+	width: 280px;
+}
+
+.TextAreaField
+{
+	width: 280px;
+	height: 100px;
+}
+
+/*#Forums#*/
+
+.ForumFlat .Table .Actions .btnGreenBoxSmall
+{
+	padding-bottom: 5px;
+	width: 110px;
+}
+.ForumFlat .Table .Actions .btnGreenBoxSmall div
+{
+	border: solid 1px #388b00;
+}
+.ForumFlat .Table .Actions .btnGreenBoxSmall div div
+{
+	border: none;
+}
+.ForumFlat .Table .Actions .btnGreenBoxSmall div a.ActionLink
+{
+	background-color: #5AB21B;
+	color: #fff;
+	font-weight: normal;
+	text-decoration: none;
+	background-image: none;
+	padding: 3px 6px 3px 6px;
+	border-top: solid 1px #A6E278;
+	white-space: nowrap;
+	display: block;
+	text-align: center;
+}
+.ForumFlat .Table .Actions .btnGreenBoxSmall div a:hover
+{
+	background-color: #4B9815;
+	border-top: solid 1px #67CB1F;
+}
+
+.ForumModerationInfo
+{
+	text-align: center;
+	margin: 5px;
+	padding: 5px;
+}
+
+.ForumModerationInfoText
+{
+	margin: 15px;
+	border: solid 1px #cccccc;
+	padding: 35px;
+	background-color: #fff6df;	
+}
+
+.ForumSearchResultsInfo
+{
+	background-color:#cccccc;
+	padding: 8px;
+	font-weight:bold;
+}
+
+.Forum .Unapproved
+{
+	background-color:#fff2cf;
+}
+
+.PostText blockquote
+{
+	border: solid 1px #d4d4d4;
+	background-color: #eeeeee;
+	padding: 4px;
+	margin-left: 10px;
+}
+
+.PostText blockquote cite 
+{
+	display: block;
+	font-weight: bold;
+}
+
+.PostExtendedActions
+{
+	border-top: solid 1px #eeeeee;
+	margin-left: 8px;
+	margin-top: 10px;
+	padding-top: 5px;
+	margin-bottom: 5px;
+	padding-bottom: 15px;
+}
+
+.PostExtendedActions span
+{
+	display: none;
+}
+
+.PostExtendedActions .SendMessage
+{
+	display: block; 
+	float: left; 
+	width: 16px; 
+	height: 16px; 
+	background-image: url(../App_themes/Default/Images/Design/Forums/sendmessage.gif);
+	margin-right: 7px;
+}
+
+.PostExtendedActions .Friendship
+{
+	display: block; 
+	float: left; 
+	width: 16px; 
+	height: 16px; 
+	background-image: url(../App_themes/Default/Images/Design/Forums/friendship.gif);		
+}
+
+/*#Forums/Extended search#*/
+
+.ForumExtendedSearch .TextBox 
+{
+	width: 300px;
+}
+
+.ForumExtendedSearch .DropDownList
+{
+	width: 304px;
+}
+
+
+.ForumExtendedSearch .Button
+{
+	margin-top: 20px;
+	width: 150px;
+}
+
+.ForumLogonBox
+{
+	margin: 10px 0px 10px 0px;
+	float: left;
+}
+
+.ForumSearchBox
+{
+	margin: 0px 0px 10px 0px;
+	float: right;
+}
+
+.ForumSearchBox a
+{
+	color: black;
+}
+
+.DesignMode .ForumSearchBox, .DesignMode .ForumLogonBox
+{
+	float: none;
+}
+
+.Post .AcceptedSolution
+{
+	background-color: #efffef;
+}
+
+.AcceptedSolutionArea
+{
+	color:Green;
+	font-size:14pt;
+	width:100%;
+	margin-bottom: 5px;
+}
+
+.AcceptedSolutionArea td 
+{
+ 	padding-left: 5px !important;
+	padding-bottom: 5px !important;
+}
+ 
+.AcceptedSolutionArea .AcceptedSolutionText
+{
+	width:100%;
+}
+
+.ForumManage
+{
+	border: 1px solid #cccccc;
+	margin: 6px 2px 2px 0px;
+	padding: 2px 5px;
+	background-color: #fffed5
+}
+
+.ForumManage a
+{
+	color: #245a91;
+	padding-right: 5px;
+}
+
+.PostManageEdit table
+{
+	border: none !important;
+}
+
+.PostManageEdit .ForumNewPost td
+{
+	border-bottom: none !important;
+}
+
+.ForumNewPost .SignatureAreaItem
+{
+	width: 505px;
+	height: 50px;
+}
+
+.SignatureArea
+{
+	border-top: solid 1px #D7D7D7;
+	font-size: 8pt;
+	color: #a8a8a8;
+	margin-top: 5px;
+	padding: 5px;
+}
+
+.ForumTree .PostTree .SignatureArea
+{
+	width: 100%;
+	border-top: solid 1px #D7D7D7;
+	font-size: 8pt;
+	color: #a8a8a8;
+	margin-top: 5px;
+	padding: 5px;
+}
+
+.AttachmentTableUpload input
+{
+margin-right: 3px;
+}
+
+/*Forum group*/
+.ForumGroup
+{
+	width: 100%;
+}
+
+.ForumGroup a
+{
+	color: #245a91;
+}
+
+.ForumGroup .Table
+{
+	width: 100%;
+	border-top: solid 1px #cccccc;
+	border-left: solid 1px #cccccc;
+	background-color: #ffffff;
+}
+
+.ForumGroup .Table td
+{
+	padding: 6px;
+}
+
+.ForumGroup .Table .Header td
+{
+	font-weight: bold;
+	border-right: solid 1px #cccccc;
+	border-bottom: solid 1px #cccccc;
+	color: #010101;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	background: #000000 url(../App_Themes/CommunitySite/Images/bg_forum_header.gif) repeat-x top left;
+}
+
+.ForumGroup .Table .Info td
+{
+	border-right: solid 1px #cccccc;
+	border-bottom: solid 1px #888888;
+	border-top: solid 1px #888888;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	background: #010101 url(../App_Themes/CommunitySite/Images/bg_forum_subheader.gif) repeat-x top left;
+
+	height: 55px;
+	vertical-align: top;
+}
+
+.ForumGroup .Table .GroupName
+{
+	display: block;
+	font-weight: bold;
+	font-size: 17px;
+
+	padding-top: 8px;
+	padding-bottom: 5px;
+	color: #010101;
+}
+
+.ForumGroup .Table .GroupDescription
+{
+	display: block;
+	padding-left: 10px;
+	color: gray;
+}
+
+
+.ForumGroup .Table .ForumInfo
+{
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+.ForumGroup .Table .Threads
+{
+	text-align: center;
+	width: 50px;
+}
+
+.ForumGroup .Table .Posts
+{
+	text-align: center;
+	width: 50px;
+}
+
+.ForumGroup .Table .LastPost
+{
+	text-align: center;
+	width: 200px;
+}
+
+.ForumGroup .Table .PostTime
+{
+	white-space: nowrap;
+}
+
+.ForumGroup .Table .PostUser
+{
+	white-space: nowrap;
+}
+
+.ForumGroup .ForumOdd td
+{
+	background-color: #f8f8ff;
+}
+
+.ForumGroup .Forum td
+{
+	border-right: solid 1px #cccccc;
+	border-bottom: solid 1px #cccccc;
+}
+
+.ForumGroup .Forum .ForumName
+{
+	font-size: 15px;
+	text-decoration: underline;
+	color: black;
+}
+
+.ForumGroup .Forum .ForumDescription
+{
+	display: block;
+	padding-top: 5px;
+}
+
+
+/*Forum flat view*/
+.ForumFlat, .ForumTree
+{
+	margin-top: 15px;
+}
+
+.ForumFlat .ActionLink, .ForumFlat .ActionLink a, .ForumTree .ActionLink, .ForumTree .ActionLink a
+{
+	color: #245a91;
+	display: inline;
+}
+
+
+.ForumFlat .Table, .ForumTree .Table
+{
+	width: 100%;
+	background-color: #ffffff;
+}
+
+.ForumFlat .Table td
+{
+	padding: 6px;
+}
+
+.ForumFlat .Table .Info td, .ForumTree .Table .Info td
+{
+	border: 1px solid #cccccc;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	background: #000000 url(../App_Themes/CommunitySite/Images/bg_forum_subheader.gif) repeat-x top left;
+	height: 55px;
+	vertical-align: top;
+	color: #010101;
+}
+
+.ForumTree .Table .Info td
+{
+	padding-left: 6px;
+}
+
+.ForumFlat .Table .ForumContent, .ForumTree .Table .ForumContent
+{
+	background-color: #ffffff;
+	padding: 0px;
+	margin: 0px;
+	/*font-size: 110%;*/
+}
+
+.ForumFlat .Table .Posts
+{
+	border-right: solid 1px #cccccc;
+	border-left: solid 1px #cccccc;
+}
+
+.ForumTree .Table .Posts
+{
+	border-right: solid 1px #cccccc;
+	border-left: solid 1px #cccccc;
+	border-bottom: solid 1px #cccccc;
+}
+
+.ForumFlat .Table .ForumName, .ForumTree .Table .ForumName
+{
+	display: block;
+	font-weight: bold;
+	font-size: 17px;
+	padding-top: 8px;
+	padding-bottom: 5px;
+	/*text-decoration: underline;*/
+	color: #010101;
+}
+
+.ForumFlat .Table .ForumDescription, .ForumTree .Table .ForumDescription
+{
+	display: block;
+	padding-left: 10px;
+	color: gray;
+}
+
+.ForumFlat .Table .Informations td, .ForumTree .Table .Informations td
+{
+	font-weight: bold;
+	background-color: #eeeeee;
+	border-right: solid 1px #cccccc;
+	border-left: solid 1px #cccccc;
+	border-bottom: solid 1px #bbbbbb;
+	padding: 5px;
+	background-color: #fffec0;
+}
+
+.ForumFlat .Table .Actions td, .ForumTree .Table .Actions td
+{
+	font-weight: bold;
+	background-color: #eeeeee;
+	border-right: solid 1px #cccccc;
+	border-left: solid 1px #cccccc;
+	border-bottom: solid 1px #bbbbbb;
+	padding: 5px;
+}
+
+.ForumFlat .Table .Actions .ActionLink, .ForumTree .Table .Actions .ActionLink
+{
+	color: #000; 
+	text-decoration: underline;
+	padding: 0px 5px 0px 5px;
+}
+
+.ForumFlat .Table .Posts td
+{
+	border-right: solid 1px #cccccc;
+	border-left: solid 1px #cccccc;
+	border-bottom: solid 1px #cccccc;
+	padding: 0px;
+}
+
+.ForumFlat .Table .PostsTable, .ForumTree .Table .PostsTable
+{
+	width: 100%;
+}
+
+.ForumFlat .Table .PostsTable td, .ForumTree .Table .PostsTable td
+{
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom: solid 1px #cccccc;
+}
+
+.ForumFlat .Pager td
+{
+	background-color: #eeeeee;
+	border: none;
+	padding: 0px;
+	height: 23px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.ForumFlat .Pager a
+{
+	font-weight: bold;
+	text-decoration: underline;
+	color: #65a02f;
+}
+
+.ForumFlat .ThreadTable, .ForumTree .ThreadTable
+{
+	border-left: solid 1px #cccccc;
+}
+
+.ForumFlat .ThreadTable td, .ForumTree .ThreadTable td
+{
+	border-right: solid 1px #cccccc;
+	border-bottom: solid 1px #cccccc;
+}
+
+.ForumFlat .ThreadTable .Header td
+{
+	font-weight: bold;
+	background-color: #eeeeee;
+	border-right: solid 1px #cccccc;
+	border-bottom: solid 1px #cccccc;
+	color: #010101;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	background-image: url(../App_Themes/CommunitySite/Images/bg_forum_header.gif);
+}
+
+.ForumFlat .ThreadTable .Author
+{
+	text-align: center;
+	width: 200px;
+}
+
+.ForumFlat .ThreadTable .Posts, .ForumFlat .ThreadTable .Views
+{
+	text-align: center;
+	width: 50px;
+}
+
+.ForumFlat .ThreadTable .LastPost
+{
+	text-align: center;
+	width: 200px;
+}
+
+.ForumFlat .ThreadTable .PostTime
+{
+	white-space: nowrap;
+}
+
+.ForumFlat .ThreadTable .PostUser
+{
+	white-space: nowrap;
+	font-weight: bold;
+	color: #a7a7a7;
+}
+
+.ForumFlat .ThreadTable .ThreadInfo
+{
+	text-align: left;
+}
+
+.ForumFlat .ThreadTable .ThreadInfo .ThreadName
+{
+	font-weight: bold;
+	text-decoration: underline;
+	color: #000;
+	font-size: 14px;
+	white-space: nowrap;
+}
+
+.ForumFlat .ForumBreadCrumbs
+{
+	font-weight: normal;
+	font-size: 9pt;
+	padding: 0px 5px 0px 5px;
+}
+
+.ForumFlat .ForumBreadCrumbs a
+{
+	color: black;
+}
+
+.ForumFlat .ForumNewPost
+{
+	border-left: solid 1px #cccccc;
+	border-right: solid 1px #cccccc;
+	border-bottom: solid 1px #cccccc;
+}
+
+.Post img
+{
+	border: 0px;
+}
+
+.PostAttachments
+{
+	border: 1px solid #cccccc;
+	background: #eeeeee;
+	padding: 5px;
+	margin: 10px 0px;
+}
+
+.PostAttachments .PostAttachmentsList
+{
+	padding: 2px 0px;
+}
+
+.PostAttachments .PostAttachmentsHeader
+{
+	color: gray;
+}
+
+.PostAttachments .PostAttachmentsList a
+{
+	color: black;
+}
+
+/*#Forums/Attachments#*/
+
+.ForumAttachments
+{
+	border-right: solid 1px #cccccc;
+	border-left: solid 1px #cccccc;
+	border-bottom: solid 1px #cccccc;
+}
+
+
+.ForumAttachments .AttachmentTable
+{
+	border: solid 1px #cccccc;
+	border-collapse: collapse;
+	margin-top: 12px;
+}
+
+.ForumAttachments .AttachmentTable td
+{
+	border-top: solid 1px #cccccc;
+	border-bottom: solid 1px #cccccc;
+}
+
+.ForumAttachments .AttachmentTable .AttachmentTableHeader
+{
+	background-color: #eeeeee;
+}
+
+.ForumAttachments .AttachmentTable .AttachmentTableHeader th, .AttachmentTable .AttachmentFileSize, .AttachmentAction 
+{
+	text-align: center;
+	border-top: solid 1px #cccccc;
+	border-bottom: solid 1px #cccccc;
+	padding: 3px;
+}
+
+.ForumAttachments .AttachmentTable .AttachmentTableHeader .AttachmentFileName
+{
+	text-align: left;
+}
+
+.ForumAttachments .AttachmentTable .AttachmentTableFooter
+{
+	display: none;
+}
+
+.ForumAttachments .AttachmentTable .AttachmentTableUpload input
+{
+	height: 23px;
+}
+
+.ForumAttachments .AttachmentTable .AttachmentTableUpload .Button
+{
+	width: 100px;
+}
+
+.ForumAttachments .AttachmentTable .AttachmentTableFooter
+{
+	display: none;
+}
+
+.ForumAttachments .Title
+{
+	font-size: 16px;
+	font-weight: bold;
+}
+.PostText
+{
+	display: block;
+	margin: 5px 0px 5px 5px;
+}
+
+.PostIndent
+{
+	margin-left: 45px;
+}
+
+
+.ForumPost .PostUser
+{
+	color: #000;
+	font-size: 13px;
+}
+
+.ForumPost .PostUser:hover
+{
+	text-decoration: none;
+}
+
+.ForumPost .PostSubject
+{
+	font-weight: bold;
+	font-size: 13px;
+	padding: 2px 0px;
+
+	
+}
+
+.ForumPost .PostActionLink
+{
+	color: #000;
+	padding: 0px 5px;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.ForumPost .PostImage
+{
+	padding: 6px 0px;
+}
+
+
+.ForumPost .UserAvatar .AvatarImage
+{
+	background: url(../App_Themes/CommunitySite/Images/bg_blog_img.gif) no-repeat top left;
+	width: 66px;
+	height: 66px;
+	padding: 5px;
+	/*float: left;*/
+	margin: 6px 15px 5px 6px;
+}
+
+.ForumPost .UserAvatar
+{
+	width: 75px;
+}
+
+.ForumPost .UserAvatar .Badge
+{
+	margin-left: 11px;
+	white-space: nowrap;  
+}
+
+.ForumPost .UserAvatar .BadgeImage
+{
+	margin-left: 8px;
+	margin-bottom: 3px;
+}
+
+.ForumPost .PostText img
+{
+border: none;
+}
+
+
+/* New post form */
+.ForumNewPost
+{
+	padding: 5px;
+}
+
+.ForumNewPost .PostReply
+{
+	border: solid 1px #cccccc;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.ForumNewPost .FormPadding
+{
+	/*border: solid 1px #cccccc;*/
+	padding: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.ForumNewPost .Title
+{
+	font-size: 17px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	display: block;
+}
+
+.ForumFlat .ForumNewPost .PostForm td
+{
+	border: none;
+}
+
+.ForumNewPost .ItemLabel
+{
+	font-weight: bold;
+
+	vertical-align: middle;
+	padding: 5px;
+}
+
+.PollsBox .PollVoteButton
+{
+	width: 100px;
+}
+
+.ForumNewPost .TextboxItem
+{
+	width: 500px;
+}
+
+.ForumNewPost .TextboxItemShort
+{
+	width: 300px;
+}
+
+.ForumNewPost .TextareaItem
+{
+	width: 505px;
+	height: 200px;
+}
+
+.forumSearch
+{
+	padding: 2px 15px 30px 15px;
+}
+
+.forum h1
+{
+
+	padding-left: 2px;
+}
+
+.ThreadImageAnnouncement{
+background: url(../App_Themes/CommunitySite/Images/Forums/thread_announcement.gif) 50% 50% no-repeat;
+width: 30px;
+}
+
+.ThreadImage{
+background: url(../App_Themes/CommunitySite/Images/Forums/thread_default.gif) 50% 50% no-repeat;
+
+width: 30px;
+}
+
+.ThreadImageLocked{
+background: url(../App_Themes/CommunitySite/Images/Forums/thread_lock.gif) 50% 50% no-repeat;
+width: 30px;
+}
+
+.ThreadImageSticky{
+background: url(../App_Themes/CommunitySite/Images/Forums/thread_stick.gif) 50% 50% no-repeat;
+width: 30px;
+}
+
+.ForumImage{
+background: url(../App_Themes/CommunitySite/Images/Forums/forum_default.gif) 50% 50% no-repeat;
+width: 40px;
+}
+
+.ForumImageLocked{
+background: url(../App_Themes/CommunitySite/Images/Forums/forum_locked.gif) 50% 50% no-repeat;
+width: 40px;
+}
+
+.ForumTree .PostTree td
+{
+	border: 0px;
+}
+
+.ForumTree .PostTree
+{
+	border: 0px;
+}
+
+.ForumTree .ForumPost
+{
+	padding-left: 6px;
+	padding-right: 6px;
+	border-bottom: solid 1px #cccccc;
+}
+
+.ForumTree .PostImage td
+{
+	vertical-align: top;
+}
+
+
+.ThreadPost, .ThreadPostSelected
+{	
+	padding: 1px 5px 2px 1px;    
+	overflow: hidden;		
+}
+
+
+.ThreadPost .Name
+{
+    padding: 1px 5px 2px 3px;    
+    margin-left: 1px;    
+}
+
+.RTL .ThreadPost .Name
+{
+    padding: 1px 3px 2px 5px;
+    margin-left: auto;
+    margin-right: 1px;
+}
+
+.ThreadPostSelected .Name
+{          	
+  	background-color: #cccccc;
+    padding: 2px 4px 2px 2px;
+    margin-left: 1px;    		
+}
+
+.RTL .ThreadPostSelected .Name
+{
+    padding: 2px 2px 2px 4px;
+    margin-left: auto;
+    margin-right: 1px;
+}
+
+.ThreadPost img, .ThreadPostSelected img
+{
+    padding-bottom: 3px;
+}
+
+
+
+.OfficeName
+{
+	padding: 2px 0 2px 0;
+	font-weight: bold;
+}
+
+/*#Office#*/
+
+.Map
+{
+	border: solid 1px #cccccc;
+	padding: 3px;
+}
+
+
+.Map img
+{
+	border: solid 1px #cccccc;
+	padding: 3px;
+}
+
+.Map .Header
+{
+	font-weight: bold;
+}
+
+.Map .Address
+{
+	font-size: 10px;
+}
+
+.OfficeDetail img
+{
+	border: solid 1px #cccccc;
+	padding: 3px;
+}
+
+.OfficeDetail .Address
+{
+	font-size: 10px;
+}
+
+.OfficeDetail h1
+{
+	padding: 0px !important;
+	margin: 0px !important;
+}
+
+.OfficeDetail .Description
+{
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+/*#Grid#*/
+.DataGrid
+{
+	border:1px solid #cccccc;
+}
+
+.DataGrid td
+{
+	padding: 3px 5px;
+}
+
+.DataGrid .Row
+{
+	
+}
+
+.DataGrid .AltRow
+{
+	background-color: #eeeeee;
+}
+
+.DataGrid .Header
+{
+	background:#000000 url(../App_Themes/CorporateSite/Images/genbackground.gif) repeat-x scroll left top;
+}
+
+.DataGrid .Header td
+{
+	padding: 5px;
+}
+
+.DataGrid .Header td a
+{
+	color: #ffffff;
+}
+
+/*#Media library#*/
+.mediaItem
+{
+	background: url('../App_Themes/CorporateSite/Images/Examples/bg_photo.gif') no-repeat;
+	float: left;
+	font-size: 10px;
+	width: 132px;
+	margin: 4px;
+
+}
+
+.mediaItemBottom
+{
+	height: 4px;
+	background: url('../App_Themes/CorporateSite/Images/Examples/bg_photo_bottom.gif') no-repeat;
+	font-size: 0;
+	line-height: 0;
+}
+
+.mediaItem a
+{
+	color: Black;
+	text-decoration: none;
+
+	font-weight: bold;
+	font-size: 11px;
+}
+
+.mediaLibraryPhoto
+{
+	height: 122px;
+	width: 132px;
+	text-align: center;
+
+}
+
+.mediaLibraryDescription
+{
+	padding: 0px 3px;
+	color: #737373;
+}
+
+
+.MediaLibrarySort
+{
+	padding-bottom: 13px;
+}
+
+
+.MediaLibrarySort span
+{
+	font-weight: bold;
+}
+
+
+.MediaLibrarySort a
+{
+	color: Black;
+}
+
+.MediaLibrarySort a:hover
+{
+	text-decoration: none;
+}
+
+
+.MediaGallery .ContentTree
+{
+	xfloat: left;
+	xwidth: 150px;
+	xheight: 500px;
+}
+
+.MediaGalleryFolderTree
+{
+	xfloat: left;
+	xwidth: 200px;
+	xoverflow: auto;
+	padding-bottom: 2em;
+}
+
+.MediaGalleryFolderTree a
+{
+	color: Black;
+}
+
+.MediaGallery .MediaContent
+{
+	xfloat: left;
+	xwidth: 540px;
+}
+
+.MediaGalleryContent
+{
+	border: 0px solid red;
+}
+
+.MediaGalleryDetail
+{
+	width: 560px;
+	background: url('../App_Themes/CorporateSite/Images/Examples/bg_photo_detail.gif') no-repeat;
+	text-align: center;
+	padding: 15px 0px;
+	
+}
+
+.MediaGalleryDetailBottom
+{
+	width: 544px;
+	padding-top: 5px;
+
+	padding-right: 16px;
+	text-align: right;
+	background: url('../App_Themes/CorporateSite/Images/Examples/bg_photo_detail_bottom.gif') no-repeat;
+}
+
+.MediaGalleryDetailBottom img
+{
+	border: none;
+}
+
+.SelectedFolder
+{
+	font-weight: bold;
+}
+
+.MediaGalleryDetailBottom h2
+
+{
+	padding-top: 5px;
+	margin: 0;
+	color: #737373;
+	font-size: 16px;
+	width: 400px;
+	text-align: left;
+}
+
+.MediaGalleryContent .Pager
+{
+clear: both;
+text-align: center;
+padding: 1em 0 1em 0;
+}
+
+.MediaGalleryPagger
+{
+    padding-bottom: 10px;	
+}
+
+.MediaGalleryPagger a
+{
+	display: block;
+	color: Black;
+	background: url('../App_Themes/CorporateSite/Images/Examples/button_back.gif') 0px 1px no-repeat;
+	padding-left: 18px;
+	font-weight: bold;
+	padding-bottom: 4px;
+}
+
+.MediaGalleryDetail object
+{
+background: #efefef;
+}
+
+a.MediaBack
+{
+	display: block;
+	color: Black;
+	background: url('../App_Themes/CorporateSite/Images/Examples/button_back.gif') 0px 1px no-repeat;
+	padding-left: 18px;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+.CommentUserName {
+	text-decoration: underline;
+}
+
+
+.MediaFileUploader
+{
+	padding-bottom: 30px;
+}
+
+.mediaItemPhotoS
+{
+	background-color: #efefec;
+	border: solid 1px #ccc;
+	float: left;
+	width: 138px;
+	margin: 4px;
+}
+
+.mediaItemPhotoS .mediaLibraryPhoto
+{
+	height: 122px;
+	width: 138px;
+	text-align: center;
+}
+.mediaItemPhotoM
+{
+	background-color: #efefec;
+	border: solid 1px #ccc;
+	float: left;
+	width: 175px;
+	margin: 4px;
+}
+
+.mediaItemPhotoM .mediaLibraryPhoto
+{
+	height: 159px;
+	width: 175px;
+	text-align: center;
+}
+.mediaItemPhotoL
+{
+	background-color: #efefec;
+	border: solid 1px #ccc;
+	float: left;
+	width: 236px;
+	margin: 4px;
+}
+
+.mediaItemPhotoL .mediaLibraryPhoto
+{
+	height: 220px;
+	width: 236px;
+	text-align: center;
+}
+.mediaItemPhotoMax
+{
+	background-color: #efefec;
+	border: solid 1px #ccc;
+	float: left;
+	width: 175px;
+	margin: 4px;
+}
+
+.mediaItemPhotoMax .mediaLibraryPhoto
+{
+	height: 159px;
+	width: 175px;
+	text-align: center;
+}
+
+/*#Oblast Vyzvy#*/
+.VysledkySutaziPremium
+{
+	background-color: #FFDFCC;
+	border: solid 1px #B57D5A;
+	padding: 20px;
+	margin-bottom: 1em;
+}
+
+.VyzvyFilter
+{
+	border: solid 1px #000;
+	background-color: #EFEFEF;
+	padding: 1em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+.VyzvyFilter .FilterRow
+{
+	padding-bottom: 0.5em;
+}
+
+.VyzvyFilter .KategoriaLabel,
+.VyzvyFilter .DruhLabel,
+.VyzvyFilter .TypLabel
+{
+	width: 85px;
+	display: inline-block;
+}
+
+.VyzvyFilter .DruhInput,
+.VyzvyFilter .TypInput
+{
+	width: 230px;
+	margin-right: 1em;
+}
+
+.VyzvyFilter .RegionLabel,
+.VyzvyFilter .RocnikLabel
+{
+	width: 80px;
+	display: inline-block;
+}
+
+.VyzvaItem
+{
+	padding-bottom: 1em;
+}
+.VyzvaItem h2
+{
+	font-size: 120%;
+	padding-bottom: 0.4em;
+	margin-bottom: 0;
+}
+.VyzvaItem .Header
+{
+	line-height: 1.5em;
+}
+.VyzvaItem .LabelLeft
+{
+	float: left;
+}
+.VyzvaItem .Header .LabelLeft
+{
+	width: 130px;
+}
+.VyzvaItem .ValueRight
+{
+	float: right;
+	text-align: right;
+	font-weight: bold;
+}
+.VyzvaItem .Col1
+{
+	float: left;
+	width: 55%;
+	padding-top: 1em;
+}
+.VyzvaItem .Col2
+{
+	float: left;
+	width: 45%;
+	padding-top: 1em;
+}
+.VyzvaItem .Col1 .LabelLeft
+{
+	float: left;
+	width: 180px;
+	color: #666;
+}
+.VyzvaItem .Col2 .LabelLeft
+{
+	float: left;
+	width: 90px;
+	color: #666;
+}
+.VyzvaItem .CenovaPonukaDate
+{
+	font-weight: bold;
+	color: red;
+}
+.VyzvaItem .CenovaPonukaCounter
+{
+	font-weight: bold;
+	color: red;
+}
+.VyzvaDocument .Download a
+{
+	padding-left: 58px;
+	height: 48px;
+        background:  url(../App_Themes/Default/Images/FileIcons/pdf.gif) no-repeat 0px 0px ;
+	display: block;
+	font-weight: bold;
+	color: #000;
+}
+.VyzvaDocument .Download
+{
+	padding-bottom: 1em;
+}
+
+.VyzvaDocument .Header
+{
+	border: solid 1px #000;
+	background-color: #EFEFEF;
+	padding: 1em;
+	margin-bottom: 1em;
+}
+.VyzvaDocument .VyzvaItem .Header
+{
+	padding: 0;
+	border: none;
+	background-color: #fff;
+	margin: 0;
+}
+
+.VyzvaDocument .Attachments
+{
+}
+.VyzvaDocument .Attachments .AttTitle
+{
+	font-weight: bold;
+	padding-bottom: 0.5em;
+}
+.VyzvaDocument .VyzvaItem .Col1 .LabelLeft
+{
+	width: 145px;
+}
+.RecentPodprahove
+{
+	font-weight: bold;
+	color: #e36c26 ;
+}
+.RecentPodpr 
+{margin-top:20px;}
+
+/*#Public#*/
+.PublicFilter
+{
+	border: solid 1px #000;
+	background-color: #EFEFEF;
+	padding: 1em;
+	margin-top: 0em;
+	margin-bottom: 1em;
+}
+.PublicFilter .FilterRow
+{
+	padding-bottom: 0.5em;
+}
+.PublicFilter .FilterTable td
+{
+	padding-bottom: 0.5em;
+}
+
+.PublicBizForm .EditingFormCategory
+{
+	font-weight: bold;
+	padding-top: 1em;
+	font-size: 110%;
+}
+.PublicBizForm
+{
+	float: left;
+	width: 430px;
+        
+        
+}
+.MebooChatForm
+{
+	float: right;
+	width: 250px;
+}
+.PublicLocalMenu
+{
+	font-size: 100%;
+	line-height: 2em;
+	padding-right: 15px;
+}
+.PublicLocalMenu a, .PublicLocalMenu a:visited
+{
+	color: #fff;
+	display: block;
+	padding: 0 11px 0 11px;
+	background-color: #000;
+	text-decoration: none;
+}
+.PublicLocalMenu a:hover, .PublicLocalMenu a.SelectedLink
+{
+	background-color: #EB6D24;
+	text-decoration: none;
+}
+
+/*#Public/Pager#*/
+.PagerControl
+{
+	text-align: center;
+}
+
+.BP .PagerControl
+{
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.BP .PagerNumberArea a
+{
+	border: solid 1px #ffb27f;
+	border: solid 1px #ffcc99;
+	padding: 2px 8px 2px 8px;
+	margin-right: 0px;
+	text-decoration: none;
+	color: #000;
+}
+.BP .PagerNumberArea .SelectedPage
+{
+	border-width: 0;
+	padding: 2px 8px 2px 8px;
+	margin-right: 0px;
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+}
+.BP .PagerNumberArea a:hover
+{
+	color: #fff;
+	background-color: #ff9933;
+	border: solid 1px #c87828;
+
+}
+/*#Public/ToolsBox#*/
+.ToolsTitle
+{
+	font-weight: bold;
+	line-height: 1em;
+	padding: 0 10px 0 10px;
+	border: solid 1px #ccc;
+	border-bottom: none;
+	background-color: #eee;
+	display: inline-block;
+	font-size: 85%;
+	line-height: 2em;
+}
+.ToolsBox
+{
+	border: solid 1px #ccc;
+	padding: 10px;
+	margin-bottom: 2em;
+}
+.ToolsBox a
+{
+	display: block;
+	padding-bottom: 0.5em;
+	line-height: 150%;
+	padding-left: 13px;
+	background: url(../App_Themes/CorporateSite/Images/treeMenuItemBackgroundActive.png) no-repeat 0px 6px;
+	color: #2542A1;
+}
+
+.ToolsBox .PageViews
+{
+	padding-top: 0.5em;
+	padding-bottom: 1em;
+}
+.ToolsBox ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+.ToolsBox ul li
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.ToolsBox ul ul
+{
+	padding-left: 18px;
+}
+
+
+/*#Public/Subjekty#*/
+.SuPublicList .pager
+{
+	padding-bottom: 1em;
+}
+table.Su
+{
+	width: 100%;
+	margin-bottom: 10px;
+	border: solid 0px #fff;
+}
+table.Su td.logo
+{
+	width: 70px;
+	height: 70px;
+	padding: 4px;
+	border: solid 1px #ccc;
+}
+table.Su td.logo img
+{
+}
+table.Su td.content
+{
+	padding-left: 10px;
+	vertical-align: top;
+}
+
+table.Su td.content h3
+{
+	margin: 0;
+	padding: 0;
+	padding-bottom: 0.25em;
+	font-weight: normal;
+}
+table.Su td.content .stavby
+{
+	color: #E36C26;
+}
+table.Su td.content .adresa
+{
+	color: #2542A1;
+}
+
+table.SuDetail
+{
+	width: 100%;
+}
+
+table.SuDetail td
+{
+	padding: 0px;
+	margin: 0px;
+	line-height: 150%;
+}
+
+table.SuDetail td a
+{
+	color: #2542A1;
+}
+
+table.SuDetail td.label
+{
+	width: 120px;
+}
+
+.SuDetailUser
+{
+	border: solid 1px #ccc;
+	padding: 10px;
+	text-align: center;
+}
+.SuDetailUser .FullName
+{
+	padding-top: 0.5em;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+.SuDetailUser .FullName a
+{
+	color: #000;
+	text-decoration: none;
+}
+
+.SuDetailUser .FullName a:hover
+{
+	color: #000;
+	text-decoration: underline;
+}
+
+.SuDetailUser .btnSendMessage
+{
+	padding-top: 0.5em;
+}
+.SuDetailUser .btnSendMessage div
+{
+	border: solid 1px #388b00;
+}
+.SuDetailUser .btnSendMessage a
+{
+	background-color: #5AB21B;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: none;
+	padding: 5px;
+	border-top: solid 1px #A6E278;
+	border-left: solid 1px #A6E278;
+	white-space: nowrap;
+	display: block;
+	text-align: center;
+	font-size: 85%;
+}
+.SuDetailUser .btnSendMessage a:hover
+{
+	background-color: #4B9815;
+	border-top: solid 1px #67CB1F;
+	border-left: solid 1px #67CB1F;
+}
+
+.SuOsobyList table
+{
+	width: 100%;
+}
+.SuOsobyList table tr
+{
+	vertical-align: top;
+}
+.SuOsoby
+{
+	line-height: 1.5em;
+}
+
+.SuOsoby .pager,
+.SuStavby .pager,
+.StSubjekty .pager
+{
+	font-size: 85%;
+}
+.SuOsoby .pager a,
+.SuStavby .pager a,
+.StSubjekty .pager a
+{
+	color: #000;
+}
+
+.SuStavby
+{
+	line-height: 1.5em;
+}
+
+.SuStavby .dt
+{
+	color: #666;
+}
+
+.StSubjekty
+{
+	line-height: 1.5em;
+}
+.SuSubListItem
+{
+	padding-bottom: 0.5em;
+}
+
+.QRCode
+{
+	border: solid 1px #ddd;
+	padding: 4px;
+	margin-top: 1em;
+}
+.QRCodeContact
+{
+	border: solid 1px #eee;
+	margin-bottom: 1em;
+}
+
+.SuTeaserImage
+{
+	padding-top: 2em;
+	text-align: center;
+}
+.SuAttchGallery
+{
+	padding-top: 2em;
+	padding-bottom: 1em;
+}
+.SuAttchGallery .Pager
+{
+	display: none;
+}
+
+.SuAttchGallery .nahled
+{
+	display: block;
+	margin-right: 5px;
+	float: left;
+}
+.SuAttchGallery #btnOpenText
+{
+	float: left;
+	font-size: 120%;
+	font-weight: bold;
+	display: block;
+	margin: 30px 0 0 14px;
+	cursor: pointer;
+}
+
+/*#Public/Osoby#*/
+.OsPublicList
+{
+	line-height: 1.5em;
+}
+
+.OsPublicList h3
+{
+	margin: 0;
+	padding: 0;
+	padding-bottom: 0.25em;
+	font-weight: normal;
+}
+.OsPublicList .item
+{
+	padding-bottom: 1em;
+}
+.OsPublicList .stavby
+{
+	color: #E36C26;
+}
+
+.OsPublicList .pager
+{
+	padding-bottom: 1em;
+}
+
+.OsDetail
+{
+	line-height: 150%;
+}
+.OsDetail td.label
+{
+	width: 90px;
+}
+.OsDetail H1
+{
+	margin-top: 0;
+}
+
+.ItemModifiedWhen
+{
+	color: #777;
+	font-size: 85%;
+}
+/*#Public/Stavby#*/
+
+.StavbyMatrix
+{
+	line-height: 1.5em;
+}
+
+.StavbyMatrix a
+{
+	color: #2542A1;
+}
+.StavbyMatrix h3
+{
+	margin: 0;
+	padding: 0.5em 0 0 0;
+	font-size: 110%;
+	font-weight: bold;
+	color: #2542A1;
+}
+.StavbyMatrix .Col50
+{
+	float: left;
+	width: 49%;
+}
+
+.btnBigOrange
+{
+	background: url(../App_Themes/Appril/Images/OrangeBackground.gif) repeat-x;
+	border: 1px solid #e36c26;
+	color: #ffffff;
+	display: block;
+	height: 45px;
+	line-height: 45px;
+	width: 250px;
+	text-align: center;
+	font-size: 130%;
+	text-decoration: none;
+}
+.btnBigOrange:visited
+{
+	color: #ffffff;
+}
+.btnBigGray
+{
+	background: url(../App_Themes/Appril/Images/SilverBackground.gif) repeat-x;
+	border: 1px solid #777;
+	color: #222;
+	display: block;
+	height: 45px;
+	line-height: 45px;
+	width: 250px;
+	text-align: center;
+	font-size: 130%;
+	text-decoration: none;
+}
+.StPublicList .pager
+{
+	padding-bottom: 1em;
+}
+table.St
+{
+	width: 100%;
+	margin-bottom: 10px;
+	border: solid 0px #fff;
+}
+table.St td.logo
+{
+	width: 70px;
+	height: 70px;
+	padding: 4px;
+	border: solid 1px #ccc;
+}
+table.St td.content
+{
+	padding-left: 10px;
+	vertical-align: top;
+}
+
+table.St td.content h3
+{
+	margin: 0;
+	padding: 0;
+	padding-bottom: 0.25em;
+	font-weight: normal;
+}
+
+table.St td.content .kat
+{
+	color: #E36C26;
+}
+table.St td.content .adresa
+{
+	color: #2542A1;
+}
+table.St td.content .trieda
+{
+	color: #2542A1;
+}
+
+table.StDetail
+{
+}
+
+table.StDetail td
+{
+	padding: 0px;
+	margin: 0px;
+	line-height: 150%;
+}
+
+table.StDetail td a
+{
+	color: #2542A1;
+}
+
+table.StDetail td.label
+{
+	width: 120px;
+}
+
+table.StTerminy
+{
+	width: 100%;
+	border-bottom: solid 1px #ccc;
+}
+table.StTerminy th
+{
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+table.StTerminy td
+{
+	border-top: solid 1px #ccc;
+	border-right: solid 1px #ccc;
+	text-align: center;
+	padding: 5px 0 5px 0;
+}
+table.StTerminy td.label
+{
+	text-align: left;
+	padding-left: 10px;
+	border-left: solid 1px #ccc;
+}
+table.StTerminy td a
+{
+	color: red;
+}
+
+.StAktuality
+{
+	background-color: #FFDFCC;
+	border: solid 1px #B57D5A;
+	padding: 10px 20px 10px 20px;
+	font-size: 100%;
+}
+.StAktuality .title
+{
+	font-weight: bold;
+	padding-bottom: 0.5em;
+}
+.StAktuality td
+{
+	padding-bottom: 0.5em;
+}
+.StAktuality td.label
+{
+	padding-right: 10px;
+}
+
+table.StDodavatelia
+{
+	width: 100%;
+	margin-bottom: 10px;
+	border: solid 0px #fff;
+}
+table.StDodavatelia td.logo
+{
+	width: 70px;
+	height: 70px;
+	padding: 4px;
+	border: solid 1px #ccc;
+}
+table.StDodavatelia td.content
+{
+	padding-left: 10px;
+	vertical-align: top;
+}
+
+table.StDodavatelia td.content h3
+{
+	margin: 0;
+	padding: 0;
+	padding-bottom: 0.25em;
+	font-weight: normal;
+}
+table.StDodavatelia td.content .predmet
+{
+	padding-bottom: 0.3em;
+}
+table.StDodavatelia td.content .vztah
+{
+	color: #E36C26;
+}
+table.StDodavatelia td.content .adresa
+{
+	color: #2542A1;
+}
+
+.StSubdodavatel
+{
+	padding-top: 1em;
+}
+.StGMap
+{
+	margin-top: 1em;
+}
+.StDetailPodobneStLink
+{
+	text-align: right;
+	padding-top: 0.5em;
+}
+.StDetailPodobneStLink a
+{
+	color: #2542A1;
+}
+
+.StSubListItem
+{
+	float: left;
+	width: 200px;
+	font-size: 85%;
+}
+.StSubListItem h3
+{
+	font-size: 110%;
+	margin: 0;
+	padding: 0;
+	padding-top: 10px;
+}
+
+.StSubPonuka
+{
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+.StSubPonuka .DemoLabel1
+{
+	float: left;
+	width: 150px;
+	font-weight: bold;
+	font-size: 250%;	
+	color: #CCC;
+	padding-top: 10px;
+}
+.StSubPonuka .DemoLabel2
+{
+	float: left;
+	width: 250px;
+	font-size: 85%;
+	color: #444;
+	padding-left: 15px;
+}
+.StSubPonuka .DemoLabel2 h3
+{
+	font-size: 120%;
+	margin: 0;
+	padding: 0;
+	padding-top: 6px;
+	color: #222;
+}
+.StSubPonuka .DemoLabel4
+{
+	float: left;
+	width: 270px;
+	font-size: 85%;
+	color: #444;
+	padding-left: 15px;
+}
+.StSubPonuka .DemoLabel4 h3
+{
+	font-size: 120%;
+	margin: 0;
+	padding: 0;
+	padding-top: 14px;
+	color: #222;
+}
+.StSubPonuka .DemoLabel3
+{
+	float: left;
+	width: 60px;
+	font-weight: bold;
+	font-size: 350%;	
+	color: #CCC;
+}
+.SubBannerButton
+{
+	display: block;
+	float: right;
+	width: 170px;
+	height: 50px;
+	font-weight: bold;
+	padding-left: 66px;
+	padding-top: 6px;
+	text-decoration: none;
+	color: #222;
+	line-height: 1.5em;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	background: #FFD800 url(../App_Themes/Appril/Images/subdodavatel-ponuka-bg.png) no-repeat; 
+}
+.SubBannerButton:visited
+{
+	color: #222;
+}
+.SubBannerButton span
+{
+	font-size: 120%;
+}
+
+.StTeaserImage
+{
+	padding-top: 2em;
+	text-align: center;
+}
+.StAttchGallery
+{
+	padding-top: 2em;
+	padding-bottom: 1em;
+}
+.StAttchGallery .Pager
+{
+	display: none;
+}
+
+.StAttchGallery .nahled
+{
+	display: block;
+	margin-right: 5px;
+	float: left;
+}
+.StAttchGallery #btnOpenText
+{
+	float: left;
+	font-size: 120%;
+	font-weight: bold;
+	display: block;
+	margin: 30px 0 0 14px;
+	cursor: pointer;
+}
+
+.StTriedyMatrix
+{
+	line-height: 1.5em;
+	padding-bottom: 2em;
+}
+
+.StTriedyMatrix .Col50
+{
+	float: left;
+	width: 49%;
+}
+.StTriedyMatrix h3
+{
+	margin: 0;
+	padding: 0 0 0.5em 0;
+	font-size: 110%;
+	font-weight: bold;
+	color: #000;
+}
+.StTriedyMatrix a
+{
+	color: #2542A1;
+}
+.StTriedyMatrix .Separator
+{
+	float: left;
+	width: 100%;
+	height: 2em;
+}
+
+.StTriedyOddielMatrix
+{
+	font-size: 100%;
+	padding-bottom: 2em;
+}
+.StTriedyOddielMatrix td
+{
+	padding-right: 2em;
+}
+
+.StArticleListItem 
+{
+	padding-bottom: 2em;
+}
+.StArticleListItem h3
+{
+	margin: 0;
+	padding-top: 0em;
+	padding-bottom: 0.5em;
+}
+.StArticleListItem img
+{
+	padding-right: 20px;
+}
+.StArticleListItem p
+{
+	margin: 0;
+	padding: 0;
+}
+.StArticleListItem .ReleaseDate
+{
+	color: #777;
+	font-size: 85%;
+	line-height: 2em;
+}
+
+.StDetailVRItem
+{
+	padding-bottom: 2em;
+}
+
+.StDetailVRItem h3
+{
+	margin: 0;
+	padding-top: 0em;
+	padding-bottom: 0.5em;
+}
+.StavbaVztahyPremium
+{
+	background-color: #FFDFCC;
+	border: solid 1px #B57D5A;
+	padding: 20px;
+	margin-bottom: 1em;
+}
+.StavbaVztahyPremium li
+{
+	font-weight: bold;
+}
+
+
+/*#Public/Subdodavky#*/
+.SubSubTitle
+{
+	border: solid 1px #000;
+	background-color: #EFEFEF;
+	padding: 1em;
+	margin-bottom: 1em;
+}
+.SubSubTitle .label
+{
+	float: left;
+	width: 140px;
+	font-weight: bold;
+}
+.SubSubTitle a
+{
+	float: left;
+	display: block;
+	width: 440px;
+}
+
+table.SubDetail td
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+table.SubDetail td a
+{
+	color: #2542A1;
+}
+
+table.SubDetail td.logo
+{
+	width: 100px;
+	height: 100px;
+}
+table.SubDetail td.content
+{
+	padding-left: 20px;
+	line-height: 150%;
+}
+
+table.SubDetail td.content .label
+{
+	width: 110px;
+	font-weight: bold;
+}
+
+table.SubDetail td.content .Popis
+{
+	margin-bottom: 2em;
+}
+.SubTeaserImage
+{
+	padding-top: 2em;
+	text-align: center;
+}
+.SubAttchGallery
+{
+	padding-top: 2em;
+	padding-bottom: 1em;
+	padding-left: 120px;
+}
+.SubAttchGallery .Pager
+{
+	display: none;
+}
+
+.SubAttchGallery .nahled
+{
+	display: block;
+	margin-right: 5px;
+	float: left;
+}
+.SubAttchGallery #btnOpenText
+{
+	float: left;
+	font-size: 120%;
+	font-weight: bold;
+	display: block;
+	margin: 30px 0 0 14px;
+	cursor: pointer;
+}
+
+.SubdodavkyGrid
+{
+	border: solid 1px #bbb;
+}
+.SubdodavkyGrid td
+{
+	padding: 4px;
+	border-right: solid 1px #bbb;
+	border-bottom: solid 1px #bbb;
+}
+.SubdodavkyGrid .header
+{
+	background-color: #b3bee4;
+	font-weight: bold;
+}
+.SubdodavkyGrid .header a
+{
+	color: #000;
+	text-decoration: none;
+}
+.SubdodavkyGrid .header a:hover
+{
+	color: #000;
+	text-decoration: underline;
+}
+.StSubdodavatelia
+{
+	padding: 6px 10px 10px 10px;
+	background: #fff url(../App_Themes/Appril/Images/topmenu.gif) repeat-x left -156px; 
+	margin-bottom: 2em;
+}
+
+.StSubdodavatelia H2
+{
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 300px;
+	font-size: 120%;
+	color: #000;
+	line-height: 1.5em;
+}
+
+.StSubdodavatelia .AddSubdodavatel
+{
+	display: block;
+	float: right;
+	padding-left: 22px;
+	text-align: right;
+	color: #002756;
+	color: #000;
+	background: transparent url(../App_Themes/Appril/Images/add-green.gif) no-repeat 0 2px; 
+	line-height: 1.5em;
+}
+
+
+
+/*#Public/Obce#*/
+.ObceMatrix
+{
+	line-height: 1.5em;
+	padding-bottom: 2em;
+}
+
+.ObceMatrix .Col50
+{
+	float: left;
+	width: 47%;
+	height: 7em;
+	margin-right: 2em;
+}
+.ObceMatrix h3
+{
+	margin: 0;
+	padding: 0.5em 0 0 0;
+	font-size: 110%;
+	font-weight: bold;
+	color: #000;
+}
+.ObceMatrix a
+{
+	color: #2542A1;
+}
+
+.OkresyList, .ObceList
+{
+	padding-bottom: 2em;
+	line-height: 150%;
+}
+.OkresyList a, .ObceList a
+{
+	font-size: 110%;
+}
+
+.ObceList table
+{
+	width: 100%;
+}
+.ObceList table td
+{
+	width: 20%;
+}
+
+table.ObecDetail td
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+table.ObecDetail td a
+{
+	color: #2542A1;
+}
+
+table.ObecDetail td.logo
+{
+	width: 100px;
+	height: 100px;
+}
+table.ObecDetail td.content
+{
+	padding-left: 20px;
+	line-height: 150%;
+}
+table.ObecDetail td.content h1
+{
+	margin: 0px;
+	padding: 0px;
+	padding-bottom: 0.5em;
+	line-height: 1.3em;
+}
+
+table.ObecDetail td.content .label
+{
+	width: 150px;
+}
+
+table.ObecDetail td.content .Popis
+{
+	margin-bottom: 2em;
+/*	overflow-y: scroll;
+	height: 220px;*/
+}
+
+/*#Oblast Rozhodnutia#*/
+.RozhodnutiaFilter
+{
+	border: solid 1px #000;
+	background-color: #EFEFEF;
+	padding: 1em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+.RozhodnutiaFilter .FilterRow
+{
+	padding-bottom: 0.5em;
+}
+
+.RozhodnutiaFilter .TriedaLabel,
+.RozhodnutiaFilter .RegionLabel
+{
+	width: 40px;
+	display: inline-block;
+}
+
+.RozhodnutieItem
+{
+	padding-bottom: 1em;
+}
+.RozhodnutieItem h2
+{
+	font-size: 120%;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 0.4em;
+}
+.RozhodnutieItem .Header
+{
+	line-height: 1.5em;
+}
+.RozhodnutieItem .Header .LabelLeft
+{
+	float: left;
+	width: 130px;
+}
+.RozhodnutieItem .Col1
+{
+	float: left;
+	width: 55%;
+	padding-top: 1em;
+}
+.RozhodnutieItem .Col2
+{
+	float: left;
+	width: 45%;
+	padding-top: 1em;
+}
+.RozhodnutieItem .Col1 .LabelLeft
+{
+	float: left;
+	width: 160px;
+	color: #666;
+}
+.RozhodnutieItem .Col2 .LabelLeft
+{
+	float: left;
+	width: 90px;
+	color: #666;
+}
+.RozhodnutieItem .DateCounter
+{
+	font-weight: bold;
+	color: red;
+}
+.RozhodnutieDocument .Download a
+{
+	padding-left: 58px;
+	height: 48px;
+        background:  url(../App_Themes/Default/Images/FileIcons/pdf.gif) no-repeat 0px 0px ;
+	display: block;
+	font-weight: bold;
+	color: #000;
+}
+.RozhodnutieDocument .Download
+{
+	border: solid 1px #000;
+	background-color: #EFEFEF;
+	padding: 1em;
+	margin-bottom: 1em;
+}
+.RozhodnutieDocument .RozhodnutieItem .Col1 .LabelLeft
+{
+	width: 180px;
+}
+.RozhodnutieDocument .RozhodnutieItem .Col1 .Value
+{
+	float: left;
+	width: 200px;
+}
+/*#Ads#*/
+.AdsReklama
+{
+	text-align: right;
+	color: #999;
+	font-size: 80%;
+}
+/*#Ads/Books#*/
+.AdsBook
+{
+	border: solid 1px #bbb;
+	padding: 10px;
+	margin-bottom: 15px;
+	font-size: 80%;
+}
+.AdsBook .img
+{
+	float: left;
+	width: 87px;
+	padding-right: 15px;
+}
+.AdsBook img
+{
+	border: solid 1px #000;
+}
+.AdsBook .title
+{
+	display: block;
+	float: left;
+	width: 116px;
+	padding-bottom: 5px;
+	font-weight: bold;
+	color: #2542A1;
+	text-decoration: none;
+	font-size: 130%;
+}
+.AdsBook .title:hover
+{
+	text-decoration: underline;
+}
+.AdsBook .desc
+{
+	clear: both;
+	xfloat: left;
+	padding-top: 1em;
+	color: #666;
+	xwidth: 116px;
+}
+.AdsBook .grada
+{
+	padding-top: 1em;
+	font-size: 110%;
+	color: #333;
+}
+/*#Ads/AddThis#*/
+.AddThisBox
+{
+	padding-bottom: 1em;
+}
+
+/*#Articles#*/
+.ArticleListItem
+{
+	padding-bottom: 2.5em;
+}
+.ArticleListItem h2
+{
+	margin: 0;
+	padding-top: 0em;
+	padding-bottom: 0.5em;
+	font-size: 135%;
+}
+.ArticleListItem p
+{
+	margin: 0;
+	padding: 0;
+}
+.ArticleListItem .ArticleReleaseDate
+{
+	color: #777;
+	font-size: 85%;
+	padding-top: 0.5em;
+}
+.ArticleHlavneTemyItem
+{
+	float: left;
+	width: 30%;
+	padding-right: 2em;
+}
+
+.ArticleHlavneTemyItem h4
+{
+	padding-bottom: 0.5em;
+	margin: 0;
+}
+.ArticleHlavneTemyItem h4 a
+{
+	color: #000;
+}
+
+.ArticleHlavneTemyItem .ArticleReleaseDate
+{
+	color: #777;
+	font-size: 85%;
+	padding-top: 0.5em;
+}
+
+.ArticleTeaserImage
+{
+	float: left;
+	border: none;
+	margin: 0 1.5em 1.5em 0;
+
+}
+.ArticleText
+{
+	line-height: 1.5em;
+	text-align: justify;
+	padding-bottom: 2em;
+}
+.ArticlePhoto
+{
+	padding-bottom: 2em;
+}
+.ArticlePhoto div
+{
+	
+}
+.ArticleStavbaNewsReleaseDate
+{
+	color: #777;
+	font-size: 85%;
+	padding-top: 0.25em;
+}
+
+/*#AJAX modal dialog#*/
+
+.PublicPopupDialog
+{
+	border: solid 1px #000;
+	background-color: #fff;
+}
+.PublicPopupDialog .PageHeader
+{
+	border-bottom: solid 1px #b3b3b3;
+	background: transparent url("../App_Themes/IntranetPortalRed/Images/BackgroundTabMenu.png") repeat-x;
+}
+
+.PublicPopupDialog .PageHeader .PageTitleHeader
+{
+	line-height: 24px;
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+.PublicPopupDialog .DialogPageContent
+{
+	padding: 20px;
+}
+
+.PublicPopupDialog .PageBodyAlert
+{
+	background-color: #FFDFCC;
+	border: solid 1px #B57D5A;
+	padding: 1em;
+}
+
+.PublicPopupDialog .PageFooterLine
+{
+	border-top: solid 1px #b3b3b3;
+	background-color: #eeeeee;
+	padding: 5px 10px 5px 10px;
+	font-size: 85%;
+}
+
+.PublicModalDialogBackground 
+{
+	background-color:Gray;
+	filter:alpha(opacity=70);
+	opacity:0.7;
+}
+
+.btnBlueBox
+{
+	padding-top: 2em;
+	padding-bottom: 0.5em;
+	padding-left: 0px;
+}
+.btnBlueBox div
+{
+	border: solid 1px #388b00;
+}
+.btnBlueBox a.btnBlue
+{
+	background-color: #5AB21B;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: none;
+	padding: 10px 10px 10px 10px;
+	border-top: solid 1px #A6E278;
+	white-space: nowrap;
+	display: block;
+	text-align: center;
+}
+.btnBlueBox a.btnBlue:hover
+{
+	background-color: #4B9815;
+	border-top: solid 1px #67CB1F;
+}
+
+.btnBlueCountBox
+{
+	font-size: 85%;
+	color: #444;
+}
+
+.btnGreenBox div
+{
+	border: solid 1px #388b00;
+}
+.btnGreenBox div div
+{
+	border: none;
+}
+.btnGreenBox div a
+{
+	background-color: #5AB21B;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: none;
+	padding: 10px 10px 10px 10px;
+	border-top: solid 1px #A6E278;
+	white-space: nowrap;
+	display: block;
+	text-align: center;
+}
+.btnGreenBox div a:hover
+{
+	background-color: #4B9815;
+	border-top: solid 1px #67CB1F;
+}
+
+.btnGreenBoxSmall div
+{
+	border: solid 1px #388b00;
+}
+.btnGreenBoxSmall div div
+{
+	border: none;
+}
+.btnGreenBoxSmall div a
+{
+	background-color: #5AB21B;
+	color: #fff;
+	font-weight: normal;
+	text-decoration: none;
+	background-image: none;
+	padding: 3px 6px 3px 6px;
+	border-top: solid 1px #A6E278;
+	white-space: nowrap;
+	display: block;
+	text-align: center;
+}
+.btnGreenBoxSmall div a:hover
+{
+	background-color: #4B9815;
+	border-top: solid 1px #67CB1F;
+}
+
+.btnOrangeBox div
+{
+	border: solid 1px #c45910;
+}
+.btnOrangeBox a
+{
+	background-color: #ed721e;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: none;
+	padding: 10px 10px 10px 10px;
+	border-top: solid 1px #f5b385;
+	white-space: nowrap;
+	display: block;
+	text-align: center;
+}
+.btnOrangeBox a:hover
+{
+	background-color: #ca611a;
+	border-top: solid 1px #ca946e;
+}
+.btnOrangeBoxSmall div
+{
+	border: solid 1px #c45910;
+}
+.btnOrangeBoxSmall a
+{
+	background-color: #ed721e;
+	color: #fff;
+	font-weight: normal;
+	text-decoration: none;
+	background-image: none;
+	padding: 3px 6px 3px 6px;
+	border-top: solid 1px #f5b385;
+	white-space: nowrap;
+	display: block;
+	text-align: center;
+}
+.btnOrangeBoxSmall a:hover
+{
+	background-color: #ca611a;
+	border-top: solid 1px #ca946e;
+}
+
+
+/*#Moj Appril#*/
+.UserProfileTitle
+{
+	padding-bottom: 1em;
+}
+
+.UserProfileTitle h1
+{
+	margin-bottom: 0em;
+}
+.UserProfileTitle .UserProfilePosition
+{
+	padding-top: 0.5em;
+}
+
+.RegisterCallToAction
+{
+	background-color: #FFDFCC;
+	border: solid 1px #B57D5A;
+	padding: 10px;
+	margin-bottom: 1em;
+}
+.MAFilterNews
+{
+	padding: 10px 15px;
+	background-color:#dff4ff;
+	border:1px solid #c2e1ef;
+	color:#444;
+	margin-bottom: 2em;
+}
+.MAFilterNews btnCollapse,
+.MAFilterNews btnCollapse:visited
+{
+	color: #2542A1;
+}
+.MANewsFeedPremium
+{
+	color: #777;
+}
+.MANewsFeedPremium a
+{
+	color: #ffa21e;
+}
+.MANewsFeedPremium a:hover
+{
+	color: #000;
+	text-decoration: underline;
+}
+.DisplayProfile .caption
+{
+	font-weight: bold;
+}
+.DisplayProfile .label
+{
+	padding-left: 20px;
+	color: #666;
+	width: 20%;
+}
+.DisplayProfile .text
+{
+	padding-left: 20px;
+}
+.DisplayProfile td
+{
+	line-height: 1.5em;
+}
+
+.MAOrderPremium .header
+{
+	font-size: 120%;
+	font-weight: bold;
+	color: #002756;
+	padding-bottom: 2em;
+}
+
+.MAOrderPremium .header span
+{
+	color: #ffa21e;
+	font-size: 200%;
+}
+
+.MAOrderPremium .Col1
+{
+	width: 29%;
+	border-right: solid 1px #ccc;
+}
+.MAOrderPremium .Col2
+{
+	padding-left: 25px;
+	width: 34%;
+	border-right: solid 1px #ccc;
+}
+.MAOrderPremium .Col3
+{
+	padding-left: 25px;
+	width: 37%;
+}
+.MAOrderPremium .Col1 .content
+{
+	color: #444;
+	font-size: 180%;
+	font-weight: normal;
+	line-height: 2em;
+	padding-left: 10px;
+}
+.MAOrderPremium .Col1 label
+{
+	padding-left: 10px;
+}
+.MAOrderPremium .Col1 .dph
+{
+	color: #555;
+	text-align: right;
+	padding-right: 25px;
+}
+.MAOrderPremium .Col2 .content
+{
+	line-height: 2.5em;
+	padding-left: 10px;
+}
+.MAOrderPremium .Col2 label
+{
+	padding-left: 10px;
+	font-weight: bold;
+	color: #444;
+}
+.MAOrderPremium .Col3 td
+{
+	padding: 5px;
+}
+.MAOrderPremium .Col3 .content
+{
+	padding-left: 0px;
+}
+.MAOrderPremium .Col3 .label
+{
+	color: #444;
+}
+.MAOrderPremium .Col3 .label span
+{
+	color: red;
+	font-size: 90%;
+	padding-bottom: 20px;
+}
+.MAOrderPremium .Col3 .ObjFakturaInfo
+{
+	background-color: #FFDFCC;
+	border: solid 1px #B57D5A;
+	padding: 20px;
+	margin-bottom: 1em;
+}
+
+.MARegForm .fUserName input,
+.MARegForm .fFirstName,
+.MARegForm .fLastName
+{
+	width: 180px;
+}
+.MARegForm .fEmail input
+{
+	width: 180px;
+}
+.MARegForm .fPassword input
+{
+	width: 180px;
+	margin-top: 5px;
+}
+
+.MARegForm .pwdlabel
+{
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+.MARegForm .ErrorLabel,
+.MARegForm .EditingFormErrorLabel
+{
+	display: block;
+	color: red;
+	padding-bottom: 10px;
+	padding-left: 3px;
+}
+.MAStopNonPremium
+{
+	background-color: #FFDFCC;
+	border: solid 1px #B57D5A;
+	padding: 20px;
+	margin-bottom: 1em;
+}
+.PodmienkySuhlas .EditingFormControlNestedControl
+{
+	display: inline;
+}
+
+/*#Help center#*/
+.HelpCenter .HelpTitle
+{
+	border-bottom: solid 1px #ccc;
+	font-size: 160%;
+	color: #ffa21e;
+	padding: 10px 0 20px 20px;
+	margin-bottom: 10px;
+}
+.HelpCenter h1
+{
+	color: #002756;
+	font-weight: normal;
+}
+
+.HelpCenter .zoneLeft
+{
+	width: 165px;
+}
+
+.HelpCenter .zoneContent
+{
+	border-left: solid 1px #ccc;
+	border-right: solid 1px #ccc;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 3em;
+	width: 590px;
+}
+
+.HelpCenter .zoneRight
+{
+	width: 180px;
+	padding-left: 20px;
+	
+}
+.HelpCenter .zoneRight h3
+{
+	color: #666;
+	font-weight: normal;
+	
+}
+.HelpCenter .zoneRight a
+{
+	text-decoration: none;
+}
+
+.HelpCenter .HelpMenu
+{
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+.HelpCenter .HelpMenu #ParentNode,
+.HelpCenter .HelpMenu #ParentNode:visited
+{
+	display: block;
+	line-height: 200%;
+	text-decoration: none;	
+	color: #2542A1;
+}
+
+.HelpCenter .HelpMenu .LeftCMSListMenuUL
+{
+	padding-left: 18px;
+}
+
+.HelpCenter .zoneLeft .Shortcuts
+{
+	border-top: solid 1px #ccc;
+	padding: 20px;
+	margin-right: 6px;
+}
+
+.HelpCenter .zoneLeft .Shortcuts a,
+.HelpCenter .zoneLeft .Shortcuts a:visited
+{
+	text-decoration: none;
+	color: #2542A1;
+}
+/*#Menu Left Appril#*/
+
+.LeftCMSListMenuUL
+{
+	list-style-type: none;
+	font-size: 100%;
+	margin: 0;
+	padding: 0px;
+	text-transform: none;
+	font-weight: normal;
+}
+
+.LeftCMSListMenuUL .LeftCMSListMenuUL
+{
+	font-weight: normal;
+	font-size: 100%;
+	padding: 0px 0 0 18px;
+}
+
+.IE6 .LeftCMSListMenuUL .LeftCMSListMenuUL, .Gecko3 .LeftCMSListMenuUL .LeftCMSListMenuUL, .Gecko .LeftCMSListMenuUL .LeftCMSListMenuUL
+{
+	font-weight: normal;
+	margin-bottom: 0px;
+}
+
+.LeftCMSListMenuLI, .LeftCMSListMenuHighlightedLI, .LeftCMSListMenuLILast, .LeftCMSListMenuHighlightedLILast
+{
+	background: none;
+	line-height: 200%;
+	margin: 0;
+	padding-bottom: 0px;
+	margin-left: 0px;
+}
+
+.IE6 .LeftCMSListMenuLI, .IE6 .LeftCMSListMenuHighlightedLI
+{
+	margin-right: 0;
+	padding-right: 0;
+}
+
+.LeftCMSListMenuLink, .LeftCMSListMenuLinkHighlighted
+{
+	text-decoration: none;	
+}
+
+.LeftCMSListMenuLI a:hover, .LeftCMSListMenuLinkHighlighted, .LeftCMSListMenuHighlightedLI a
+{
+	background: none;
+	text-decoration: none;	
+}
+
+.LeftCMSListMenuLI a:hover, .LeftCMSListMenuHighlightedLI a:hover
+{
+	text-decoration: underline;	
+}
+
+.LeftCMSListMenuLinkHighlighted, .LeftCMSListMenuHighlightedLI a
+{
+	font-weight: bold;
+	color: #002756;
+}
+
+.LeftCMSListMenuLI .LeftCMSListMenuLI .LeftCMSListMenuLink,
+.LeftCMSListMenuHighlightedLI .LeftCMSListMenuLI .LeftCMSListMenuLink,
+.LeftCMSListMenuHighlightedLI .LeftCMSListMenuHighlightedLI .LeftCMSListMenuLink
+{
+	font-weight: normal;
+}
+.LeftCMSListMenuLI .LeftCMSListMenuHighlightedLI .LeftCMSListMenuLinkHighlighted
+{
+	font-weight: bold;
+	color: #002756;
+}
+
+.LeftCMSListMenuLI a:visited
+{
+	color: #2542A1;
+}
+.LeftCMSListMenuHighlightedLI a:visited
+{
+	color: #002756;
+}
+.IE6 .LeftCMSListMenuLI a:visited, .IE6 .LeftCMSListMenuHighlightedLI a:visited
+{
+	color: #2542A1;
+}
+
+.SimpleLeftMenu
+{
+	padding-left: 10px;
+}
+
+.SimpleLeftMenu .ParentNode
+{
+	font-weight: normal;
+	line-height: 2em;
+	font-size: 120%;
+}
+.SimpleLeftMenu .ParentNode a
+{
+	color: #002756;
+	text-decoration: none;
+}
+.SimpleLeftMenu .ParentNode a:hover
+{
+	color: #002756;
+	text-decoration: underline;
+}
+
+.SimpleLeftMenu #menuElem
+{
+	padding-left: 18px;
+}
+
+/*#Groups#*/
+.GroupMembersCount
+{	
+	font-size: 85%;
+	font-weight: bold;
+	color: #444;
+	color: #E36C26;
+}
+
+.GroupVIPUser .avatar
+{
+	background-color: #efefec;
+	border: solid 1px #ccc;
+	padding: 15px 20px;
+	width: 150px;
+	float: left;
+	text-align: center;
+}
+.GroupVIPUser .content
+{
+	margin-left: 212px;
+}
+.GroupVIPUser h3
+{
+	padding: 15px 0 0 0;
+	margin: 0;
+}
+.GroupVIPUser h3 a
+{
+	text-decoration: none;
+}
+
+.btnGroupVIPMessage
+{
+	width: 130px;
+	padding: 1em 0 1em 0;
+}
+
+.btnGroupVIPMessage div
+{
+	border: solid 1px #388b00;
+}
+.btnGroupVIPMessage div a
+{
+	background-color: #5AB21B;
+	color: #fff;
+	font-weight: normal;
+	text-decoration: none;
+	background-image: none;
+	padding: 3px 6px 3px 6px;
+	border-top: solid 1px #A6E278;
+	white-space: nowrap;
+	display: block;
+	text-align: center;
+}
+.btnGroupVIPMessage div a:hover
+{
+	background-color: #4B9815;
+	border-top: solid 1px #67CB1F;
+}
+
+H1.GroupTitle div
+{
+	display: inline;
+}
+
+table.GroupVIPUsersGrid td
+{
+	padding: 15px;
+	text-align: center;
+	vertical-align: top;
+}
+
+.GroupVIPUsersGrid .ProfileBox
+{
+	border: 1px solid #ccc;
+	padding: 20px;
+	width: 175px;
+}
+.GroupVIPUsersGrid .avatar
+{
+	height: 165px;
+}
+.GroupVIPUsersGrid h4
+{
+	font-size: 110%;
+	padding-bottom: 0.25em;
+	margin: 0;
+}
+.GroupVIPUsersGrid h4 a
+{
+	text-decoration: none;
+	color: black;
+}
+.GroupVIPUsersGrid h4 a:hover
+{
+	text-decoration: underline;
+	color: black;
+}
+.GroupVIPUsersGrid .position
+{
+	font-size: 85%;
+	height: 3.5em;
+}
+.GroupVIPUsersGrid .btnGroupVIPMessage
+{
+	text-align: center;
+	padding: 0;
+}
+
+/*#Groups/Context menu#*/
+
+
+.UserContextMenu
+{
+    border: solid 1px #666666;
+    background-color: #e0e0e0;
+    font-size: 11px;
+    display: block;
+    width: 135px;
+}
+
+.UserContextMenu .Item
+{
+    border-bottom: solid 1px #a4b2bc;
+    height: 21px;
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    overflow: hidden;
+}
+
+.UserContextMenu .ItemLast
+{
+    height: 21px;
+    display: block;
+    text-decoration: none;
+    color: #000000;
+}
+
+.UserContextMenu .ItemPadding
+{
+    background: url(../App_Themes/CommunitySite/Images/userContextMenu.gif) repeat-x;
+    padding: 0px 3px 1px 5px;
+    white-space: nowrap;
+    display: block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.UserContextMenu .ItemPadding:hover, .UserContextMenu .ItemSelected .ItemPadding
+{
+    display: block;
+    background-color: #ffffff;
+    background-image: none;
+    border-left: solid 4px #ffb540;
+    padding: 0px 3px 1px 1px;
+    border-bottom: solid 1px #a4b2bc;
+}
+
+.UserContextActiveNode
+{
+    background-color: #e4e4e4;
+}
+
+.UserContextMenu .Item .Icon, .UserContextMenu .ItemLast .Icon
+{
+    vertical-align: text-top;
+    width: 16px;
+    height: 16px;
+
+}
+
+.TreeContextMenu .Item .IconBig, .UserContextMenu .ItemLast .IconBig
+{
+    float: left;
+    width: 20px;
+
+    height: 20px;
+}
+
+.UserContextMenu .Item .Name, .UserContextMenu .ItemLast .Name, .UserContextMenu .Item .NameInactive, .UserContextMenu .ItemLast .NameInactive
+{
+
+    line-height: 20px;
+    text-decoration: underline;
+}
+
+.UserContextMenu .Separator
+{
+    height: 1px;
+    background-color: #000000;
+    overflow: hidden;
+}
+
+.ProfileSummary
+{
+	border: solid 1px #ccc;
+	background-color: #eee;
+	padding: 15px;
+}
+.ProfileSummary td
+{
+	padding-bottom: 0.5em;
+}
+.ProfileSummary td.label
+{
+	width: 130px;
+	padding-right: 2em;
+}
+
+.memberSmall
+{
+	padding-bottom: 1em;
+}
+.memberSmall td.avatar
+{
+	width: 50px;
+}
+.memberSmall td.info
+{
+	font-size: 85%;
+	padding-left: 10px;
+	color: #444;
+}
+.memberSmall td.info h3
+{
+	font-size: 120%;
+	margin: 0;
+	padding-bottom: 5px;
+}
+/*#Groups/Articles#*/
+.GroupArticleList
+{
+	padding-bottom: 1em;
+}
+
+/*#Main styles/Content page#*/
+.ContentPage
+{
+	color: #333;
+	line-height: 1.5em;
+}
+.ContentPage h2
+{
+	color: #333;
+	font-weight: normal;
+}
+.ContentPage h3
+{
+	font-weight: normal;
+}
+.ContentPage h4
+{
+	font-weight: normal;
+}
+/*#Events#*/
+
+.EventCalendar
+{
+	width: 100%;
+}
+
+.EventCalendar *
+{
+	padding: 0px;
+}
+
+.EventCalendar .Title
+{
+	background:#000000 url(../App_Themes/CorporateSite/Images/genbackground.gif) repeat-x scroll left top;
+	color: #ffffff;
+	padding: 5px;
+	height: 35px;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+.EventCalendar .Navigation
+{
+	font-weight: bold;
+	width: 50px;
+	padding-left: 10px;
+	padding-right: 10px;
+	vertical-align: middle;
+}
+
+.EventCalendar .DayHeader
+{
+	height: 25px;
+	background-color: #222222;
+	color: White;
+	font-weight: bold;
+	border-style: none;
+	vertical-align: middle;
+	font-size: 11px;
+}
+
+.EventCalendar .Day, .EventCalendar .OtherMonth, .EventCalendar .Weekend, .EventCalendar .Today
+{
+	height: 50px;
+	padding: 3px;
+	background-color: #eeeeee;
+	font-size: 11px;
+}
+
+.EventCalendar .Today
+{
+	background-color: #222222;
+	color: White;
+	font-weight: bold;
+}
+
+.EventCalendar .Today a
+{
+	color: White;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+.EventCalendar .ContentEvent a
+
+{
+	margin-top: 3px;
+	color: Orange;
+	font-weight: bold;
+}
+
+.EventCalendar .OtherMonth
+{
+	color: Gray;
+	background-color: White;
+}
+
+.EventManagerRegTitle
+{
+	display: block;
+	font-weight: bold;
+	font-size: 160%;
+	color: #002756;
+	line-height: 1.5em;
+}
+.EventManagerOutlookLink
+{
+	display: block;
+	margin-top: 5px;
+}
+
+.EventManagerRegLabel
+{
+	font-weight: bold;
+}
+
+.EventList h3
+{
+	margin-bottom: 0.5em;
+}
+
+/*#User Contributions#*/
+.ContributionsList .NewItemLink,
+.ContributionsEdit .NewItemLink,
+.EditContributionEdit,
+.EditContributionDelete,
+.EditContributionClose
+{
+    font-weight: bold;
+    margin-right: 1em;
+    color: red;
+}
+
+.ContributionPanel
+{
+    padding-bottom: 1em;
+}
+.ContributionPanel .EditForm
+{
+    margin-top: 1em;
+}
+.yellowRegBox
+{
+background-color: rgb(255,255,131) !important;
+}
+.AddUserToCompany table
+{
+	width: auto;
+	margin: 0px auto;
+}

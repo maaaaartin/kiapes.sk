@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+ Copyright 2008 Google Inc. 
+ Licensed under the Apache License, Version 2.0: 
+ http://www.apache.org/licenses/LICENSE-2.0 
+ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Street View Data</title>
+<script src="http://maps.google.com/maps?file=api&v=2.121&sensor=false&key=ABQIAAAAkB22vVOxUm9RpxEoRECD7BRPKK-ukIwhhKBFZJQd_5mmNur1QxRbmiTUVUs7BEMLNWYJI3Jg1oElnw" type="text/javascript"></script>
+<script type="text/javascript"> 
+var map;
+var myPano;   
+var panoClient;
+var houseMarker;
+var latitude;
+var longitude;
+
+function addListener(element, type, expression, bubbling) {
+	bubbling = bubbling || false;
+	if(window.addEventListener) {
+		// Standard		
+		element.addEventListener(type, expression, bubbling);
+		return true;
+	} else if(window.attachEvent) { 
+		// IE		
+		element.attachEvent('on' + type, expression);
+		return true;
+	} else 
+	return false;
+}
+function initialize() {
+	var latitude = document.getElementById('latitude').innerHTML;
+	var longitude = document.getElementById('longitude').innerHTML;
+	var address = document.getElementById('address').innerHTML;
+	var houseMarkerContent = address + '<br/>Zemepisná šírka: ' + latitude + '<br/>Zemepisná dĺžka: ' + longitude;
+	var houseMarkerContentMoved = 'Vaša poloha na mape bola zmenená';
+	
+	panoClient = new GStreetviewClient();
+	map = new GMap2(document.getElementById('map_canvas'));
+	map.setCenter(new GLatLng(latitude,longitude), 15);
+	var topRight = new GControlPosition(G_ANCHOR_TOP_RIGHT, new GSize(10,10));
+	var bottomRight = new GControlPosition(G_ANCHOR_BOTTOM_RIGHT, new GSize(10,10));
+	map.addControl(new GSmallMapControl());
+	map.addControl(new GMapTypeControl());
+
+	houseMarker = new GMarker(new GLatLng(latitude,longitude), {
+		draggable: true
+	});
+	map.addOverlay(houseMarker);
+	
+	houseMarker.openInfoWindowHtml(houseMarkerContent);
+	//houseMarker.openInfoWindowHtml('Latitude: ' + latitude + '<br/>Longitude: ' + longitude);
+	GEvent.addListener(houseMarker, 'dragstart', function() {
+		houseMarker.closeInfoWindow();
+	});
+	GEvent.addListener(houseMarker, 'dragend', function() {
+		panoClient.getNearestPanorama(houseMarker.getLatLng(), showPanoData);
+		houseMarker.openInfoWindowHtml(houseMarkerContentMoved);
+	});
+	/*GEvent.addListener(houseMarker, 'click', function() {
+		panoClient.getNearestPanorama(houseMarker.getLatLng(), showPanoData);
+		houseMarker.openInfoWindowHtml(houseMarkerContent);
+	});*/
+
+	myPano = new GStreetviewPanorama(document.getElementById('map_street'));
+	panoClient.getNearestPanorama(houseMarker.getLatLng(), showPanoData);
+}
+
+function showPanoData(panoData) {
+	if (panoData.code != 200) {
+		GLog.write('showPanoData: Server rejected with code: ' + panoData.code);
+		return;
+	}
+	var angle = computeAngle(houseMarker.getLatLng(), panoData.location.latlng);
+	myPano.setLocationAndPOV(panoData.location.latlng, {yaw: angle});
+}
+
+function computeAngle(endLatLng, startLatLng) {
+	var DEGREE_PER_RADIAN = 57.2957795;
+	var RADIAN_PER_DEGREE = 0.017453;
+
+	var dlat = endLatLng.lat() - startLatLng.lat();
+	var dlng = endLatLng.lng() - startLatLng.lng();
+	// We multiply dlng with cos(endLat), since the two points are very closeby,
+	// so we assume their cos values are approximately equal.
+	var yaw = Math.atan2(dlng * Math.cos(endLatLng.lat() * RADIAN_PER_DEGREE), dlat)
+	* DEGREE_PER_RADIAN;
+	return wrapAngle(yaw);
+}
+
+function wrapAngle(angle) {
+if (angle >= 360) {
+angle -= 360;
+} else if (angle < 0) {
+angle += 360;
+}
+return angle;
+};
+addListener(window, 'load', initialize);
+</script>
+  </head>
+  <body>
+    <div id="map_canvas" style="width: 100%; height: 400px"><span id="latitude">49.1363</span><span id="longitude">19.5116</span><span id="address">Brnice 166, Liptovská Sielnica, SK</span></div>
+    <div id="map_street" style="width: 100%; height: 300px"></div>
+  </body>
+</html>

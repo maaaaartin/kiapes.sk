@@ -1,0 +1,57 @@
+/* */
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-size: inherit;
+}
+@media print {
+	html, body {
+		height: 100%;
+	}
+}
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-size: 13px;
+}
+html, input, select, label, form, div, td {
+}
+#map_canvas div, #map_canvas div a {
+}
+form {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+img {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+a {
+}
+a:hover {
+}
+.clear {
+	display: block;
+	clear: both;
+}
+.hidden {
+	display: none;
+	display: none !important;
+}
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+#map_list {
+}
+.gm-style-item-drop {
+	padding-top: 2px !important;
+}

@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Info windows</title>
+    <style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+	<script src="http://www.appril.com/CMSScripts/jquery/jquery-core.js" type="text/javascript"></script>
+    <script>
+// This example displays a marker at the center of Australia.
+// When the user clicks the marker, an info window opens.
+   /* function addAddress(address) {    
+	element = document.getElementById('map_object');
+	var getAddress = element.textContent || element.innerText;
+	var parts = address.split('|');  //index: 0 - address, 2 - lat, 1 - lon
+if(parts[1] != 0 && parts[2] != 0 && parts[1] < 60 && parts[2] < 60)
+{
+	map.clearOverlays();
+	marker = new GMarker(new GLatLng(parts[2], parts[1]));
+	map.addOverlay(marker);
+	map.setCenter(new GLatLng(parts[2], parts[1]), 17);
+	return true;
+}
+	geocoder.getLatLng(parts[0], function(point)
+      {
+        if(!point)
+          return;
+        map.clearOverlays();
+        marker = new GMarker(point);
+		map.setCenter(point, 17);
+        map.addOverlay(marker);
+        //marker.bindInfoWindowHtml(html);
+      });
+    }*/
+
+function initialize(position) {
+	element = document.getElementById('map_object');
+	var getAddress = element.textContent || element.innerText;
+	var parts = address.split('|');  //index: 0 - address, 1 - lat, 2 - lon
+  var myLatlng = new google.maps.LatLng(parts[1],parts[2]));
+  var mapOptions = {
+    zoom: 4,
+    center: myLatlng
+  };
+
+  var map = new google.maps.Map(document.getElementById('map_object'), mapOptions);
+
+  var contentString = '<div style="height: 350px; width: 500px; display: block; overflow: hidden;"><img src="http://www.appril.com/getattachment/d580ae1a-7d70-48a6-8125-f65a27349907/Bytovy-dom-KARPATIA,-BA-Dubravka.aspx?maxSideSize=570&width=420&height=570" alt="" style="height: 100%; width: auto; display: block;"><\/div>';
+
+  var infowindow = new google.maps.InfoWindow({
+      content: contentString
+  });
+
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      //title: 'Uluru (Ayers Rock)'
+  });
+  google.maps.event.addListener(marker, 'click', function() {
+    infowindow.open(map,marker);
+  });
+  google.maps.event.addListenerOnce(map, 'idle', function() {
+    infowindow.open(map,marker);
+  });
+google.maps.event.addListener(map, 'click', function () {
+	infowindow.close();
+});
+
+  }
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+  </head>
+  <body>
+    <div id="map_object">Adresa | -25.363882 | 131.044922</div>
+  </body>
+</html>

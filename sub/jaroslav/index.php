@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="author" content="Martin Kiapeš" />
+	<meta name="copyright" content="Martin Kiapeš 2013/2019" />
+	<meta name="robots" content="index, follow" />
+	<meta name="description" content="JUDr. Jaroslav Kiapeš" />
+	<meta name="keywords" content="JUDr. Jaroslav Kiapeš, advokát, právnik, advokátska kancelária, právnická kancelária, trestné právo, občianske právo, obchodné právo, pracovné právo, správne právo" />
+	<title>JUDr. Jaroslav Kiapeš</title>
+	<link rel="Shortcut Icon" href="" type="image/x-icon" />
+	<link rel="stylesheet" href="" type="text/css" media="print" />
+	<link rel="stylesheet" href="http://kiapes.sk/style/style0.css" type="text/css" media="screen,projection" />
+	<link rel="stylesheet" href="style/style1.css" type="text/css" media="screen,projection" />
+	<link rel="index" title="" href="" />
+	<!--[if lt IE 9 ]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142763-8"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-142763-8');
+	</script>
+</head>
+
+<body lang="sk-SK" class="home">
+	<div class="content">
+		<div class="div large">
+			<span class="span letters centered" title="Ego sum">
+				<span class="span middle letter" aria-hidden="true"><firstletter>J</firstletter>UDr.</span>
+				<span class="span letter" aria-hidden="true"><firstletter>J</firstletter>aroslav</span>
+				<span class="span letter" aria-hidden="true"><firstletter>K</firstletter>iapeš</span>
+				<span class="hidden" aria-hidden="false">JUDr. Jaroslav Kiapeš</span>
+			</span>
+			<div class="clear"></div>
+			<ul class="clean">
+				<li class="middle" title="Telefón">
+					<span aria-hidden="true">421&nbsp;44&nbsp;55&nbsp;22&nbsp;639</span>
+					<span class="hidden" aria-hidden="false">00421445522639</span>
+				</li>
+				<li class="middle" title="Fax">
+					<span aria-hidden="true">421&nbsp;44&nbsp;55&nbsp;22&nbsp;639</span>
+					<span class="hidden" aria-hidden="false">00421445522639</span>
+				</li>
+				<li class="middle" title="Mobil">
+					<span aria-hidden="true">421&nbsp;905&nbsp;501&nbsp;186</span>
+					<span class="hidden" aria-hidden="false">00421905501186</span>
+				</li>
+				<li class="middle" title="E-mail">
+					<span aria-hidden="true"><a href="mailto:jaroslav@kiapes.sk">jaroslav@kiapes.sk</a></span>
+					<span class="hidden" aria-hidden="false"></span>
+				</li>
+				<li class="middle" title="Web">
+					<span aria-hidden="true"><a href="http://jaroslav.kiapes.sk">jaroslav.kiapes.sk</a></span>
+					<span class="hidden" aria-hidden="false"></span>
+				</li>
+			</ul>
+		</div>
+		<div class="div large sub">
+			<div class="clear"></div>
+			<ul class="clean centered">
+				<li class="middle _hidden" title="Činnosť">
+					<div aria-hidden="false">
+						<span class="_hidden" aria-hidden="false">Advokátska kancelária</span>
+						<span class="hidden" aria-hidden="false"></span>
+					</div>
+				</li>
+				<li class="small" title="Rozsah">
+					<div aria-hidden="false">
+						<p>
+							<span class="_hidden" aria-hidden="false">(právo trestné, občianske, obchodné, pracovné, správne)</span>
+							<span class="hidden" aria-hidden="false">(právo trestné, občianske, obchodné, pracovné, správne)</span>
+						</p>
+					</div>
+				</li>
+				<li class="small sub" title="Adresa">
+					<div>
+						<p>
+							<span class="hidden" aria-hidden="true"></span>
+							<span aria-hidden="true">Štúrova&nbsp;4330/31,&nbsp;031&nbsp;01&nbsp;&nbsp;Liptovský&nbsp;Mikuláš</span>
+							<span class="hidden" aria-hidden="false">Štúrova 4330/31, 031 01  Liptovský Mikuláš</span>
+						</p>
+					</div>
+				</li>
+				<li class="small">&nbsp;</li>
+			</ul>
+			<div class="clear"></div>
+			<ul class="clean centered">
+				<li class="middle _hidden" title="Činnosť 2">
+					<div aria-hidden="false">
+						<span class="_hidden" aria-hidden="false">Poskytovanie ubytovania</span>
+						<span class="hidden" aria-hidden="false"></span>
+					</div>
+				</li>
+				<li class="small" title="Rozsah">
+					<div aria-hidden="false">
+						<p>
+							<span class="_hidden" aria-hidden="false">(rodinný dom v blízkosti termálneho kúpaliska Bešeňová)</span>
+							<span class="hidden" aria-hidden="false">(rodinný dom v blízkosti termálneho kúpaliska Bešeňová)</span>
+						</p>
+					</div>
+				</li>
+				<li class="small sub" title="Adresa">
+					<div>
+						<p>
+							<span class="hidden" aria-hidden="true"></span>
+							<span aria-hidden="true">Liptovský Michal&nbsp;93,&nbsp;034&nbsp;83&nbsp;&nbsp;Liptovský&nbsp;Michal</span>
+							<span class="hidden" aria-hidden="false">Liptovský Michal 93, 034 83  Liptovský Michal</span>
+						</p>
+					</div>
+				</li>
+				<li class="small">&nbsp;</li>
+			</ul>
+		</div>
+	</div>
+	<div class="base clear">
+		<copyright>Copyright 2020 Kiapeš</copyright>
+		<a href="http://kiapes.sk" class="hidden" title="kiapes.sk" aria-hidden="false">kiapes.sk</a>
+		<a href="http://kiapes.sk" aria-hidden="true" class="root"><span class="hidden">kiapes.sk</span></a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="author" content="Martin Kiapeš" />
+		<meta name="copyright" content="Martin Kiapeš 2013" />
+		<meta name="robots" content="index, follow" />
+		<meta name="description" content="Martin Kiapeš" />
+		<meta name="keywords" content="Martin Kiapeš" />
+		<title>Martin Kiapeš</title>
+		<link rel="Shortcut Icon" href="" type="image/x-icon" />
+		<link rel="stylesheet" href="" type="text/css" media="print" />
+		<link rel="stylesheet" href="style/style.css" type="text/css" media="screen,projection" />
+		<link rel="index" title="" href="" />
+		<!--[if lt IE 9 ]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]--> 
+		<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+		<script src="http://jquery-csv.googlecode.com/git/src/jquery.csv.js"></script>
+		<script>
+			//var appurl = 'http://dev.appril.com/appril/ApprilTools/Temp/StavbaGEO.aspx'
+			var appurl = 'http://appril.com/ApprilTools/Temp/StavbaGEO.aspx'
+			$(document).ready(function() {
+				example();
+				$('#run').bind('click', function() {
+					example();
+				});
+			});
+			function example() {
+				var input = $('#input').val();
+				var data = $.csv.toObjects(input);
+				var html = generateTable(data);
+				$('#result').empty();
+				$('#result').html(html);
+			}
+			// build HTML table data from an array (one or two dimensional)
+			function generateTable(data) {
+				var html = '';
+				if(typeof(data[0]) === 'undefined') {
+				  return null;
+				}
+				if(data[0].constructor === Object) {
+					for(var row in data) {
+						html += '<tr><td><a href="' + appurl + '?';
+						for(var item in data[row]) {
+							html += item + '=' + data[row][item] + '&';
+						}
+						html = html.substring(0, html.length - 1);
+						html += '">' + appurl + '?';
+						for(var item in data[row]) {
+							html += item + '=' + data[row][item] + '&';
+						}
+						html = html.substring(0, html.length - 1);
+						html += '</a></td></tr>\r\n';
+					}
+				}
+				return html;
+			}
+		</script>
+	</head>
+	<body>
+		<div class="div">
+			<h2>$.csv.toObjects()</h2>
+			</p>
+			<hr />
+			<h4>Input Data:</h4>
+			<textarea id="input" style="height:150px;width:80%">stavbaid,lat,lng
+		3,48.110888,17.111563
+		4,49.083446,19.612485
+		5,48.996268,18.233281
+		6,48.314845,18.087986
+		7,48.274921,17.031886
+		8,49.391775,20.405315</textarea>
+			<p><input id="run" type="button" value="Run" /></p>
+			<hr />
+			<h4>Result:</h4>
+			<div class="result">
+				<table id="result" border="0"></table>
+			</div>
+		</div>
+	</body>
+</html>

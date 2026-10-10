@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="author" content="Martin Kiapeš" />
+	<meta name="copyright" content="Martin Kiapeš 2013/2019" />
+	<meta name="robots" content="index, follow" />
+	<meta name="description" content="Juraj Kiapeš" />
+	<meta name="keywords" content="Juraj Kiapeš" />
+	<!--<meta http-equiv="refresh" content="2;URL=http://marta.kiapes.sk/volby" />-->
+	<title>Juraj Kiapeš</title>
+	<link rel="Shortcut Icon" href="" type="image/x-icon" />
+	<link rel="stylesheet" href="" type="text/css" media="print" />
+	<link rel="stylesheet" href="http://kiapes.sk/style/style0.css" type="text/css" media="screen,projection" />
+	<link rel="stylesheet" href="style/style1.css" type="text/css" media="screen,projection" />
+	<link rel="index" title="" href="" />
+	<!--[if lt IE 9 ]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142763-8"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-142763-8');
+	</script>
+</head>
+<body lang="sk-SK" class="home">
+	<div class="content">
+		<div class="div large">
+			<br />
+			<span class="span letters centered" title="Ego sum">
+				<span class="span letter" aria-hidden="true"><firstletter>J</firstletter>uraj</span>
+				<span class="span letter" aria-hidden="true"><firstletter>K</firstletter>iapeš</span>
+				<span class="hidden" aria-hidden="false">Juraj Kiapeš</span>
+			</span>
+			<br />
+            <span class="span letters centered post" title="Natus mortuos">
+                <span class="span middle" aria-hidden="true"><firstletter>(*)</firstletter> 15.05.1954 <span class="small">(Lovinobaňa, Železničná 384)</span></span><br />
+                <span class="span middle" aria-hidden="true"><firstletter>(†)</firstletter> 04.11.2020 <span class="small">(Lučenec, Námestie republiky 15)</span></span><br />
+                <span class="span middle hidden" aria-hidden="false">(*) 15.05.1954 (Lovinobaňa, Železničná 384)</span><br />
+                <span class="span middle hidden" aria-hidden="false">(†) 04.11.2020 (Lučenec, Námestie republiky 15)</span>
+            </span>
+			<br />
+			<div class="clear"></div>
+			<ul class="clean">
+				<li class="middle" title="Telephonum">
+					<span aria-hidden="true"><a href="tel:+421474396717">421&nbsp;47&nbsp;43&nbsp;96&nbsp;717</a></span>
+					<span class="hidden" aria-hidden="false">00421474396717</span>
+				</li>
+				<li class="middle" title="Mobil">
+					<span aria-hidden="true"><a href="tel:+421908953375">421&nbsp;908&nbsp;953&nbsp;375</a></span>
+					<span class="hidden" aria-hidden="false">00421908953375</span>
+				</li>
+				<li class="middle" title="E-mail">
+					<span aria-hidden="true"><a href="mailto:juraj@kiapes.sk">juraj@kiapes.sk</a></span>
+					<span class="hidden" aria-hidden="false"></span>
+				</li>
+				<li class="middle" title="Web">
+					<span aria-hidden="true"><a href="http://juraj.kiapes.sk">juraj.kiapes.sk</a></span>
+					<span class="hidden" aria-hidden="false"></span>
+				</li>
+			</ul>
+		</div>
+		<div class="div large sub">
+			<div class="clear"></div>
+			<ul class="clean centered">
+				<li class="middle _hidden" title="Činnosť">
+					<div aria-hidden="false">
+						<span class="_hidden" aria-hidden="false">Viem čo robím</span>
+						<span class="hidden" aria-hidden="false"></span>
+					</div>
+				</li>
+				<li class="small" title="Rozsah">
+					<div aria-hidden="false">
+						<p>
+							<span class="_hidden" aria-hidden="false">(vždy a všetko)</span>
+							<span class="hidden" aria-hidden="false">(vždy a všetko)</span>
+						</p>
+					</div>
+				</li>
+				<li class="small sub" title="Adresa">
+					<div>
+						<p>
+							<span class="hidden" aria-hidden="true"></span>
+							<span aria-hidden="true">Sadová 5/87,&nbsp;985&nbsp;54&nbsp;&nbsp;Lovinobaňa</span>
+							<span class="hidden" aria-hidden="false">Sadová 5/87,98554,Lovinobaňa</span>
+						</p>
+					</div>
+				</li>
+				<li class="small">&nbsp;</li>
+			</ul>
+		</div>
+	</div>
+	<div class="base clear">
+		<copyright>Copyright 2020 Kiapeš</copyright>
+		<a href="http://kiapes.sk" class="hidden" title="kiapes.sk" aria-hidden="false">kiapes.sk</a>
+		<a href="http://kiapes.sk" aria-hidden="true" class="root"><span class="hidden">kiapes.sk</span></a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,1017 @@
+/*#Appril Premium#*/
+
+.AdListBox 
+{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.AdListHead
+{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	height: 185px;
+}
+
+.AdListHeadOne
+{
+	width: 440px;
+	height: auto;
+	float: left;
+	font-weight: normal;
+	font-size: 130%;
+	line-height: auto;
+	text-indent: 0;
+	text-align: justify;
+	display: inline-block;
+}
+
+.AdListHeadOne h2
+{
+	margin: 0 0 5px 0;
+	font-size: 140%;
+}
+
+.AdListHeadTwo,
+.AdListHeadThree
+{
+	width: 275px;
+	height: 185px;
+	padding-top: 0;
+	float: right;
+	font-weight: normal;
+	font-size: 130%;
+	display: inline-block;
+}
+
+.AdListHeadTwo
+{
+	background: url(http://www.appril.com/getattachment/Cennik/ApprilData---Premium/free_user.png.aspx) center center no-repeat;
+}
+
+.AdListHeadThree
+{
+	background: url(http://www.appril.com/getattachment/Cennik/ApprilData---Premium/premium_user.png.aspx) center center no-repeat;
+}
+
+.AdListHeadTwo#Firma
+{
+	background: url(http://www.appril.com/getattachment/Cennik/Firemny-profil---Premium/free.png.aspx) center center no-repeat;
+}
+
+.AdListHeadThree#Firma
+{
+	background: url(http://www.appril.com/getattachment/Cennik/Firemny-profil---Premium/premium.png.aspx) center center no-repeat;
+}
+
+.AdListItem,
+.AdListItem ul,
+.AdListItem ul li
+{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.AdListItem
+{
+	border-bottom: 1px solid #c7c7c7;
+	cursor: pointer;
+}
+
+.AdListItem ul li img
+{
+	width: 1004px;
+}
+
+.AdListItemToggler
+{
+	padding: 10px 0;
+	background: url(http://www.appril.com/getattachment/Cennik/ApprilData---Premium/arrow1_l.png.aspx) 5px 16px no-repeat;
+}
+
+.AdListItemToggler:hover
+{
+	background: #eee url(http://www.appril.com/getattachment/Cennik/ApprilData---Premium/arrow1_l.png.aspx) 5px 16px no-repeat;
+}
+
+.AdListItemToggler.open
+{
+	background: #ddd url(http://www.appril.com/getattachment/Cennik/ApprilData---Premium/arrow1_d.png.aspx) 5px 16px no-repeat;
+}
+
+.AdListItemToggler.open:hover
+{
+	background: #ddd url(http://www.appril.com/getattachment/Cennik/ApprilData---Premium/arrow1_d.png.aspx) 5px 16px no-repeat;
+}
+
+.AdListItemProm
+{
+	width: 440px;
+	height: 35px;
+	font-weight: bold;
+	font-size: 130%;
+	line-height: 35px;
+	text-indent: 30px;
+	display: inline-block;
+}
+
+.AdListItemTick
+{
+	width: 275px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	float: right;
+	font-weight: normal;
+	font-size: 130%;
+	display: inline-block;
+}
+
+.Yes
+{
+	background: url(http://www.appril.com/getattachment/Cennik/Firemny-profil---Premium/ticker_yes.png.aspx) center center no-repeat;
+}
+
+.No
+{
+	background: url(http://www.appril.com/getattachment/Cennik/Firemny-profil---Premium/ticker_no.png.aspx) center center no-repeat;
+}
+
+.AdListItemContent
+{
+	display: none;
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+
+.AdListItemContent li
+{
+	padding: 0;
+	margin: 0;
+}
+
+.AdListItemContent img
+{
+	margin: 0 0 -5px 0;
+}
+
+.AdListItemText
+{
+	width: 325px;
+	padding: 10px;
+	opacity: 0.75;
+	position: absolute;
+	right: 5px;
+	top: 0px;
+	z-index: 996;
+	text-align: justify;
+	font-size: 115%;
+}
+
+.AdListEndOne
+{
+	width: auto;
+	height: auto;
+	padding-top: 95px;
+	font-weight: bold;
+	font-size: 130%;
+	line-height: 35px;
+	text-indent: 10px;
+	display: inline-block;
+}
+
+.AdListEndTwo,
+.AdListEndThree
+{
+	width: 287px;
+	height: 185px;
+	float: right;
+	font-weight: normal;
+	font-size: 130%;
+	text-align: center;
+	padding: 10px 0;
+	display: inline-block;
+}
+
+.AdButton
+{
+	margin: 0px auto;
+}
+
+
+/*#Appril Register Wizard#*/
+
+#ApprilRegWizOverlay {
+display: block;
+background: #ccc;
+width: 100%;
+height: 100%;
+filter: alpha(opacity=75);
+-moz-opacity: 0.75;
+-khtml-opacity: 0.75;
+opacity: 0.75;
+position: fixed;
+left: 0;
+top: 0;
+z-index: 1000;
+}
+
+.AddCompWiz {
+/*
+display: none !important;
+
+display: none;
+*/
+width: 390px !important;
+padding: 10px 0 0 0;
+/*
+position: absolute;
+left: 0;
+top: 0;
+*/
+}
+
+.EditingFormLabel {
+padding-left: 0px !important;
+}
+
+.AddCompWiz td{
+border: 0;
+}
+
+.AddWiz {
+margin-top: -15px;
+}
+
+.ApprilRegWizObjContainer input.DropDownField,
+.ApprilRegWizCompContainer input.DropDownField,
+.ApprilRegWizPrivContainer select.DropDownField,
+.AddCompWiz select.DropDownField {
+width: 285px !important;
+overflow: hidden
+}
+
+.ApprilRegWizObjContainer input.TextBoxField,
+.ApprilRegWizObjContainer textarea.TextAreaField,
+.ApprilRegWizCompContainer input.TextBoxField,
+.ApprilRegWizPrivContainer textarea.TextAreaField,
+.ApprilRegWizPrivContainer input.TextBoxField,
+.AddCompWiz textarea.TextAreaField,
+.AddCompWiz input.TextBoxField {
+width: 280px !important;
+overflow: hidden
+}
+
+.AddCompWiz.EditingFormControlNestedControl {
+width: 390px !important;
+}
+
+.ApprilRegWizProfContainer {
+position: relative;
+margin-bottom: -10px
+}
+
+.ApprilRegWizObjContainer {
+height: 1500px;
+background: url("http://www.appril.com/getattachment/Special/RegisterWizard/Pridat-referenciu/reference_adapted_2.png.aspx") no-repeat 0 0;
+}
+
+.ApprilRegWizProfContainer {
+height: 800px;
+background: url("http://www.appril.com/getattachment/Special/RegisterWizard/OsobnyProfil--1---1-/profile.png.aspx") no-repeat 0 0;
+}
+
+/*#Appril Register AddCompany Wizard Overlay#*/
+.ApprilRegWizCompContainer {
+position:relative;
+height: 1200px;
+background: url("http://www.appril.com/getattachment/Special/RegisterWizard/firemnyprofil--2-/company.png.aspx") no-repeat 0 0;
+margin-bottom: -10px;
+}
+/*
+.ApprilRegWizCompContainer.Open {
+height: 1700px;
+background: url("http://www.appril.com/getattachment/Special/RegisterWizard/firemnyprofil--2-/company_adapted.png.aspx") no-repeat 0 0;
+}
+*/
+/*
+.ApprilRegWizCompContainerOverlay {
+position: fixed;
+width: 100%;
+height: 100%;
+background: #fff;
+filter: alpha(opacity=90);
+-moz-opacity: 0.90;
+-khtml-opacity: 0.90;
+opacity: 0.90;
+left: 0;
+top: 0;
+z-index: 10001;
+overflow: visible;
+display: none;
+}
+
+.ApprilRegWizCompContainerOverlay.Open {
+display: visible !important:
+}
+*/
+.ApprilRegWizCompContainer .TextAreaField {
+width: 280px !important;
+}
+.ApprilRegWizCompContainer .DropDownField {
+width: 285px !important;
+}
+
+.ApprilRegWizCompContainer .AddCompWiz a.AddCompWizOpener {
+font-size: 0 !important;
+background: url("http://www.appril.com/getattachment/Firmy/Pridat-referenciu/butt_121014_16.png.aspx") no-repeat 0 0;
+display: block;
+width: 100px;
+height: 50px;
+border: 0;
+padding: 0;
+zoom: 1;
+left: 100%;
+top: 100px;
+z-index: 10002;
+position: absolute;
+margin: 0 0 0 -100px;
+filter: alpha(opacity=100);
+-moz-opacity: 1.0;
+-khtml-opacity: 1.0;
+opacity: 1.0;
+}
+
+.ApprilRegWizCompContainer  .RegCompFormBox {
+position: absolute;
+width: 550px !important;
+left: 50%;
+top: 100px;
+margin-left: -275px;
+margin-bottom: 150px !important;
+z-index: 10002;
+background: #eee;
+border: 1px solid #ccc;
+padding: 15px 5px 0 5px;
+}
+
+.ApprilRegWizCompContainer  .RegCompFormBox  h2 {
+margin-top: 0 !important;
+}
+
+.ApprilRegWizCompContainer .AddCompWiz input.DropDownField {
+width: 410px !important;
+overflow: hidden
+}
+
+.ApprilRegWizCompContainer .AddCompWiz input.TextBoxField,
+.ApprilRegWizCompContainer .AddCompWiz textarea.TextAreaField {
+width: 405px !important;
+overflow: hidden
+}
+
+.ApprilRegWizCollContainer {
+height: 750px;
+background: url("http://www.appril.com/getattachment/Special/RegisterWizard/Kolegovia/colleagues.png.aspx") no-repeat 0 0;
+}
+
+.ApprilRegWizPrivContainer {
+height: 2800px;
+vertical-align: top;
+background: url("http://www.appril.com/getattachment/Special/RegisterWizard/Nastavenie-sukromia/privacy_adapted.png.aspx") no-repeat 0 0;
+}
+
+.ApprilRegWizPrivContainer td {
+vertical-align: top !important;
+}
+
+.MARegForm input.RegisterButton {
+font-size: 0 !important;
+background: url("http://www.appril.com/getattachment/Special/RegisterWizard/OsobnyProfil--1---1-/butt_121014_14.png.aspx") no-repeat 0 0;
+width: 100px;
+height: 50px;
+border: 0;
+padding: 0;
+margin: 10px 10px 0 0;
+filter: alpha(opacity=100);
+-moz-opacity: 1.00;
+-khtml-opacity: 1.00;
+opacity: 1.00;
+}
+
+.ApprilRegWizCompSelect,
+.ApprilRegWizCompSkip {
+width: auto !important;
+}
+
+.ApprilRegWizCompSelect input.FormButton {
+font-size: 0 !important;
+background: url("http://www.appril.com/getattachment/Special/RegisterWizard/firemnyprofil--2-/butt_121014_11.png.aspx") no-repeat 0 0;
+width: 100px;
+height: 50px;
+border: 0;
+padding: 0;
+margin: 10px 0 0 0;
+filter: alpha(opacity=100);
+-moz-opacity: 1.00;
+-khtml-opacity: 1.00;
+opacity: 1.00;
+}
+
+.ApprilRegWizCompContainer .SearchDialog input.ContentButton {
+font-size: 0 !important;
+background: url("http://www.appril.com/getattachment/Special/RegisterWizard/firemnyprofil--2-/butt_121014_13.png.aspx") no-repeat 0 0;
+width: 125px;
+height: 50px;
+position: absolute;
+left: 210px;
+/*left: 0px;*/
+top: 110px;
+border: 0;
+padding: 0;
+margin: 0;
+filter: alpha(opacity=100);
+-moz-opacity: 1.00;
+-khtml-opacity: 1.00;
+opacity: 1.00;
+}
+
+.ApprilRegWizCompAdd input.FormButton{
+font-size: 0 !important;
+background: url("http://www.appril.com/getattachment/Special/RegisterWizard/firemnyprofil--2-/butt_121014_10.png.aspx") no-repeat 0 0;
+width: 100px;
+height: 50px;
+border: 0;
+padding: 0;
+margin: 10px 0 0 0;
+filter: alpha(opacity=100);
+-moz-opacity: 1.00;
+-khtml-opacity: 1.00;
+opacity: 1.00;
+}
+
+.ApprilRegWizCompSkip input{
+font-size: 0 !important;
+background: url("http://www.appril.com/getattachment/Special/RegisterWizard/firemnyprofil--2-/butt_121014_01.png.aspx") no-repeat 0 0;
+width: 200px;
+height: 50px;
+border: 0;
+padding: 0;
+margin: 10px 10px 0 0;
+filter: alpha(opacity=50);
+-moz-opacity: 0.50;
+-khtml-opacity: 0.50;
+opacity: 0.50;
+}
+
+.ApprilRegWizCompSkip input:hover {
+font-size: 0 !important;
+width: 200px;
+height: 50px;
+border: 0;
+padding: 0;
+margin: 10px 10px 0 0;
+filter: alpha(opacity=100);
+-moz-opacity: 1.00;
+-khtml-opacity: 1.00;
+opacity: 1.00;
+}
+
+/*
+.ApprilRegWizPrivContainer input.SubmitButton {
+font-size: 0 !important;
+background: url("http://www.appril.com/getattachment/Special/RegisterWizard/OsobnyProfil--1---1-/butt_121014_14.png.aspx") no-repeat 0 0;
+width: 100px;
+height: 50px;
+border: 0;
+padding: 0;
+margin: 0;
+position: absolute;
+left: 215px;
+bottom: -65px;
+filter: alpha(opacity=100);
+-moz-opacity: 1.00;
+-khtml-opacity: 1.00;
+opacity: 1.00;
+}
+
+.ApprilRegWizPrivContainer input.LongSubmitButton {
+font-size: 0 !important;
+background: url("http://www.appril.com/getattachment/Special/RegisterWizard/OsobnyProfil--1---1-/butt_121014_14.png.aspx") no-repeat 0 0;
+width: 100px;
+height: 50px;
+border: 0;
+padding: 0;
+margin: 0;
+position: absolute;
+left: 215px;
+bottom: -65px;
+filter: alpha(opacity=100);
+-moz-opacity: 1.00;
+-khtml-opacity: 1.00;
+opacity: 1.00;
+}
+*/
+
+#plc_lt_zoneContent_PagePlaceholder_PagePlaceholder_lt_zoneLeft_MyAccount_pnlBody,
+#plc_lt_zoneContent_PagePlaceholder_PagePlaceholder_lt_zoneLeft_MyAccount_pnlTabs {
+border: 0;
+padding: 0;
+}
+
+
+#plc_lt_zoneContent_PagePlaceholder_PagePlaceholder_lt_zoneLeft_usercontrol_userControlElem_btnSend {
+/*
+font-size: 0 !important;
+background: url("http://www.appril.com/getattachment/Special/RegisterWizard/OsobnyProfil--1---1-/butt_121014_14.png.aspx") no-repeat 0 0;
+width: 100px;
+height: 50px;
+border: 0;
+padding: 0;
+margin: 0;
+*/
+position: absolute;
+left: 0;
+bottom: 35px;
+filter: alpha(opacity=100);
+-moz-opacity: 1.00;
+-khtml-opacity: 1.00;
+opacity: 1.00;
+}
+
+
+.ApprilRegText img {
+margin-left: 10px;
+}
+
+.ApprilRegWizCompContainer .SearchDialog {
+margin: 0 0 75px 0;
+}
+
+.ApprilRegWizCompContainer .SearchDialog,
+.ApprilRegWizCompContainer .SearchResults {
+width: 421px !important;
+}
+
+.ApprilRegWizCompContainer .SearchResultsDesc {
+display: none !important;
+}
+
+
+.ApprilRegWizPrivContainer .ApprilRegCompButtSkip {
+position: absolute;
+left: 0;
+bottom: 0;
+border: 0;
+padding: 0;
+margin: 10px 0 0 0;
+filter: alpha(opacity=100);
+-moz-opacity: 1.00;
+-khtml-opacity: 1.00;
+opacity: 1.00;
+
+
+/*
+display: none;
+*/
+}
+
+.ApprilRegWizCompContainer .ApprilRegCompButtSkip {
+position: absolute;
+left: 0;
+top: 110px;
+height: 47px;
+border: 0;
+padding: 0;
+margin: 0 0 3px 0;
+filter: alpha(opacity=50);
+-moz-opacity: 0.50;
+-khtml-opacity: 0.50;
+opacity: 0.50;
+}
+
+.ApprilRegWizCompContainer.NoJS .ApprilRegCompButtSkip {
+position: absolute;
+left: 115px;
+top: 514px;
+height: 47px;
+border: 0;
+padding: 0;
+margin: 0 0 3px 0;
+filter: alpha(opacity=50);
+-moz-opacity: 0.50;
+-khtml-opacity: 0.50;
+opacity: 0.50;
+}
+
+.ApprilRegWizCompContainer .ApprilRegCompButtSkip:hover {
+position: absolute;
+height: 47px;
+border: 0;
+padding: 0;
+margin: 0 0 3px 0;
+filter: alpha(opacity=100);
+-moz-opacity: 1.00;
+-khtml-opacity: 1.00;
+opacity: 1.00;
+}
+
+.ApprilRegWizCollContainer .ApprilRegCompButtSkip {
+position: absolute;
+left: 0;
+bottom: -20px;
+height: 47px;
+border: 0;
+padding: 0;
+margin: 0 0 3px 0;
+filter: alpha(opacity=50);
+-moz-opacity: 0.50;
+-khtml-opacity: 0.50;
+opacity: 0.50;
+}
+
+.ApprilRegWizCollContainer .ApprilRegCompButtSkip:hover {
+position: absolute;
+left: 0;
+bottom: -20px;
+height: 47px;
+border: 0;
+padding: 0;
+margin: 0 0 3px 0;
+filter: alpha(opacity=100);
+-moz-opacity: 1.00;
+-khtml-opacity: 1.00;
+opacity: 1.00;
+}
+
+.ApprilRegWizCollContainer .ApprilRegCompButtNext {
+font-size: 0 !important;
+width: 100px;
+height: 47px;
+border: 0;
+padding: 0;
+margin: 0 0 3px 0;
+position: absolute;
+left: 210px;
+bottom: -20px;
+filter: alpha(opacity=100);
+-moz-opacity: 1.00;
+-khtml-opacity: 1.00;
+opacity: 1.00;
+}
+
+.ApprilRegWizPrivContainer .ApprilRegCompButtNext {
+position: absolute;
+left: 210px;
+bottom: -55px;
+height: 47px;
+border: 0;
+padding: 0;
+margin: 0 0 3px 0;
+filter: alpha(opacity=100);
+-moz-opacity: 1.00;
+-khtml-opacity: 1.00;
+opacity: 1.00;
+}
+
+.ApprilRegWizPrivContainer .ApprilRegCompButtSkip {
+position: absolute;
+left: ;
+bottom: -55px;
+height: 47px;
+border: 0;
+padding: 0;
+margin: 0 0 3px 0;
+filter: alpha(opacity=50);
+-moz-opacity: 0.50;
+-khtml-opacity: 0.50;
+opacity: 0.50;
+}
+
+.ApprilRegWizPrivContainer .ApprilRegCompButtSkip:hover {
+position: absolute;
+left: 0;
+bottom: -55px;
+height: 47px;
+border: 0;
+padding: 0;
+margin: 0 0 3px 0;
+filter: alpha(opacity=100);
+-moz-opacity: 1.00;
+-khtml-opacity: 1.00;
+opacity: 1.00;
+}
+
+.ApprilRegWizPrivContainer .TabsContent {
+min-height: 50px !important;
+}
+
+.ApprilRegText .CompAddImg {
+display: block;
+position: relative;
+width: 330px;
+height: 220px;
+margin: 0;
+}
+
+.ApprilRegText .CompAddImg img {
+position: absolute !important;
+right: 0 !important;
+top: 35px !important;
+width: 330px;
+height: auto;
+border: 1px solid #ccc;
+margin: 0 0 5px 0;
+transition: width .25s ease, height .25s ease, top .25s ease, right .25s ease;
+-moz-transition: width .25s ease, height .25s ease, top .25s ease, right .25s ease;
+-webkit-transition: width .25s ease, height .25s ease, top .25s ease, right .25s ease;
+-o-transition: width .25s ease, height .25s ease, top .25s ease, right .25s ease;
+}
+
+.ApprilRegText .CompAddImg:hover img {
+position: absolute !important;
+z-index: 999 !important;
+right: 50px !important;
+top: -73px !important;
+width: 750px !important;
+height: auto;
+border: 1px solid #ccc;
+margin: 0 !important;
+-webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 5px;
+box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 5px;
+}
+
+/*#Appril AddReference Wizard#*/
+
+.AddObjFree {
+margin: 15px 0 0 0;
+display: none
+}
+
+.ApprilObjText .ObjAddImg {
+display: block;
+position: relative;
+width: 419px;
+height: 270px;
+margin: 0;
+}
+
+.ApprilObjText .ObjAddImg img {
+position: absolute !important;
+right: 0 !important;
+top: 35px !important;
+width: 419px;
+height: auto;
+border: 1px solid #ccc;
+margin: 0 0 5px 0;
+transition: width .25s ease, height .25s ease, top .25s ease, right .25s ease;
+-moz-transition: width .25s ease, height .25s ease, top .25s ease, right .25s ease;
+-webkit-transition: width .25s ease, height .25s ease, top .25s ease, right .25s ease;
+-o-transition: width .25s ease, height .25s ease, top .25s ease, right .25s ease;
+}
+
+.ApprilObjText .ObjAddImg:hover img {
+position: absolute !important;
+z-index: 999 !important;
+right: 50px !important;
+top: -73px !important;
+width: 750px !important;
+height: auto;
+border: 1px solid #ccc;
+margin: 0 !important;
+-webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 5px;
+box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 5px;
+}
+
+.ApprilRefObjContainer .SearchDialog input.ContentButton,
+.ApprilRegWizObjContainer .SearchDialog input.ContentButton {
+font-size: 0 !important;
+background: url("http://www.appril.com/getattachment/Firmy/Pridat-referenciu/butt_121014_13.png.aspx") no-repeat 0 0;
+width: 200px;
+height: 50px;
+border: 0;
+padding: 0;
+zoom: 1;
+position: relative;
+margin: 10px 0 0 -123px;
+filter: alpha(opacity=100);
+-moz-opacity: 1.0;
+-khtml-opacity: 1.0;
+opacity: 1.0;
+}
+
+.ApprilRefObjContainer #ApprilRefObjForm input.FormButton,
+.ApprilRegWizObjContainer #ApprilRefObjForm input.FormButton {
+font-size: 0 !important;
+background: url("http://www.appril.com/getattachment/Firmy/Pridat-referenciu/butt_121014_11.png.aspx") no-repeat 0 0;
+width: 100px;
+height: 50px;
+border: 0;
+padding: 0;
+zoom: 1;
+position: relative;
+margin: 10px 0 0 -131px;
+filter: alpha(opacity=100);
+-moz-opacity: 1.0;
+-khtml-opacity: 1.0;
+opacity: 1.0;
+}
+
+.ApprilRefObjContainer #ApprilRefObjForm input.TextBoxField,
+.ApprilRegWizObjContainer #ApprilRefObjForm input.TextBoxField {
+width: 300px !important;
+}
+
+.ApprilRefObjContainer .SearchDialog select.DropDownField,
+.ApprilRegWizObjContainer .SearchDialog select.DropDownField {
+width: 325px !important;
+overflow: hidden
+}
+
+.ApprilRefObjContainer .SearchDialog input.TextBoxField,
+.ApprilRegWizObjContainer .SearchDialog input.TextBoxField {
+width: 320px !important;
+overflow: hidden
+}
+
+.ApprilRefObjContainer {
+position: relative;
+padding: 0 0 50px 0;
+}
+
+.ApprilRegWizObjContainer {
+position: relative;
+padding: 0;
+margin: 0 0 -10px 0;
+}
+
+.ApprilRefObjContainerOverlay {
+position: fixed;
+width: 100%;
+height: 100%;
+background: #fff;
+filter: alpha(opacity=90);
+-moz-opacity: 0.90;
+-khtml-opacity: 0.90;
+opacity: 0.90;
+left: 0;
+top: 0;
+z-index: 10001;
+overflow: visible;
+/*display: none;*/
+}
+
+.ApprilRefObjContainerOverlay.Open {
+display: visible !important:
+}
+
+.ApprilRefObjContainer .AddObjFree a.AddObjFreeOpener,
+.ApprilRegWizObjContainer .AddObjFree a.AddObjFreeOpener {
+font-size: 0 !important;
+background: url("http://www.appril.com/getattachment/Firmy/Pridat-referenciu/butt_121014_16.png.aspx") no-repeat 0 0;
+display: block;
+width: 100px;
+height: 50px;
+border: 0;
+padding: 0;
+zoom: 1;
+left: 100%;
+top: -100px;
+z-index: 10002;
+position: absolute;
+margin: 0 0 0 -100px;
+filter: alpha(opacity=100);
+-moz-opacity: 1.0;
+-khtml-opacity: 1.0;
+opacity: 1.0;
+}
+
+.AddObjFree  .blackBox {
+position: absolute;
+width: 460px !important;
+left: 50%;
+top: -100px;
+margin-left: -230px;
+margin-bottom: 150px !important;
+z-index: 10002;
+}
+
+/*#Appril Avatar#*/
+
+.DisplayProfile .label {
+width: 100px;
+padding-bottom: 10px;
+}
+
+.DisplayProfile .avatar {
+width: 150px;
+height: 180px !important;
+overflow: hidden;
+padding: 0 0 20px 0;
+}
+
+.DisplayProfile .avatar div {
+width: 150px;
+height: 180px !important;
+overflow: hidden;
+}
+
+.DisplayProfile .avatar img {
+width: 150px;
+}
+
+.DisplayProfile .text {
+padding: 0 0 20px 0;
+}
+/*
+.DisplayProfile, .ProfileSummary {
+float: left;
+}
+*/
+.zoneLeftContent .btnGreenBox {
+display: block;
+float: left;
+}
+
+.zoneLeftContent .btnOrangeBox {
+display: block;
+float: right;
+}
+
+.zoneLeftContent .btnSocial {
+display: block;
+position: absolute;
+width: 300px;
+left: 170px;
+top: 50px;
+}
+
+.zoneLeftContent .UserProfileTitleAbs {
+display: block;
+position: absolute;
+left: 170px;
+top: 0px;
+}
+
+.spanner {
+height: 80px;
+}
+
+/*#Appril Edit Profile#*/
+
+.ListBoxField {
+width: 506px !important;
+height: 100px;
+}
+
+/*#Appril Login#*/
+
+.zoneLogin
+{
+	width: 350px;
+	float: right;
+}
+.zoneLogin table
+{
+	margin: 6px 0 0 0;
+	float: right;
+}
+.zoneLogin .LogonField
+{
+	width: 100px !important;
+	margin: 0;
+	padding: 2px 8px 0 6px;
+	height: 28px;
+	border: 1px solid #ccc;
+	border-bottom-color: #999;
+	vertical-align: top;
+	font-size: 18px;
+	line-height: 26px;
+	font-family: Comfortaa,"Century Gothic",verdana,arial,helvetica,sans-serif;
+}
+#plc_lt_zoneLogin_logonminiform_loginElem_btnLogon
+{
+	cursor: pointer;
+	font-family: Comfortaa,"Century Gothic",verdana,arial,helvetica,sans-serif;
+	margin: 0;
+	vertical-align: top;
+	position: relative;
+	background: #eee url(../App_Themes/Appril/Images/topmenu.gif) repeat-x left -102px;
+	height: 32px;
+	font-size: 15px;
+	width: 70px;
+	border-top: solid 1px #ccc;
+	border-left: solid 1px #999;
+	border-right: solid 1px #999;
+	border-bottom: solid 1px #999;
+	padding-bottom: 0px;
+	display: inline-block;
+}
+#plc_lt_zoneLogin_logonminiform_loginElem_btnLogon:active
+{
+	background: #ccc none repeat scroll 0 0;
+}

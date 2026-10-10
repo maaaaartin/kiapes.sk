@@ -1,0 +1,436 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" /> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Mockup</title>
+	<!--[if lte IE 6]>
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="http://universal-ie6-css.googlecode.com/files/ie6.0.3.css" />
+	<![endif]-->
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" href="css/map_ie8.css" type="text/css" media="screen" charset="utf-8" />
+	<![endif]-->
+	<!--[if gte IE 9]>
+		<link rel="stylesheet" href="css/map_ie9.css" type="text/css" media="screen" charset="utf-8" />
+	<![endif]-->
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600&amp;subset=latin-ext" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/map.css" type="text/css" media="screen" charset="utf-8" />
+	<style>
+		@-moz-document url-prefix() {
+			.gm-style-item-drop {
+				padding-top: 3px !important;
+			}
+		}
+	</style>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script id="jqueryui" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js" defer async></script>
+	<script type="text/javascript" src="js/jquery/jquery.nicescroll.js"></script>
+	<script type="text/javascript" src="js/jquery/jquery.scrollto.js"></script>
+	<script type="text/javascript" src="js/jquery/jquery.trunk8.js"></script>
+	<script type="text/javascript" src="js/jquery/jquery.cookie.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/modernizr.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/xml.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/fnc.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/flt.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/lst.js"></script>
+	<script type="text/javascript" src="http://www.google.com/jsapi?key=AIzaSyAMydFGYRDQ7Wb-HfYAQTzUrjh29IT8aTg"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script type="text/javascript">
+		jQuery(window).load(function() {
+			//"use strict"
+			jQuery('#map_list_scroll').niceScroll({cursorcolor:'rgba(225,225,225,1.0)',cursorwidth:'10px',cursorborder:'0px',cursorborderradius:'0px'});
+			jQuery('#map_event_scroll').niceScroll({cursorcolor:'rgba(245,245,245,1.0)',cursorwidth:'10px',cursorborder:'0px',cursorborderradius:'0px'});
+		});
+		//<![CDATA[
+		jQuery.noConflict();
+		var xmlfeed = 'http://martin.kiapes.sk/DEV/appril.com/Files/html/maps/v05/dat/po_data.xml';
+		var markers = [];
+		var map_icons = [];
+		var map = null;
+		var linkid;
+		var state_val;
+		var state_name;
+		var invest_txt;
+		var street_txt;
+		var zip_txt;
+		var city_txt;
+		var county_txt;
+		var infowindow = new google.maps.InfoWindow({});
+		map_icons = new google.maps.MarkerImage('img/marker/marker_small_A.png',
+				new google.maps.Size(15.0, 23.0),
+				new google.maps.Point(0.0, 0.0),
+				new google.maps.Point(7.0, 11.0));
+		var icon_image = new google.maps.MarkerImage('img/marker/marker_small_A.png',
+				new google.maps.Size(15.0, 23.0),
+				new google.maps.Point(0.0, 0.0),
+				new google.maps.Point(7.0, 11.0));
+		function getMarkerImage(icon_color) {
+			//"use strict";
+			if ((typeof(icon_color) === 'undefined') || (icon_color === null)) {
+				icon_color = 'A';
+			}
+			if (!map_icons[icon_color]) {
+				map_icons[icon_color] = new google.maps.MarkerImage('img/marker/marker_small_' + icon_color + '.png',
+						new google.maps.Size(15.0, 23.0),
+						new google.maps.Point(0.0, 0.0),
+						new google.maps.Point(7.0, 11.0));
+			}
+			return map_icons[icon_color];
+		}
+		function state2color(state_val) {
+			//"use strict";
+			var color = 'A';
+			switch (state_val) {
+			case 'B':
+				color = 'B';
+				break;
+			case 'C':
+				color = 'C';
+				break;
+			case 'D':
+				color = 'D';
+				break;
+			case 'E':
+				color = 'E';
+				break;
+			case 'F':
+				color = 'F';
+				break;
+			default:
+				color = 'A';
+				break;
+			}
+			return color;
+		}
+		map_icons['A'] = getMarkerImage(state2color('A'));
+		map_icons['B'] = getMarkerImage(state2color('B'));
+		map_icons['C'] = getMarkerImage(state2color('C'));
+		map_icons['D'] = getMarkerImage(state2color('D'));
+		map_icons['E'] = getMarkerImage(state2color('E'));
+		map_icons['F'] = getMarkerImage(state2color('F'));
+		function initialize() {
+			//"use strict"
+			var mapOptions = {
+				center : new google.maps.LatLng(48.669026,19.699024),
+				zoom : 8,
+				mapTypeControl : true,
+				mapTypeControlOptions : {
+					style : google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+					position : google.maps.ControlPosition.TOP_RIGHT
+				},
+				panControlOptions : {
+					position : google.maps.ControlPosition.TOP_LEFT
+				},
+				zoomControlOptions : {
+					position : google.maps.ControlPosition.TOP_LEFT
+				},
+				mapTypeId : google.maps.MapTypeId.HYBRID
+			};
+			map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+			var latlngbounds = new google.maps.LatLngBounds();
+			google.maps.event.addListener(map, 'click', function () {
+				infowindow.close();
+				jQuery('.gm-style-item-drop').hide();
+			});
+			google.maps.event.addListener(infowindow, 'closeclick', function () {
+				infowindow.close();
+				jQuery('.gm-style-item-drop').hide();
+			});
+			google.maps.event.addListener(map, 'bounds_changed', function () {
+				google.maps.event.trigger(map, 'resize');
+			});
+			downloadUrl(xmlfeed, function (data) {
+				var markers = data.documentElement.getElementsByTagName('item');
+				for (var i = 0; i < markers.length; i++) {
+					var lat = parseFloat(markers[i].getAttribute('lat')).toFixed(6);
+					//parseFloat(Math.round(lat * 1000000) / 1000000).toFixed(6);
+					var lng = parseFloat(markers[i].getAttribute('lng')).toFixed(6);
+					//parseFloat(Math.round(lng * 1000000) / 1000000).toFixed(6);
+					var latlng = new google.maps.LatLng(lat, lng);
+					var name = markers[i].getAttribute('name');
+					var text = markers[i].getAttribute('text');
+					var street = markers[i].getAttribute('street');
+					text.street = street.replace(/^ /, '');
+					var zip = markers[i].getAttribute('zip');
+					var city = markers[i].getAttribute('city');
+					var district = markers[i].getAttribute('district');
+					var county = markers[i].getAttribute('county');
+					var country = markers[i].getAttribute('country');
+					if (street) {
+						var zip_txt = ',&nbsp;' + zip;
+					} else {
+						var zip_txt = zip;
+					};
+					if ((zip) || (street)) {
+						var city_txt = '&nbsp;&nbsp;' + city;
+					} else {
+						var city_txt = city;
+					};
+					if (district) {
+						var county_txt = ',&nbsp;' + county;
+					} else {
+						var county_txt = county;
+					};
+					var shortaddress = street + zip_txt + city_txt;
+					var fulladdress = street + zip_txt + city_txt + '</br>' + district + county_txt;
+					var category_id = markers[i].getAttribute('category_id');
+					var category = markers[i].getAttribute('category');
+					var type = markers[i].getAttribute('type');
+					var type_id = markers[i].getAttribute('type_id');
+					var form = markers[i].getAttribute('form');
+					var form_id = markers[i].getAttribute('form_id');
+					var state = markers[i].getAttribute('state');
+					var state_id = markers[i].getAttribute('state_id');
+					var invest = markers[i].getAttribute('invest');
+					var invest = parseFloat(invest.replace(',', '.'));
+					if (invest) {
+						var invest_txt = +invest + '&nbsp;€';
+					} else {
+						var invest_txt = '-';
+					};
+					var date_first = markers[i].getAttribute('date_first');
+					var date_last = markers[i].getAttribute('date_last');
+					var thumb_img = markers[i].getAttribute('thumb_img');
+					var link = markers[i].getAttribute('link');
+					if (state_id == '19') {
+						var state_val = 'A';
+						var state_name = 'Zámer';
+					};
+					if (state_id == '2') {
+						var state_val = 'B';
+						var state_name = 'V príprave';
+					};
+					if (state_id == '9') {
+						var state_val = 'C';
+						var state_name = 'Vo výstavbe';
+					};
+					if (state_id == '11') {
+						var state_val = 'D';
+						var state_name = 'Zrušené';
+					};
+					if (state_id == '13') {
+						var state_val = 'E';
+						var state_name = 'Pozastavené';
+					};
+					if (state_id == '14') {
+						var state_val = 'F';
+						var state_name = 'Realizované';
+					}
+					var marker = createMarker(latlng, name, text, city, shortaddress, fulladdress, category_id, category, type_id, type, form_id, form, state_id, state, state_val, state_name, invest, invest_txt, date_first, date_last, thumb_img, link);
+
+					latlngbounds.extend(latlng);
+				}
+				showItem('A');
+				showItem('B');
+				showItem('C');
+				hideItem('D');
+				hideItem('E');
+				hideItem('F');
+				makeList();
+
+				map.fitBounds(latlngbounds);
+				changeBounds = 
+				google.maps.event.addListenerOnce(map, 'bounds_changed', function(event) {
+					if (this.getZoom()){
+						this.setZoom(13);
+					}
+				});
+				setTimeout(function(){google.maps.event.removeListener(changeBounds)}, 2000);
+				/*google.maps.event.addDomListener(window, 'resize', function () {
+					map.fitBounds(latlngbounds);
+					if (this.getZoom()){
+						this.setZoom(13);
+					}
+				});*/
+
+			});
+		}
+		function drop() {
+			for (var i = 0; i < markers.length; i++) {
+				setTimeout(function () {
+					createMarker();
+				}, i * 500);
+			}
+		}
+		function createMarker(latlng, name, text, city, shortaddress, fulladdress, category_id, category, type_id, type, form_id, form, state_id, state, state_val, state_name, invest, invest_txt, date_first, date_last, thumb_img, link) {
+			//"use strict"
+			var linkid = 'link' + (markers.length);
+			var scrollid = '#' + (linkid);
+			if (text) {
+				var description = '<div class="infowin_description">' + text + '</div>';
+			} else {
+				var description = '<div class="infowin_description empty">' + text + '</div>';
+			}
+			var content = '<div class="infowin_frame state_' + state_val + '">' +
+				'<div class="map_item_img"></div>' +
+				'<div class="infowin_detail">' +
+				'<div class="infowin_title bold">' + name + '</div></br>' +
+				'<span class="autospan">' + fulladdress + '</span></br>' +
+				'<table>' +
+				'<tr><td><span class="fixedspan">Kategória:&nbsp;</span></td><td>' + category + '</td></tr>' +
+				'<tr><td><span class="fixedspan">Trieda:&nbsp;</span></td><td>' + form + '</td></tr>' +
+				'<tr><td><span class="fixedspan">Stav:&nbsp;</span></td><td>' + state_name + '</td></tr>' +
+				'<tr><td><span class="fixedspan">Objem investície:&nbsp;</span></td><td>' + invest_txt + '</td></tr>' +
+				'</table>' +
+				'</div>' +
+				'<div class="clear">' +
+				'</div>' +
+				description +
+				'<div class="map_item_date bold txt_' + state_val + '">' + date_last +
+				'<a href="' + link + '" target="_blank" class="map_item_link">Zobraziť detail stavby</a></div>' +
+				'</div>';
+			var marker = new google.maps.Marker({
+					position : latlng,
+					icon : map_icons[state_val],
+					map : map,
+					draggable : false,
+					animation : google.maps.Animation.DROP,
+					title : name,
+					//zIndex: Math.round(latlng.lat()*-100000)<<5
+				});
+			marker.mycategory = category;
+			marker.myname = name;
+			marker.mytext = text;
+			marker.mystate_val = state_val;
+			marker.mystate_name = state_name;
+			marker.mycity = city;
+			marker.mydate_last = date_last;
+			marker.mylinkid = linkid;
+			markers.push(marker);
+			google.maps.event.addListener(marker, 'click', function () {
+				infowindow.setContent(content);
+				infowindow.open(map, marker);
+				jQuery('.gm-style-item-drop').hide();
+				jQuery('#' + marker.mylinkid).addClass('active');
+				jQuery('#map_list_items li').not('#' + marker.mylinkid).removeClass('active');
+				jQuery('#map_list_scroll').scrollTo(scrollid);
+				jQuery('.infowin_frame').parents().eq(1).css('max-height', '410px');
+				jQuery('.infowin_frame').parents().eq(1).css('height', 'auto');
+				jQuery('.infowin_frame').parents().eq(1).css('overflow', 'visible');
+				jQuery('.infowin_frame').parents().eq(0).css('max-height', '410px');
+				jQuery('.infowin_frame').parents().eq(0).css('height', 'auto');
+				jQuery('.infowin_frame').parents().eq(0).css('overflow', 'visible');
+				linkid = marker.mylinkid;
+			});
+			google.maps.event.addListener(infowindow, 'domready', function () {
+				/* Trunk8 */
+				jQuery('.infowin_description').trunk8({
+					lines : 4
+				});
+				jQuery('.infowin_title').trunk8({
+					lines: 2
+				});
+			});
+		}
+		function myClick(i) {
+			//"use strict"
+			google.maps.event.trigger(markers[i], 'click');
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+		//]]>
+	</script>
+</head>
+<!--<body class="center" onload="initialize()">-->
+<body class="center">
+	<div class="center" id="main_area">
+		<div id="map_area">
+			<div id="map_state" style="width: auto; height: 13px;">
+				<div id="map_filter_state" style="opacity: 0.7; background-color: rgb(245, 245, 245); padding: 0 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap;"><a style="color: rgb(68, 68, 68); text-decoration: none; cursor: pointer;"></a></div>
+			</div>
+			<div id="map_filter">
+				<div class="gmnoprint gm-style-mtc drop" style="margin: 5px 5px 5px 0; position: relative; cursor: pointer; text-align: left; width: 110px; float: right;">
+					<div class="gm-style-item item-drop" draggable="false" title="Viac stavieb">Viac<img src="http://maps.gstatic.com/mapfiles/arrow-down.png" draggable="false" style="-webkit-user-select: none; border: 0px; padding: 0px; margin: -2px 0px 0px; position: absolute; right: 6px; top: 50%; width: 7px; height: 4px;"></div>
+					<div class="gm-style-item-drop" style="display: none;">
+						<label for="D_box" id="label_D_box"><div class="gm-style-sub-item" draggable="false" title="Zobraziť zrušené stavby">
+							<span role="checkbox" class="checkbox">
+								<div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none;">
+									<img src="http://maps.gstatic.com/mapfiles/mv/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 68px; height: 67px;">
+								</div>
+							</span>
+							<span class="label" style="vertical-align: middle; cursor: pointer;">Zrušené</span>
+						</div></label>
+						<label for="E_box" id="label_E_box"><div class="gm-style-sub-item" draggable="false" title="Zobraziť pozastavené stavby">
+							<span role="checkbox" class="checkbox">
+								<div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none;">
+									<img src="http://maps.gstatic.com/mapfiles/mv/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 68px; height: 67px;">
+								</div>
+							</span>
+							<span class="label" style="vertical-align: middle; cursor: pointer;">Pozastavené</span>
+						</div></label>
+						<label for="F_box" id="label_F_box"><div class="gm-style-sub-item" draggable="false" title="Zobraziť realizované stavby">
+							<span role="checkbox" class="checkbox">
+								<div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none;">
+									<img src="http://maps.gstatic.com/mapfiles/mv/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; width: 68px; height: 67px;">
+								</div>
+							</span>
+							<span class="label" style="vertical-align: middle; cursor: pointer;">Realizované</span>
+						</div></label>
+					</div>
+				</div>
+				<div class="gmnoprint gm-style-mtc" style="margin: 5px 0; position: relative; cursor: pointer; text-align: left; width: auto; min-width: 77px; float: right;">
+					<label for="C_box" class="filter_label" id="label_C_box" style="vertical-align: middle; cursor: pointer;"><div class="gm-style-item selected" draggable="false" title="Zobraziť stavby vo výstavbe">Vo výstavbe</div></label>
+				</div>
+				<div class="gmnoprint gm-style-mtc" style="margin: 5px 0; position: relative; cursor: pointer; text-align: left; width: auto; min-width: 69px; float: right;">
+					<label for="B_box" class="filter_label" id="label_B_box" style="vertical-align: middle; cursor: pointer;"><div class="gm-style-item selected" draggable="false" title="Zobraziť stavby v príprave">V príprave</div></label>
+				</div>
+				<div class="gmnoprint gm-style-mtc" style="margin: 5px 0; position: relative; cursor: pointer; text-align: left; width: auto; min-width: 54px; float: right;">
+					<label for="A_box" class="filter_label" id="label_A_box" style="vertical-align: middle; cursor: pointer;"><div class="gm-style-item selected" draggable="false" title="Zobraziť stavby v zámere">Zámery</div></label>
+				</div>
+			</div>
+			<div id="map_canvas">
+			</div>
+		</div>
+		<div id="ad_strip1">
+		</div>
+		<div id="data_area">
+			<div class="hidden">
+				<form action="#">
+					<input type="checkbox" id="A_box" onclick="boxClick(this,'A')"/>
+					<input type="checkbox" id="B_box" onclick="boxClick(this,'B')"/>
+					<input type="checkbox" id="C_box" onclick="boxClick(this,'C')"/>
+					<input type="checkbox" id="D_box" onclick="boxClick(this,'D')"/>
+					<input type="checkbox" id="E_box" onclick="boxClick(this,'E')"/>
+					<input type="checkbox" id="F_box" onclick="boxClick(this,'F')"/>
+				</form>
+			</div>
+			<div id="map_list">
+				<div id="map_list_title">
+					<span>Nové stavby</span>
+				</div>
+				<div id="map_list_scroll">
+					<ul id="map_list_items">
+					</ul>
+					<div class="clear">
+					</div>
+				</div>
+			</div>
+			<div id="map_event">
+				<div id="map_event_title">
+					<span>Kalendár udalostí</span>
+				</div>
+				<div id="map_event_scroll">
+					<ul id="map_event_items">
+					</ul>
+					<div class="clear">
+					</div>
+				</div>
+			</div>
+			<div class="clear">
+			</div>
+		</div>
+		<div id="ad_strip2">
+		</div>
+		<div id="ad_strip3">
+		</div>
+
+		<div class="clear">
+		</div>
+	</div>
+	<noscript><p><b>JavaScript must be enabled in order for you to use Google Maps.</b></br>
+	However, it seems JavaScript is either disabled or not supported by your browser. 
+	To view Google Maps, enable JavaScript by changing your browser options, and then 
+	try again.</p>
+	</noscript> 
+</body> 
+</html> 
