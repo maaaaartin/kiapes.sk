@@ -1,0 +1,1 @@
+<?php ob_start();?><h1>Témy</h1><p><a class="button" href="/admin?action=themes&do=create">Pridať tému</a></p><table><thead><tr><th>Názov</th></tr></thead><tbody><?php foreach($items as $t):?><tr><td><?= $e($t["name"]) ?></td></tr><?php endforeach;?></tbody></table><?php $content=ob_get_clean();$title="Témy";require dirname(__DIR__)."/layout.php";

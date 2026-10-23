@@ -1,0 +1,1 @@
+<?php ob_start();?><h1>Náhľad: <?= $title ?></h1><div class="business-card"><?php foreach($blocks as $b): if($b["type"]==="heading"):?><h2><?= $e($b["data"]["text"]??"") ?></h2><?php elseif($b["type"]==="richtext"):?><p><?= nl2br($e($b["data"]["text"]??"")) ?></p><?php endif;endforeach;?></div><?php $content=ob_get_clean();$title="Náhľad";require dirname(__DIR__)."/layout.php";
