@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="author" content="Martin Kiapeš" />
+	<meta name="copyright" content="Martin Kiapeš 2013/2019" />
+	<meta name="robots" content="index, follow" />
+	<meta name="description" content="Eva Kiapešová" />
+	<meta name="keywords" content="Eva Kiapešová" />
+	<title>Eva Kiapešová</title>
+	<link rel="Shortcut Icon" href="" type="image/x-icon" />
+	<link rel="stylesheet" href="" type="text/css" media="print" />
+	<link rel="stylesheet" href="http://kiapes.sk/style/style0.css" type="text/css" media="screen,projection" />
+	<link rel="stylesheet" href="style/style1.css" type="text/css" media="screen,projection" />
+	<link rel="index" title="" href="" />
+	<!--[if lt IE 9 ]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142763-8"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-142763-8');
+	</script>
+</head>
+<body lang="sk-SK" class="home">
+	<div class="content">
+		<div class="div large">
+			<span class="span letters centered" title="Ego sum">
+				<span class="span letter" aria-hidden="true"><firstletter>E</firstletter>va</span>
+				<span class="span letter" aria-hidden="true"><firstletter>K</firstletter>iapešová</span>
+				<span class="hidden" aria-hidden="false">Eva Kiapešová</span>
+			</span>
+			<div class="clear"></div>
+			<ul class="clean centered">
+				<li class="middle" title="Telefón">
+					<span aria-hidden="true">421&nbsp;47&nbsp;43&nbsp;96&nbsp;717</span>
+					<span class="hidden" aria-hidden="false">00421474396717</span>
+				</li>
+				<li class="middle" title="Mobil">
+					<span aria-hidden="true">421&nbsp;908&nbsp;271&nbsp;691</span>
+					<span class="hidden" aria-hidden="false">00421908271691</span>
+				</li>
+				<li class="middle" title="E-mail">
+					<span aria-hidden="true"><a href="mailto:eva@kiapes.sk">eva@kiapes.sk</a></span>
+					<span class="hidden" aria-hidden="false"></span>
+				</li>
+				<li class="middle" title="Web">
+					<span aria-hidden="true"><a href="http://eva.kiapes.sk">eva.kiapes.sk</a></span>
+					<span class="hidden" aria-hidden="false"></span>
+				</li>
+			</ul>
+		</div>
+		<div class="div large sub hidden">
+			<div class="clear"></div>
+			<ul class="clean centered">
+				<li class="middle _hidden" title="Činnosť">
+					<div aria-hidden="false">
+						<span class="_hidden" aria-hidden="false">Ego sum omnium</span>
+						<span class="hidden" aria-hidden="false"></span>
+					</div>
+				</li>
+				<li class="small" title="Rozsah">
+					<div aria-hidden="false">
+						<p>
+							<span class="_hidden" aria-hidden="true">(bscp)</span>
+							<span class="hidden" aria-hidden="false">(beneficiencia, consciencia, sapientia, potentia)</span>
+						</p>
+					</div>
+				</li>
+				<li class="small sub" title="Adresa">
+					<div>
+						<p>
+							<span class="hidden" aria-hidden="true"></span>
+							<span aria-hidden="true">Sadová 5/87,&nbsp;985&nbsp;54&nbsp;&nbsp;Lovinobaňa</span>
+							<span class="hidden" aria-hidden="false">Sadová 5/87,98554,Lovinobaňa</span>
+						</p>
+					</div>
+				</li>
+				<li class="small">&nbsp;</li>
+			</ul>
+		</div>
+	</div>
+	<div class="base clear">
+		<copyright>Copyright 2020 Kiapeš</copyright>
+		<a href="http://kiapes.sk" class="hidden" title="kiapes.sk" aria-hidden="false">kiapes.sk</a>
+		<a href="http://kiapes.sk" aria-hidden="true" class="root"><span class="hidden">kiapes.sk</span></a>
+	</div>
+</body>
+</html>

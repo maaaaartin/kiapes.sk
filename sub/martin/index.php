@@ -13,11 +13,11 @@
 	<title>Martin Kiapeš</title>
 	<link rel="Shortcut Icon" href="" type="image/x-icon" />
 	<link rel="stylesheet" href="" type="text/css" media="print" />
-	<link rel="stylesheet" href="http://kiapes.sk/style/style0.css" type="text/css" media="screen,projection" />
+	<link rel="stylesheet" href="https://kiapes.sk/style/style0.css" type="text/css" media="screen,projection" />
 	<link rel="stylesheet" href="style/style1.css" type="text/css" media="screen,projection" />
 	<link rel="index" title="" href="" />
 	<!--[if lt IE 9 ]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://kit.fontawesome.com/39eabd14c5.js" crossorigin="anonymous"></script>
@@ -31,7 +31,7 @@
 		gtag('config', 'UA-142763-8');
 	</script>
 
-	<script http://kiapes.sk/script/script0.js" type="text/css" media="screen,projection,print" ></script>
+	<script https://kiapes.sk/script/script0.js" type="text/css" media="screen,projection,print" ></script>
 </head>
 <body lang="sk-SK" class="home">
 	<div class="content">
@@ -63,7 +63,7 @@
 					<span class="hidden" aria-hidden="false">martin@kiapes.sk</span>
 				</li>
 				<li class="middle" title="Situs interretialis">
-					<span aria-hidden="true"><a href="http://martin.kiapes.sk">martin.kiapes.sk</a></span>
+					<span aria-hidden="true"><a href="https://martin.kiapes.sk">martin.kiapes.sk</a></span>
 					<span class="hidden" aria-hidden="false">martin.kiapes.sk</span>
 				</li>
 			</ul>
@@ -135,8 +135,8 @@
 	</div>
 	<div class="base clear">
 		<copyright>Copyright 2020 Kiapeš</copyright>
-		<a href="http://kiapes.sk" class="hidden" title="kiapes.sk" aria-hidden="false">kiapes.sk</a>
-		<a href="http://kiapes.sk" aria-hidden="true" class="root"><span class="hidden">kiapes.sk</span></a>
+		<a href="https://kiapes.sk" class="hidden" title="kiapes.sk" aria-hidden="false">kiapes.sk</a>
+		<a href="https://kiapes.sk" aria-hidden="true" class="root"><span class="hidden">kiapes.sk</span></a>
 	</div>
 </body>
 </html>

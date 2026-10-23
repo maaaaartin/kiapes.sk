@@ -1,0 +1,10 @@
+.site-header{border-bottom:1px solid var(--color-border)}
+.site-nav ul{display:flex;flex-wrap:wrap;gap:var(--space-1);margin:0;padding:var(--space-2);list-style:none}
+.site-nav a{display:inline-block;padding:.5rem .75rem;text-decoration:none}
+.site-nav a:hover,.site-nav a:focus-visible{background:#eef5f9}
+.business-card,.home-groups{display:grid;gap:var(--space-3);padding:clamp(1rem,4vw,3rem);border:1px solid var(--color-border);border-radius:.75rem}
+.card-name,.family-name{margin:0;font-size:clamp(2rem,7vw,4.5rem);line-height:1.1;letter-spacing:-.02em}
+.contact-list,.family-links{margin:0;padding:0;list-style:none;display:grid;gap:.75rem}
+.contact-list .label{display:block;color:var(--color-muted);font-size:.875rem}
+.site-footer{padding:var(--space-2);border-top:1px solid var(--color-border);color:var(--color-muted);font-size:.875rem}
+@media(prefers-reduced-motion:no-preference){a,button{transition:background-color .2s ease,color .2s ease}}

@@ -1,0 +1,12 @@
+SETENVIF GEOIP_COUNTRY_CODE SK POVOLENE
+
+#AuthType Basic
+#AuthName "Chránený priečinok"
+#AuthBasicProvider file
+#AuthUserFile /_sub/martin/s98559/.htpasswd
+#Require valid-user
+
+#AuthType Basic
+#AuthName "Chránený priečinok"
+#AuthUserFile /ms008600/_sub/martin/s98559/.htpasswd
+#Require valid-user
