@@ -26,7 +26,7 @@ body {
 }
 
 	body::after {
-		content: "Copyright \00A9  2026 Kiape\0161";
+		content: "Copyright \00A9  2013 - 2026 Kiape\0161";
 		padding: 2.5vw 0 0 0;
 		text-align: center;
 		position: absolute;
